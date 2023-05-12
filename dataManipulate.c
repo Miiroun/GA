@@ -2,7 +2,7 @@
 int readFile() {
     return 1;
 }
-
+/*
 writeFile(char[] message) {
     FILE *fptr;
     
@@ -12,3 +12,4 @@ writeFile(char[] message) {
     
     fclose(fptr);
 }
+*/

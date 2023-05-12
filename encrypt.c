@@ -8,11 +8,11 @@
 int cryptionType = 0;
 
 
-int main(int argc, char const *argv[])
+int main()
 {
     /* code */
     
-    printf("Hello world");
+  printf("Hello World!");
     //readFile();
 
     return 0;
