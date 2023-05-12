@@ -11,8 +11,8 @@ int cryptionType = 0;
 int main()
 {
     /* code */
-    printf("Hello World!");
-    //readFile();
+    //printf("Hello World!");
+    int x = dataManipulation.readFile();
 
   return 0;
 }
