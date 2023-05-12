@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
 {
     /* code */
     
-    printF("Hello world");
+    printf("Hello world");
     //readFile();
 
     return 0;
