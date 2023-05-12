@@ -1,3 +1,4 @@
+#include <stdio.h>
 
 /*
 0 = rsa
@@ -11,7 +12,8 @@ int main(int argc, char const *argv[])
 {
     /* code */
     
-    readFile();
+    printF("Hello world");
+    //readFile();
 
     return 0;
 }
