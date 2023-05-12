@@ -1,21 +1,31 @@
 #include <stdio.h>
 
+enum EncryptionStandard {
+  DES,
+  AES,
+  DHKE
+};
 /*
-0 = des
-1 = aes
-2 = Diffie-Helman key exchange
+des
+aes
+Diffie-Helman key exchange
 */
-int cryptionType = 0;
-int dataSize = 100;
 
-char desEncrypt(char dataIn[dataSize]) {
-  char encData[dataSize] = dataIn;
+//int dataSize = 100;
+
+char desEncrypt(char *dataIn) 
+{
+  char encData[100] = dataIn;
   return encData;
 }
 
 
 int main()
 {
+  enum EncryptionStandard cryptionType = DES;
+
+
+
   FILE *inFile;
   inFile = fopen("data/dataIn.txt", "r");
   char dataIn[dataSize];
@@ -24,14 +34,20 @@ int main()
   printf("%s", dataIn);
   fclose(inFile);
 
-  char encData[dataSize];
-  if (cryptionType == 0)
+  char encData[100];
+  encData[0] = "a";
+  if (cryptionType == DES)
   {
-    encData = desEncrypt(dataIn);
+    char tempData[100] = desEncrypt(dataIn);
+    for (size_t i = 0; i < dataSize; i++)
+    {
+      encData[i] = tempData[i];
+    }
+    
   }
 
   FILE *encFile;
-  encFile = fdopen("data/encryptedData.txt", "w");
+  encFile = fopen("data/encryptedData.txt", "w");
 
   fprintf(encFile, encData);
 
