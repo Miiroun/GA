@@ -11,9 +11,8 @@ int cryptionType = 0;
 int main()
 {
     /* code */
-    
-  printf("Hello World!");
+    printf("Hello World!");
     //readFile();
 
-    return 0;
+  return 0;
 }
