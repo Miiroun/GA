@@ -13,10 +13,10 @@ Diffie-Helman key exchange
 
 //int dataSize = 100;
 
-char desEncrypt(char *dataIn) 
+char desEncrypt(char dataIn) 
 {
-  char encData[100] = dataIn;
-  return encData;
+  //char encData[100]; encData = dataIn;
+  return "hi"//encData;
 }
 
 
@@ -28,7 +28,7 @@ int main()
 
   FILE *inFile;
   inFile = fopen("data/dataIn.txt", "r");
-  char dataIn[dataSize];
+  char dataIn[100];
 
   fgets(dataIn, dataSize, inFile);
   printf("%s", dataIn);
