@@ -13,10 +13,12 @@ Diffie-Helman key exchange
 
 int dataSize = 256;
 
-char * desEncrypt(char dataIn) 
+char * desEncrypt(char *data) 
 {
-  char encData[256] = "Hi";
-  return &encData[0];
+  char encData[256];
+  encData[0] = *data;
+  *data = encData [0];
+  return &data[0];
 }
 
 
@@ -38,10 +40,15 @@ int main()
   char encData[256] = "a";
   if (cryptionType == DES)
   {
-    char tempData[256] = "Hi";//desEncrypt(dataIn);
-    for (size_t i = 0; i < dataSize; i++)
+    char * pData;
+    pData = &dataIn[0];
+    char *tempData[256];
+    tempData[0] = desEncrypt(pData);
+
+    int i;
+    for (i = 0; i < dataSize; i++)
     {
-      encData[i] = tempData[i];
+      encData[i] = *tempData[i];
     }
     
   }
