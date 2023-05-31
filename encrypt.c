@@ -24,8 +24,7 @@ char * desEncrypt(char *data)
 
 int main()
 {
-  enum EncryptionStandard cryptionType;
-  cryptionType = DES;
+  enum EncryptionStandard cryptionType = DES;
 
 
 
@@ -35,9 +34,11 @@ int main()
 
   fgets(dataIn, dataSize, inFile);
   printf("%s", dataIn);
+  printf("\n");
+
   fclose(inFile);
 
-  char encData[256] = "a";
+  char encData[256];
   if (cryptionType == DES)
   {
     char * pData;
@@ -46,18 +47,26 @@ int main()
     tempData[0] = desEncrypt(pData);
 
     int i;
+    // just nu så bara tar värdet för index noll av tempdata, behöver flytta hela stringen, fixat tror jag
     for (i = 0; i < dataSize; i++)
     {
+      printf(*tempData[i]);
       encData[i] = *tempData[i];
+      if (i != dataSize)
+      {
+        tempData[i+1] = tempData[i] + 1;
+      }      
     }
     
   }
 
+
+  printf(encData);
+  printf("\n");
+
   FILE *encFile;
   encFile = fopen("data/encryptedData.txt", "w");
-
   fprintf(encFile, encData);
-
   fclose(encFile);
 
   return 0;
