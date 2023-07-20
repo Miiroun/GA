@@ -11,7 +11,7 @@ aes
 Diffie-Helman key exchange
 */
 
-//int dataSize = 100;
+const int dataSize = 100;
 
 char desEncrypt(char *dataIn) 
 {
@@ -28,7 +28,7 @@ int main()
 
   FILE *inFile;
   inFile = fopen("data/dataIn.txt", "r");
-  char dataIn[dataSize];
+  char dataIn[100];
 
   fgets(dataIn, dataSize, inFile);
   printf("%s", dataIn);
