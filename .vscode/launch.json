@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "GA_cc9a5892"
+    },
+    {
+      "type": "java",
       "name": "Encrypt",
       "request": "launch",
       "mainClass": "Encrypt",

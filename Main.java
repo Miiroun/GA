@@ -5,7 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
-class Encrypt {
+class Main {
 
     public enum EncStandard {
         encDES,
@@ -14,7 +14,8 @@ class Encrypt {
 
     // curently working in bits not bytes
 
-    static final int blockSize = 64 / 8;
+    public static final int blockSize = 64;
+    public static final int byteSize = blockSize / 8;
     static Charset charset = Charset.forName("UTF-8");
 
     // setup
@@ -53,6 +54,14 @@ class Encrypt {
 
         try {
             if (isText) {
+                for (int i = 0; i < byteArray.length; i++) {
+                    if (byteArray[i] == 0) {
+                        byte[] temp = new byte[i];
+                        System.arraycopy(byteArray, 0, temp, 0, i);
+                        byteArray = temp;
+                        i = i - 1;
+                    }
+                }
                 String output = new String(byteArray, charset);
                 FileWriter fileWriter = new FileWriter(path);
                 fileWriter.write(output);
@@ -73,63 +82,33 @@ class Encrypt {
     }
 
     public static void seperateIntoBlocks(EncStandard encStandard) {
-        int blockCount = Math.floorDiv((inputArray.length - 1), blockSize) + 1;
-        outputArray = new byte[blockCount * blockSize];
+        int blockCount = Math.floorDiv((inputArray.length - 1), byteSize) + 1;
+        outputArray = new byte[blockCount * byteSize];
         int i = 0;
-        int j = blockSize;
+        int j = byteSize;
         while (i < blockCount) {
-            byte[] data = new byte[blockSize];
+            byte[] data = new byte[byteSize];
             if (i == blockCount - 1) {
-                j = inputArray.length + blockSize - outputArray.length;
+                j = inputArray.length + byteSize - outputArray.length;
             }
-            System.arraycopy(inputArray, i * blockSize, data, 0, j);
+            System.arraycopy(inputArray, i * byteSize, data, 0, j);
             if (encStandard == EncStandard.encDES) {
-                data = encDES(data);
+                data = DES.encDES(data);
             } else if (encStandard == EncStandard.decDES) {
-                data = decDES(data);
+                data = DES.decDES(data);
             }
 
-            System.arraycopy(data, 0, outputArray, i * blockSize, blockSize);
+            System.arraycopy(data, 0, outputArray, i * byteSize, byteSize);
             i = i + 1;
         }
     }
 
     // algorithems
 
-    public static byte[] encDES(byte[] workArray) {
-        byte[] localArray = workArray;
-        for (int j = 0; j < blockSize; j++) {
-            byte b = localArray[j];
-            int i = (int) b;
-            i = ~i;
-            // System.out.print(i + ", " + ~i);
-            b = (byte) i;
-            localArray[j] = b;
-
-        }
-
-        return localArray;
-    }
-
-    public static byte[] decDES(byte[] workArray) {
-        byte[] localArray = workArray;
-        for (int j = 0; j < blockSize; j++) {
-            byte b = localArray[j];
-            int i = (int) b;
-            i = ~i;
-            // System.out.print(i + ", " + ~i);
-            b = (byte) i;
-            localArray[j] = b;
-
-        }
-
-        return localArray;
-    }
-
     public static void encryptData() {
         System.out.println("encrypting data");
 
-        inputArray = readData("data/decryptedText.txt", true);
+        inputArray = readData("data/startText.txt", false);
         keyArray = readData("data/encryptKey.txt", false);
 
         seperateIntoBlocks(EncStandard.encDES);
@@ -146,14 +125,14 @@ class Encrypt {
 
         seperateIntoBlocks(EncStandard.decDES);
 
-        writeData(outputArray, "data/decryptedText.txt", true);
+        writeData(outputArray, "data/endText.txt", true);
         writeStats();
     }
 
     public static void main(String[] args) {
         System.out.println("Staring...");
         encryptData();
-        decryptData();
+        // decryptData();
         System.out.println("Done!");
     }
 
