@@ -331,34 +331,21 @@ public class DES {
         // System.out.print("K" + n + " + E(R" + (n - 1) + "): ");
         // printBitSet(8, kN, 48); //this looks correct, atelast for n=1
 
-        //
-        System.out.print(n);
-        //
-
         BitSet _Si[] = new BitSet[8];
 
         BitSet sumS = new BitSet(0);
         for (int i = 0; i < 8; i++) {
             // this part seperates it into 8 Bi boxes
-            BitSet _Bi = kN.get(i * 6, (i + 1) * 6);// skall jag ta sista 6an minus 1 här? för ska bli 6 bites?, tror
-                                                    // inte det abserat på hur index fungerar
-            printBitSet(6, _Bi, 6);// the set of Bi is cut correctly //print not working for bitdis=/= 8, forget
-                                   // first 2 nummbers exist
+            BitSet _Bi = kN.get(i * 6, (i + 1) * 6);
 
             // this part aplies the Si box to it's coresponding Bi box
-            _Si[i] = funSi(_Bi, i); // proberbly wrong here
-
-            printBitSet(4, _Si[i], 4);// 0101
+            _Si[i] = funSi(_Bi, i);
 
             sumS = fuseBitSet(sumS, i * 4, _Si[i], 4);
         }
-        // printBitSet(4, sumS, 32); // should be 0101 1100 1000 0010 1011 0101 1001
-        // 0111
 
         BitSet temp = permutation(sumS, _P);
 
-        // printBitSet(4, temp, 32); // this is wrong, should be =0010 0011 0100 1010
-        // 1010 1001 1011 1011
         return temp;
     }
 
@@ -384,12 +371,7 @@ public class DES {
         _L[0] = ipMessage.get(0, 32);
         _R[0] = ipMessage.get(32, 64);
 
-        // coorect up until this point
-        // printBitSet(8, l0, 32);
-
         // here do rounds
-        // redo all calculations two times here, could double performance if wanted
-        // not the coorect c here
         BitSet _R16L16 = fuseBitSet(funRn(16), 32, funLn(16), 32);
         BitSet c = permutation(_R16L16, _IP_1);
 
@@ -403,15 +385,34 @@ public class DES {
     //
 
     public static byte[] decDES(byte[] workArray) {
-        byte[] localArray = workArray;
-        /*
-         * for (int j = 0; j < blockSize / 8; j++) {
-         * byte b = localArray[j];
-         * b ^= keyArray[j];
-         * localArray[j] = b;
-         * 
-         * }
-         */
-        return localArray;
+        // generate keys
+        BitSet keyK = reverseBitSet(BitSet.valueOf(reverseByteArray(Main.keyArray)), 64);
+        BitSet keyKplus = permutation(keyK, _PC1);
+        keyKN = keyTransformation(keyKplus);
+
+        BitSet tempKeyKN[] = new BitSet[keyKN.length];
+        for (int i = 0; i < keyKN.length; i++) {
+            tempKeyKN[i] = keyKN[keyKN.length - i - 1];
+        }
+        keyKN = tempKeyKN;
+
+        // prep message
+        BitSet message = reverseBitSet(BitSet.valueOf(reverseByteArray(workArray)), 64);
+        BitSet ipMessage = permutation(message, _IP);
+        _L = new BitSet[17];
+        _R = new BitSet[17];
+        _L[0] = ipMessage.get(0, 32);
+        _R[0] = ipMessage.get(32, 64);
+
+        // here do rounds
+
+        BitSet _R16L16 = fuseBitSet(funRn(16), 32, funLn(16), 32);
+        BitSet c = permutation(_R16L16, _IP_1);
+
+        // make sure the array that sends back is correct size
+        byte[] sendBytes = new byte[Main.byteSize];
+        byte[] tempBytes = reverseByteArray(reverseBitSet(c, 64).toByteArray());
+        System.arraycopy(tempBytes, 0, sendBytes, 0, tempBytes.length);
+        return sendBytes;
     }
 }
