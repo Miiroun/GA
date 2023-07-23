@@ -1,4 +1,6 @@
+
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -40,13 +42,17 @@ class Main {
                 inputArray = input.getBytes(charset);
                 System.out.println("Input" + ":" + input);
             } else {
-                inputArray = Files.readAllBytes(Paths.get(path));
+                // inputArray = Files.readAllBytes(Paths.get(path));
+                File file = new File(path);
+                byte[] bytes = new byte[(int) file.length()];
+                try (FileInputStream fis = new FileInputStream(file)) {
+                    fis.read(bytes);
+                }
+                inputArray = bytes;
             }
         } catch (Exception e) {
             System.out.println("An error occurred.");
-            e.printStackTrace();
         }
-
         return inputArray;
     }
 

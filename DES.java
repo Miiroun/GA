@@ -2,30 +2,85 @@ import java.util.BitSet;
 
 public class DES {
     // functions
-    public static BitSet shiftLeft(BitSet workSet) {
-        BitSet localBitSet = new BitSet(workSet.size());
+    public static BitSet shiftLeft(BitSet workSet, int size) {
+        BitSet localBitSet = new BitSet(size);
 
-        localBitSet.set(0, workSet.get(workSet.size()));
-        for (int j = 1; j < workSet.size(); j++) {
-            localBitSet.set(j, workSet.get(j + 1));
+        for (int i = 0; i <= size; i++) {
+            localBitSet.set(i, workSet.get(i + 1));
         }
+        localBitSet.set(size - 1, workSet.get(0));
+
+        // printBitSet(28, localBitSet, 32);
 
         return localBitSet;
     }
 
-    public static BitSet fuseBitSet(BitSet bitSet1, BitSet bitSet2) {
-        BitSet tempBitSet = new BitSet(bitSet1.size() + bitSet2.size());
-        int bs1Size = bitSet1.size();
-        for (int i = 0; i < bs1Size + bitSet2.size(); i++) {
+    public static BitSet fuseBitSet(BitSet bitSet1, int size1, BitSet bitSet2, int size2) {
+        BitSet tempBitSet = new BitSet(size1 + size2);
+        for (int i = 0; i < size1 + size2; i++) {
             boolean n;
-            if (i < bs1Size) {
+            if (i < size1) {
                 n = bitSet1.get(i);
             } else {
-                n = bitSet2.get(i - bs1Size);
+                n = bitSet2.get(i - size1);
             }
             tempBitSet.set(i, n);
         }
         return tempBitSet;
+    }
+
+    public static void printBitSet(int bitDis, byte[] byteArray) {
+        String decimal = "";
+        String binary = "";
+        String hex = "";
+        for (byte b : byteArray) {
+            int i = Byte.toUnsignedInt(b);
+            decimal += Integer.toString(i) + " ";
+            String tempBinary = Integer.toBinaryString(i);
+            while (tempBinary.length() < Math.min(8, bitDis)) {
+                tempBinary = "0" + tempBinary;
+            }
+            binary = binary + tempBinary;
+            hex += Integer.toHexString(i) + "       ";
+        }
+        int times = binary.length() / bitDis;
+        for (int i = 0; i < times; i++) {
+            binary = binary.substring(0, i * (bitDis + 1) + bitDis)
+                    + " "
+                    + binary.substring(i * (bitDis + 1) + bitDis, binary.length());
+            // hex = hex.substring(0, i * 5 + 1) + " " + hex.substring(i * 5 + 2,
+            // hex.length());
+        }
+        // System.out.println("decimal:" + decimal);
+        System.out.println("binary :" + binary);
+        // System.out.println("hex :" + hex);
+    }
+
+    public static void printBitSet(int bitDis, BitSet bits, int length) {
+        byte[] byteArray = reverseByteArray(reverseBitSet(bits, length).toByteArray());
+        printBitSet(bitDis, byteArray);
+    }
+
+    public static BitSet reverseBitSet(BitSet bitSet, int tempSize) {
+        int size = tempSize;
+        BitSet temp = new BitSet(size);
+
+        for (int i = 0; i < size; i++) {
+            temp.set(i, bitSet.get(size - 1 - i));
+        }
+
+        return temp;
+    }
+
+    public static byte[] reverseByteArray(byte[] array) {
+        int size = array.length;
+        byte[] temp = new byte[size];
+
+        for (int i = 0; i < size; i++) {
+            temp[i] = array[size - 1 - i];
+        }
+
+        return temp;
     }
 
     //
@@ -153,8 +208,8 @@ public class DES {
 
     static final int shifts[] = { 1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1 };
 
-    static BitSet l0;
-    static BitSet r0;
+    static BitSet[] _L;
+    static BitSet[] _R;
 
     static BitSet keyKN[];
 
@@ -173,7 +228,10 @@ public class DES {
     static BitSet permutation(BitSet workSet, int[] table) {
         BitSet localBitSet = new BitSet(table.length);
         for (int i = 0; i < table.length; i++) {
-            localBitSet.set(i, workSet.get(table[i]));
+            // System.out.print(Integer.toString(i) + " "
+            // + Boolean.toString(workSet.get(table[i] - 1)) + " "
+            // + Integer.toString(table[i]) + " \n");
+            localBitSet.set(i, workSet.get(table[i] - 1));
         }
         return localBitSet;
     }
@@ -183,77 +241,125 @@ public class DES {
 
         BitSet[] C = new BitSet[17];
         BitSet[] D = new BitSet[17];
-        C[0] = workSet.get(0, 27);
-        D[0] = workSet.get(28, 55);
+        C[0] = workSet.get(0, 28);
+        D[0] = workSet.get(28, 56);
+        // printBitSet(4, D[0], 32);
         for (int i = 0; i < 16; i++) {
             for (int j = 0; j < shifts[i]; j++) {
-                C[i + 1] = shiftLeft(C[i + j]);
-                D[i + 1] = shiftLeft(D[i - +j]);
+                C[i + 1] = shiftLeft(C[i + j], 28);
+                D[i + 1] = shiftLeft(D[i + j], 28);
             }
+            // System.out.print(i);// + "\n");
+            // printBitSet(28, C[i], 32);
+
         }
 
         for (int i = 0; i < 16; i++) {
-            localKeyArray[i] = permutation(fuseBitSet(C[i + 1], D[i + 1]), _PC2);
+            localKeyArray[i] = permutation(fuseBitSet(C[i + 1], 28, D[i + 1], 28), _PC2);
+            // printBitSet(6, D[i + 1], 28);
+            // printBitSet(6, fuseBitSet(C[i + 1], 28, D[i + 1], 28), 56);
+            // printBitSet(6, localKeyArray[i], 48);
         }
 
         return localKeyArray;
 
     }
 
-    static BitSet funSi(BitSet _Bi, int i) {
+    static BitSet funSi(BitSet _Bi, int n) {
         BitSet selected;
-        int a = i;
-        int b = 2 * (_Bi.get(0) ? 1 : 0) + 1 * (_Bi.get(5) ? 1 : 0);
-        int c = 8 * (_Bi.get(1) ? 1 : 0)
-                + 4 * (_Bi.get(2) ? 1 : 0)
+        int a = n;
+        int i = 1 * (_Bi.get(5) ? 1 : 0) + 2 * (_Bi.get(0) ? 1 : 0);
+        int j = 1 * (_Bi.get(4) ? 1 : 0)
                 + 2 * (_Bi.get(3) ? 1 : 0)
-                + 1 * (_Bi.get(4) ? 1 : 0);
+                + 4 * (_Bi.get(2) ? 1 : 0)
+                + 8 * (_Bi.get(1) ? 1 : 0);
+        int integer = tableS[a][i][j];
+        // System.out.println(integer);
+        // long[] longs = new long[1];
+        // longs[0] = (long) integer;
+        // selected = BitSet.valueOf(longs);
+
         byte[] bytes = new byte[1];
-        bytes[0] = (byte) tableS[a][b][c];
-        selected = BitSet.valueOf(bytes);
+        bytes[0] = (byte) integer;
+        // selected = reverseBitSet(BitSet.valueOf(reverseByteArray(bytes)), 6);
+        selected = reverseBitSet(BitSet.valueOf(reverseByteArray(bytes)), 4);
+
+        // System.out.println(selected);
         return selected;
     }
 
     static BitSet funLn(int n) {
-        BitSet temBitSet;
-        if (n <= 0) {
-            temBitSet = l0;
+
+        if (_L[n] != null) {
+            return _L[n];
         } else {
+            BitSet temBitSet;
             temBitSet = funRn(n - 1);
+            _L[n] = temBitSet;
+            // System.out.print("L:" + n + " ");
+            // printBitSet(8, temBitSet, 32);
+            return temBitSet;
         }
-        return temBitSet;
+
     }
 
     static BitSet funRn(int n) {
-        BitSet temBitSet;
-        if (n <= 0) {
-            temBitSet = r0;
+        if (_R[n] != null) {
+            return _R[n];
         } else {
+            BitSet temBitSet;
+
             temBitSet = funLn(n - 1);
             temBitSet.xor(funFn(n));
+            _R[n] = temBitSet;
+            // System.out.print("R:" + n + " ");
+            // printBitSet(8, temBitSet, 32);
+            return temBitSet;
+
         }
-        return temBitSet;
+
     }
 
     static BitSet funFn(int n) {
         // original
         BitSet rN_1 = funRn(n - 1);
-        BitSet kN = keyKN[n - 1];
+        BitSet kN = keyKN[n - 1]; // my Kn hase it index moved one nummber lower
 
-        BitSet _e = permutation(rN_1, _E);
-        kN.xor(_e);
+        BitSet _Ern_1 = permutation(rN_1, _E);
+        kN.xor(_Ern_1);
+
+        // System.out.print("K" + n + " + E(R" + (n - 1) + "): ");
+        // printBitSet(8, kN, 48); //this looks correct, atelast for n=1
+
+        //
+        System.out.print(n);
+        //
 
         BitSet _Si[] = new BitSet[8];
 
         BitSet sumS = new BitSet(0);
         for (int i = 0; i < 8; i++) {
-            BitSet _Bi = kN.get(i * 6, (i + 1) * 6);// skall jag ta sista 6an minus 1 här? för ska bli 6 bites?
-            // needs to do a permutation here, not done under
-            _Si[i] = funSi(_Bi, i);
-            sumS = fuseBitSet(sumS, _Si[i]);
-        }
+            // this part seperates it into 8 Bi boxes
+            BitSet _Bi = kN.get(i * 6, (i + 1) * 6);// skall jag ta sista 6an minus 1 här? för ska bli 6 bites?, tror
+                                                    // inte det abserat på hur index fungerar
+            printBitSet(6, _Bi, 6);// the set of Bi is cut correctly //print not working for bitdis=/= 8, forget
+                                   // first 2 nummbers exist
 
-        return permutation(sumS, _P);
+            // this part aplies the Si box to it's coresponding Bi box
+            _Si[i] = funSi(_Bi, i); // proberbly wrong here
+
+            printBitSet(4, _Si[i], 4);// 0101
+
+            sumS = fuseBitSet(sumS, i * 4, _Si[i], 4);
+        }
+        // printBitSet(4, sumS, 32); // should be 0101 1100 1000 0010 1011 0101 1001
+        // 0111
+
+        BitSet temp = permutation(sumS, _P);
+
+        // printBitSet(4, temp, 32); // this is wrong, should be =0010 0011 0100 1010
+        // 1010 1001 1011 1011
+        return temp;
     }
 
     //
@@ -266,25 +372,30 @@ public class DES {
     public static byte[] encDES(byte[] workArray) {
 
         // generate keys
-        BitSet keyK = BitSet.valueOf(Main.keyArray);
+        BitSet keyK = reverseBitSet(BitSet.valueOf(reverseByteArray(Main.keyArray)), 64);
         BitSet keyKplus = permutation(keyK, _PC1);
         keyKN = keyTransformation(keyKplus);
 
         // prep message
-        BitSet message = BitSet.valueOf(workArray);
+        BitSet message = reverseBitSet(BitSet.valueOf(reverseByteArray(workArray)), 64);
         BitSet ipMessage = permutation(message, _IP);
-        l0 = ipMessage.get(0, 31);
-        r0 = ipMessage.get(32, 63);
+        _L = new BitSet[17];
+        _R = new BitSet[17];
+        _L[0] = ipMessage.get(0, 32);
+        _R[0] = ipMessage.get(32, 64);
+
+        // coorect up until this point
+        // printBitSet(8, l0, 32);
 
         // here do rounds
         // redo all calculations two times here, could double performance if wanted
         // not the coorect c here
-        BitSet _R16L16 = fuseBitSet(funRn(16), funLn(16));
+        BitSet _R16L16 = fuseBitSet(funRn(16), 32, funLn(16), 32);
         BitSet c = permutation(_R16L16, _IP_1);
 
         // make sure the array that sends back is correct size
         byte[] sendBytes = new byte[Main.byteSize];
-        byte[] tempBytes = c.toByteArray();
+        byte[] tempBytes = reverseByteArray(reverseBitSet(c, 64).toByteArray());
         System.arraycopy(tempBytes, 0, sendBytes, 0, tempBytes.length);
         return sendBytes;
     }
