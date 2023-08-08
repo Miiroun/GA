@@ -1,6 +1,6 @@
 import java.util.BitSet;
 
-public class DES {
+public class DES implements EncrytionInterface {
     // functions
     public static BitSet shiftLeft(BitSet workSet, int size) {
         BitSet localBitSet = new BitSet(size);
@@ -51,9 +51,9 @@ public class DES {
             // hex = hex.substring(0, i * 5 + 1) + " " + hex.substring(i * 5 + 2,
             // hex.length());
         }
-        // System.out.println("decimal:" + decimal);
+        System.out.println("decimal:" + decimal);
         System.out.println("binary :" + binary);
-        // System.out.println("hex :" + hex);
+        System.out.println("hex :" + hex);
     }
 
     public static void printBitSet(int bitDis, BitSet bits, int length) {
@@ -356,7 +356,7 @@ public class DES {
     //
 
     // main functions
-    public static byte[] encDES(byte[] workArray) {
+    public byte[] enc(byte[] workArray) {
 
         // generate keys
         BitSet keyK = reverseBitSet(BitSet.valueOf(reverseByteArray(Main.keyArray)), 64);
@@ -384,7 +384,7 @@ public class DES {
 
     //
 
-    public static byte[] decDES(byte[] workArray) {
+    public byte[] dec(byte[] workArray) {
         // generate keys
         BitSet keyK = reverseBitSet(BitSet.valueOf(reverseByteArray(Main.keyArray)), 64);
         BitSet keyKplus = permutation(keyK, _PC1);
@@ -405,7 +405,6 @@ public class DES {
         _R[0] = ipMessage.get(32, 64);
 
         // here do rounds
-
         BitSet _R16L16 = fuseBitSet(funRn(16), 32, funLn(16), 32);
         BitSet c = permutation(_R16L16, _IP_1);
 
