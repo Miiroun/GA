@@ -43,7 +43,7 @@ public class DiffieHellman implements EncrytionInterface {
         // this is not 100% correvt, somthing wrong should use: me & other, for second calculation
 
         //
-
+        me = me + other + knownNumber; //just so no error
         return message;
     }
 

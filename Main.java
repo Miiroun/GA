@@ -10,7 +10,8 @@ class Main {
     public enum EncStandard {
         DES,
         TriDES,
-        D_H
+        D_H,
+        CC
     }
 
     // curently working in bits not bytes
@@ -18,7 +19,7 @@ class Main {
     public static int blockSize = 64;
     public static int byteSize = blockSize / 8;
     public static int blockCount;
-    static Charset charset = Charset.forName("UTF-8");
+    public static Charset charset = Charset.forName("UTF-8");
 
     // setup
     public static byte[] inputArray;
@@ -89,32 +90,6 @@ class Main {
     public static void computeBlock(byte[] block, int i, EncrytionInterface encClass, boolean encrypt) {
         byte[] data = block;
 
-        /*
-         * if (encStandard == EncStandard.DES) {
-         * if (encrypt) {
-         * data = DES.encDES(data);
-         * } else {
-         * data = DES.decDES(data);
-         * }
-         * } else if (encStandard == EncStandard.TriDES) {
-         * if (encrypt) {
-         * data = DES.encDES(data);
-         * data = DES.encDES(data);
-         * data = DES.encDES(data);
-         * } else {
-         * data = DES.decDES(data);
-         * data = DES.decDES(data);
-         * data = DES.decDES(data);
-         * }
-         * } else if (encStandard == EncStandard.D_H) {
-         * if (encrypt) {
-         * data = DiffieHellman.encDH(data);
-         * } else {
-         * data = DiffieHellman.decDH(data);
-         * }
-         * }
-         */
-
         if (encrypt) {
             data = encClass.enc(data);
         } else {
@@ -137,6 +112,8 @@ class Main {
             encClass = new TriDES();
         } else if (encStandard == EncStandard.D_H) {
             encClass = new DiffieHellman();
+        } else if (encStandard == EncStandard.CC) {
+            encClass = new CaesarCipher();
         } else {
             // error, should never be here
             encClass = new DES();
@@ -177,8 +154,8 @@ class Main {
 
     public static void main(String[] args) {
         System.out.println("Staring...");
-        encryptData(EncStandard.D_H);
-        // decryptData(EncStandard.D_H);
+        encryptData(EncStandard.CC);
+        decryptData(EncStandard.CC);
         // Hacking.hack(EncStandard.DES);
         System.out.println("Done!");
     }
