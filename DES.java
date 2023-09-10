@@ -1,6 +1,7 @@
-import java.util.BitSet;
 
-public class DES implements EncrytionInterface {
+import java.util.BitSet;
+public class DES implements ByteEncrytionInterface {
+    
     // functions
     public static BitSet shiftLeft(BitSet workSet, int size) {
         BitSet localBitSet = new BitSet(size);
@@ -413,5 +414,9 @@ public class DES implements EncrytionInterface {
         byte[] tempBytes = reverseByteArray(reverseBitSet(c, 64).toByteArray());
         System.arraycopy(tempBytes, 0, sendBytes, 0, tempBytes.length);
         return sendBytes;
+    }
+
+    public void setKey(byte[] data) {
+        throw new UnsupportedOperationException("Unimplemented method 'setKey'");
     }
 }

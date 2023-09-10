@@ -1,4 +1,7 @@
-public class TriDES implements EncrytionInterface {
+
+
+public class TriDES implements ByteEncrytionInterface {
+
     public byte[] enc(byte[] data) {
         byte[] message = data;
 
@@ -21,5 +24,10 @@ public class TriDES implements EncrytionInterface {
 
         return message;
 
+    }
+
+
+    public void setKey(byte[] data) {
+        throw new UnsupportedOperationException("Unimplemented method 'setKey'");
     }
 }

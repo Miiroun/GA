@@ -1,32 +1,37 @@
-public class CaesarCipher implements EncrytionInterface {
+public class CaesarCipher implements StringEncrytionInterface {
+    int key = 0;
 
-    public char[] key = "a".toCharArray(); 
 
-    public byte[] enc(byte[] data) {
-        char[] message = data.toString().toCharArray();
+    public char shitChar(char character, int n) {
+        char c = Character.toLowerCase(character);
 
-        for (int i = 0; i < message.length; i++) {  //inte efel med denna functionen, inte detta iallafall
-            message[i] = (char) (message[i]     + key[ i % key.length]);
-            
+        c = Utility.alphabet[( Utility.indexOf(c) + n + 29) % 29];
+
+        return c;
+    }
+
+    public String enc(String data) {
+        String message = "";
+
+        for (char c : data.toCharArray()) {
+            message = message + shitChar(c, (-1)*key);
         }
 
-        return message.toString().getBytes();
+        return message;   
     }
 
-    public byte[] dec(byte[] data) {
-                char[] message = data.toString().toCharArray();
 
-        for (int i = 0; i < message.length; i++) {
-            message[i] = (char) (message[i]    - key[ i % key.length]);
-            
+    public String dec(String data) {
+        String message = "";
+
+        for (char c : data.toCharArray()) {
+            message = message + shitChar(c, (-1)*key);
         }
 
-        return message.toString().getBytes();
+        return message;
+    }
+    public void setKey(String keyString) {
+        key = Integer.valueOf(keyString);
     }
 
-    public CaesarCipher() {
-        //key = Main.keyArray.toString().toCharArray();
-        key[0] = 0;
-    }
-    
 }

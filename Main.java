@@ -11,20 +11,46 @@ class Main {
         DES,
         TriDES,
         D_H,
-        CC
+        CC,
+        XOR,
+        Sub
     }
 
-    // curently working in bits not bytes
+    public enum AttStandard {
+        FA,
+        BF
+    }
 
+    public static EncStandard encStandard;
+    public static AttStandard attStandard;
+    public static boolean doBytes; // else work with strings
     public static int blockSize = 64;
     public static int byteSize = blockSize / 8;
     public static int blockCount;
     public static Charset charset = Charset.forName("UTF-8");
 
+    public static void varibleSetUp(EncStandard encStand, AttStandard attStand) {
+        encStandard = encStand;
+        attStandard = attStand;
+
+        if (encStandard == EncStandard.DES || encStandard == EncStandard.TriDES || encStandard == EncStandard.D_H) {
+            doBytes = true;
+            blockSize = 64;
+            byteSize = blockSize / 8;
+            charset = Charset.forName("UTF-8");
+        } else if (encStandard == EncStandard.CC) {
+            doBytes = false;
+        }
+    }
+
     // setup
     public static byte[] inputArray;
     public static byte[] outputArray;
     public static byte[] keyArray;
+
+    public static String inputString;
+    public static String outputString;
+    public static String keyString;
 
     public static byte[] readData(String path, boolean isText) {
 
@@ -47,6 +73,14 @@ class Main {
         return inputArray;
     }
 
+    public static String readData(String path) {
+        return "4";
+    }
+
+    public static void writeData(String string, String path) {
+
+    }
+
     public static void writeData(byte[] byteArray, String path, boolean isText) {
 
         try {
@@ -60,10 +94,6 @@ class Main {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
-
-    }
-
-    public static void writeStats() {
 
     }
 
@@ -87,7 +117,7 @@ class Main {
         return blocks;
     }
 
-    public static void computeBlock(byte[] block, int i, EncrytionInterface encClass, boolean encrypt) {
+    public static void computeBlock(byte[] block, int i, ByteEncrytionInterface encClass, boolean encrypt) {
         byte[] data = block;
 
         if (encrypt) {
@@ -100,11 +130,11 @@ class Main {
 
     }
 
-    public static void doCryotionBlocks(EncStandard encStandard, boolean encrypt) {
+    public static void doCryotionBlocks(boolean encrypt) {
         blockCount = Math.floorDiv((inputArray.length - 1), byteSize) + 1;
         outputArray = new byte[blockCount * byteSize];
         byte[][] blocks = seperateIntoBlocks();
-        EncrytionInterface encClass;
+        ByteEncrytionInterface encClass;
 
         if (encStandard == EncStandard.DES) {
             encClass = new DES();
@@ -112,8 +142,6 @@ class Main {
             encClass = new TriDES();
         } else if (encStandard == EncStandard.D_H) {
             encClass = new DiffieHellman();
-        } else if (encStandard == EncStandard.CC) {
-            encClass = new CaesarCipher();
         } else {
             // error, should never be here
             encClass = new DES();
@@ -124,40 +152,139 @@ class Main {
         }
     }
 
-    // algorithems
+    public static void doCryption(boolean encrypt) {
+        StringEncrytionInterface encClass;
 
-    public static void encryptData(EncStandard encStandard) {
-        System.out.println("encrypting data");
+        if (encStandard == EncStandard.CC) {
+            encClass = new CaesarCipher();
+        } else if (encStandard == EncStandard.XOR) {
+            encClass = new X_OR();
+        } else if (encStandard == EncStandard.Sub) {
+            encClass = new Substitution();
+        } else {
+            // error, should never be here
+            encClass = new CaesarCipher();
+        }
 
-        inputArray = readData("data/startText.txt", true);
-        keyArray = readData("data/encryptKey.txt", false);
+        encClass.setKey(keyString);
 
-        doCryotionBlocks(encStandard, true);
+        if (encrypt) {
+            encClass.enc(inputString);
+        } else {
+            encClass.dec(inputString);
+        }
 
-        writeData(outputArray, "data/encryptedText.txt", false);
-        writeStats();
     }
 
-    public static void decryptData(EncStandard encStandard) {
+    public static void doAttacking() {
+        AttackInterface attClass;
+
+        if (attStandard == AttStandard.BF) {
+            attClass = new BruitForce();
+        } else if (attStandard == AttStandard.FA) {
+            attClass = new FrequencyAnalysis();
+        } else {
+            // error, should never be here
+            System.out.println("something wrong with attact standard selection");
+            attClass = new BruitForce();
+        }
+
+        //
+
+        if (encStandard == EncStandard.CC) {
+            outputString = attClass.attackCC(inputString);
+        } else if (encStandard == EncStandard.XOR) {
+            outputString = attClass.attackXO(inputString);
+        } else if (encStandard == EncStandard.Sub) {
+            outputString = attClass.attackST(inputString);
+        } else {
+            // error, should never be here
+            System.out.println("something wrong with attact standard selection");
+        }
+
+    }
+    // algorithems
+
+    public static void encryptData() {
+        System.out.println("encrypting data");
+
+        if (doBytes) {
+            inputArray = readData("data/startText.txt", true);
+            keyArray = readData("data/encryptKey.txt", false);
+
+            doCryotionBlocks(true);
+
+            writeData(outputArray, "data/encryptedText.txt", false);
+        } else {
+            inputString = readData("data/startText.txt");
+            keyString = readData("data/encryptKey.txt");
+
+            doCryption(true);
+
+            writeData(outputString, "data/encryptedText.txt");
+        }
+
+        Statistics.recordeStats();
+    }
+
+    public static void decryptData() {
         System.out.println("decrypting data");
 
-        inputArray = readData("data/encryptedText.txt", false);
-        keyArray = readData("data/encryptKey.txt", false);
+        if (doBytes) {
+            inputArray = readData("data/encryptedText.txt", false);
+            keyArray = readData("data/encryptKey.txt", false);
 
-        //
-        doCryotionBlocks(encStandard, false);
-        //
+            //
+            doCryotionBlocks(false);
+            //
 
-        writeData(outputArray, "data/endText.txt", true);
-        writeStats();
+            writeData(outputArray, "data/endText.txt", true);
+        } //
+        else //
+        { //
+            inputString = readData("data/encryptedText.txt");
+            keyString = readData("data/encryptKey.txt");
+
+            //
+            doCryption(false);
+            //
+
+            writeData(outputString, "data/endText.txt");
+        }
+        Statistics.recordeStats();
+    }
+
+    public static void attackData() {
+        if (doBytes) {
+
+        } else {
+            System.out.println("attacking data");
+
+            inputString = readData("data/encryptedText");
+
+            doAttacking();
+
+            writeData(outputString, "data/attackedText");
+        }
+        Statistics.recordeStats();
+
     }
 
     public static void main(String[] args) {
+        varibleSetUp(EncStandard.CC, AttStandard.FA);
+        Statistics.startCollecting();
+
         System.out.println("Staring...");
-        encryptData(EncStandard.CC);
-        decryptData(EncStandard.CC);
-        // Hacking.hack(EncStandard.DES);
+
+        encryptData();
+
+        decryptData();
+
+        //attackData();
+
         System.out.println("Done!");
+
+        Statistics.endCollecting(false);
     }
 
 }

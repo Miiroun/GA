@@ -1,5 +1,5 @@
-public class DiffieHellman implements EncrytionInterface {
-
+public class DiffieHellman implements ByteEncrytionInterface {
+    
     // private should not know the other
     double myKey;
     double otherKey;
@@ -57,6 +57,10 @@ public class DiffieHellman implements EncrytionInterface {
 
     public byte[] dec(byte[] data) {
         return null;
+    }
+    
+    public void setKey(byte[] data) {
+        throw new UnsupportedOperationException("Unimplemented method 'setKey'");
     }
 
 }
