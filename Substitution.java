@@ -1,3 +1,5 @@
+import Interfaces.StringEncrytionInterface;
+
 public class Substitution implements StringEncrytionInterface {
 
     public String enc(String data) {throw new UnsupportedOperationException("Unused vertion of dec");}

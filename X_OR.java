@@ -1,3 +1,5 @@
+import Interfaces.StringEncrytionInterface;
+
 public class X_OR implements StringEncrytionInterface {
     public char[] key = "a".toCharArray(); 
 

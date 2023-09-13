@@ -1,5 +1,8 @@
+package AdvancedEncryption;
 
 import java.util.BitSet;
+
+import Interfaces.ByteEncrytionInterface;
 public class DES implements ByteEncrytionInterface {
     
     // functions
@@ -213,6 +216,7 @@ public class DES implements ByteEncrytionInterface {
     static BitSet[] _R;
 
     static BitSet keyKN[];
+    static byte[] keyArray;
 
     //
 
@@ -360,7 +364,7 @@ public class DES implements ByteEncrytionInterface {
     public byte[] enc(byte[] workArray) {
 
         // generate keys
-        BitSet keyK = reverseBitSet(BitSet.valueOf(reverseByteArray(Main.keyArray)), 64);
+        BitSet keyK = reverseBitSet(BitSet.valueOf(reverseByteArray(keyArray)), 64);
         BitSet keyKplus = permutation(keyK, _PC1);
         keyKN = keyTransformation(keyKplus);
 
@@ -377,7 +381,7 @@ public class DES implements ByteEncrytionInterface {
         BitSet c = permutation(_R16L16, _IP_1);
 
         // make sure the array that sends back is correct size
-        byte[] sendBytes = new byte[Main.byteSize];
+        byte[] sendBytes = new byte[8]; 
         byte[] tempBytes = reverseByteArray(reverseBitSet(c, 64).toByteArray());
         System.arraycopy(tempBytes, 0, sendBytes, 0, tempBytes.length);
         return sendBytes;
@@ -387,7 +391,7 @@ public class DES implements ByteEncrytionInterface {
 
     public byte[] dec(byte[] workArray) {
         // generate keys
-        BitSet keyK = reverseBitSet(BitSet.valueOf(reverseByteArray(Main.keyArray)), 64);
+        BitSet keyK = reverseBitSet(BitSet.valueOf(reverseByteArray(keyArray)), 64);
         BitSet keyKplus = permutation(keyK, _PC1);
         keyKN = keyTransformation(keyKplus);
 
@@ -410,13 +414,14 @@ public class DES implements ByteEncrytionInterface {
         BitSet c = permutation(_R16L16, _IP_1);
 
         // make sure the array that sends back is correct size
-        byte[] sendBytes = new byte[Main.byteSize];
+        byte[] sendBytes = new byte[8];
         byte[] tempBytes = reverseByteArray(reverseBitSet(c, 64).toByteArray());
         System.arraycopy(tempBytes, 0, sendBytes, 0, tempBytes.length);
         return sendBytes;
     }
 
     public void setKey(byte[] data) {
-        throw new UnsupportedOperationException("Unimplemented method 'setKey'");
+        keyArray = data;
+
     }
 }

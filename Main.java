@@ -5,6 +5,13 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import AdvancedEncryption.DES;
+import AdvancedEncryption.DiffieHellman;
+import AdvancedEncryption.TriDES;
+import Interfaces.AttackInterface;
+import Interfaces.ByteEncrytionInterface;
+import Interfaces.StringEncrytionInterface;
+
 class Main {
 
     public enum EncStandard {
@@ -68,17 +75,28 @@ class Main {
                 System.out.println("Input" + ":" + input);
             }
         } catch (Exception e) {
-            System.out.println("An error occurred.");
+            System.out.println("An error '" + e + "' has occurred.");
         }
         return inputArray;
     }
 
-    public static String readData(String path) {
-        return "4";
+    public static String readData(String path){
+        String data = "";
+        try{
+            data = new String(Files.readAllBytes(Paths.get(path)));
+        } catch (Exception e) {
+            System.out.println("An error '" + e + "' has occurred.");
+        }
+        return data;
+
     }
 
-    public static void writeData(String string, String path) {
-
+    public static void writeData(String data, String path) {
+        try{
+            Files.writeString(Paths.get(path), data);
+        } catch (Exception e) {
+            System.out.println("An error '" + e + "' has occurred.");
+        }
     }
 
     public static void writeData(byte[] byteArray, String path, boolean isText) {
@@ -91,7 +109,7 @@ class Main {
                 System.out.println("Output:" + output);
             }
         } catch (Exception e) {
-            System.out.println("An error occurred.");
+            System.out.println("An error '" + e + "' has occurred.");
             e.printStackTrace();
         }
 
@@ -169,9 +187,9 @@ class Main {
         encClass.setKey(keyString);
 
         if (encrypt) {
-            encClass.enc(inputString);
+            outputString = encClass.enc(inputString);
         } else {
-            encClass.dec(inputString);
+            outputString = encClass.dec(inputString);
         }
 
     }

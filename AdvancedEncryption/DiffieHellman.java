@@ -1,3 +1,6 @@
+package AdvancedEncryption;
+import Interfaces.ByteEncrytionInterface;
+
 public class DiffieHellman implements ByteEncrytionInterface {
     
     // private should not know the other

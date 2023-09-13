@@ -1,3 +1,4 @@
+package Interfaces;
 public interface AttackInterface {
     
     public String attackCC(String data);

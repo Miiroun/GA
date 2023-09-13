@@ -1,4 +1,6 @@
+package AdvancedEncryption;
 
+import Interfaces.ByteEncrytionInterface;
 
 public class TriDES implements ByteEncrytionInterface {
 

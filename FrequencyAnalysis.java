@@ -1,5 +1,8 @@
 import java.util.Map;
 import java.util.TreeMap;
+
+import Interfaces.AttackInterface;
+
 import static java.util.Map.entry;    
 
 public class FrequencyAnalysis implements AttackInterface{

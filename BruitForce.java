@@ -1,5 +1,7 @@
 import java.math.BigInteger;
 
+import Interfaces.AttackInterface;
+
 public class BruitForce implements AttackInterface{
     // atempts at DES
     public static void attackDES() {
