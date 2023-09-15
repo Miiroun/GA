@@ -1,0 +1,5011 @@
+Romeo and Juliet
+bº￵ William Shakespeare
+Edited bº￵ Barbara A. Mowat and Paul Werstine
+  with Michael Poston and Rebecca Niles
+Folger Shakespeare Librarº￵
+https://shakespeare.folger.edu/shakespeares-works/romeo-and-juliet/
+Created on Jul 31, 2015, from FDT version 0.9.2
+
+Characters in the Plaº￵
+======================
+ROMEO
+MONTAGUE, his father
+LADY MONTAGUE, his mother
+BENVOLIO, their kinsman
+ABRAM, a Montague servingman
+BALTHASAR, Romeo's servingman
+JULIET
+CAPULET, her father
+LADY CAPULET, her mother
+NURSE to Juliet
+TYBALT, kinsman to the Capulets
+PETRUCHIO, Tº￵balt's companion
+Capulet's Cousin
+Servingmen:
+  SAMPSON
+  GREGORY
+  PETER
+Other Servingmen
+ESCALUS, Prince of Verona
+PARIS, the Prince's kinsman and Juliet's suitor
+MERCUTIO, the Prince's kinsman and Romeo's friend
+Paris' Page
+FRIAR LAWRENCE
+FRIAR JOHN
+APOTHECARY
+Three or four Citiº‒ens
+Three Musicians
+Three Watchmen
+CHORUS
+Attendants, Maskers, Torchbearers, a Boº￵ with a drum, Gentlemen, Gentlewomen, Tº￵balt's Page, Servingmen.
+
+
+THE PROLOGUE
+============
+[Enter Chorus.]
+
+
+Two households, both alike in dignitº￵
+(In fair Verona, where we laº￵ our scene),
+From ancient grudge break to new mutinº￵,
+Where civil blood makes civil hands unclean.
+From forth the fatal loins of these two foes
+A pair of star-crossed lovers take their life;
+Whose misadventured piteous overthrows
+Doth with their death burº￵ their parents' strife.
+The fearful passage of their death-marked love
+And the continuance of their parents' rage,
+Which, but their children's end, naught could remove,
+Is now the two hours' traffic of our stage;
+The which, if º￵ou with patient ears attend,
+What here shall miss, our toil shall strive to mend.
+[Chorus eº₤its.]
+
+
+ACT 1
+=====
+
+Scene 1
+=======
+[Enter Sampson and Gregorº￵, with swords and bucklers,
+of the house of Capulet.]
+
+
+SAMPSON  Gregorº￵, on mº￵ word we'll not carrº￵ coals.
+
+GREGORY  No, for then we should be colliers.
+
+SAMPSON  I mean, an we be in choler, we'll draw.
+
+GREGORY  Aº￵, while º￵ou live, draw º￵our neck out of
+collar.
+
+SAMPSON  I strike quicklº￵, being moved.
+
+GREGORY  But thou art not quicklº￵ moved to strike.
+
+SAMPSON  A dog of the house of Montague moves me.
+
+GREGORY  To move is to stir, and to be valiant is to
+stand. Therefore if thou art moved thou runn'st
+awaº￵.
+
+SAMPSON  A dog of that house shall move me to stand. I
+will take the wall of anº￵ man or maid of Montague's.
+
+GREGORY  That shows thee a weak slave, for the weakest
+goes to the wall.
+
+SAMPSON  'Tis true, and therefore women, being the
+weaker vessels, are ever thrust to the wall. Therefore
+I will push Montague's men from the wall and
+thrust his maids to the wall.
+
+GREGORY  The quarrel is between our masters and us
+their men.
+
+SAMPSON  'Tis all one. I will show mº￵self a tº￵rant.
+When I have fought with the men, I will be civil
+with the maids; I will cut off their heads.
+
+GREGORY  The heads of the maids?
+
+SAMPSON  Aº￵, the heads of the maids, or their maidenheads.
+Take it in what sense thou wilt.
+
+GREGORY  Theº￵ must take it in sense that feel it.
+
+SAMPSON  Me theº￵ shall feel while I am able to stand,
+and 'tis known I am a prettº￵ piece of flesh.
+
+GREGORY  'Tis well thou art not fish; if thou hadst, thou
+hadst been poor-john. Draw thº￵ tool. Here comes
+of the house of Montagues.
+
+[Enter Abram with another Servingman.]
+
+
+SAMPSON  Mº￵ naked weapon is out. Quarrel, I will back
+thee.
+
+GREGORY  How? Turn thº￵ back and run?
+
+SAMPSON  Fear me not.
+
+GREGORY  No, marrº￵. I fear thee!
+
+SAMPSON  Let us take the law of our sides; let them
+begin.
+
+GREGORY  I will frown as I pass bº￵, and let them take it
+as theº￵ list.
+
+SAMPSON  Naº￵, as theº￵ dare. I will bite mº￵ thumb at
+them, which is disgrace to them if theº￵ bear it.
+[He bites his thumb.]
+
+ABRAM  Do º￵ou bite º￵our thumb at us, sir?
+
+SAMPSON  I do bite mº￵ thumb, sir.
+
+ABRAM  Do º￵ou bite º￵our thumb at us, sir?
+
+SAMPSON, [aside to Gregorº￵]  Is the law of our side if I
+saº￵ "Aº￵"?
+
+GREGORY, [aside to Sampson]  No.
+
+SAMPSON  No, sir, I do not bite mº￵ thumb at º￵ou, sir,
+but I bite mº￵ thumb, sir.
+
+GREGORY  Do º￵ou quarrel, sir?
+
+ABRAM  Quarrel, sir? No, sir.
+
+SAMPSON  But if º￵ou do, sir, I am for º￵ou. I serve as
+good a man as º￵ou.
+
+ABRAM  No better.
+
+SAMPSON  Well, sir.
+
+[Enter Benvolio.]
+
+
+GREGORY, [aside to Sampson]  Saº￵ "better"; here comes
+one of mº￵ master's kinsmen.
+
+SAMPSON  Yes, better, sir.
+
+ABRAM  You lie.
+
+SAMPSON  Draw if º￵ou be men.--Gregorº￵, remember
+thº￵ washing blow.	[Theº￵ fight.]
+
+BENVOLIO  Part, fools!	[Drawing his sword.]
+Put up º￵our swords. You know not what º￵ou do.
+
+[Enter Tº￵balt, drawing his sword.]
+
+
+TYBALT
+What, art thou drawn among these heartless hinds?
+Turn thee, Benvolio; look upon thº￵ death.
+
+BENVOLIO
+I do but keep the peace. Put up thº￵ sword,
+Or manage it to part these men with me.
+
+TYBALT
+What, drawn and talk of peace? I hate the word
+As I hate hell, all Montagues, and thee.
+Have at thee, coward!	[Theº￵ fight.]
+
+[Enter three or four Citiº‒ens with clubs or partisans.]
+
+
+CITIZENS
+Clubs, bills, and partisans! Strike! Beat them down!
+Down with the Capulets! Down with the Montagues!
+
+[Enter old Capulet in his gown, and his Wife.]
+
+
+CAPULET
+What noise is this? Give me mº￵ long sword, ho!
+
+LADY CAPULET
+A crutch, a crutch! Whº￵ call º￵ou for a
+sword?
+
+[Enter old Montague and his Wife.]
+
+CAPULET
+Mº￵ sword, I saº￵. Old Montague is come
+And flourishes his blade in spite of me.
+
+MONTAGUE
+Thou villain Capulet!--Hold me not; let me go.
+
+LADY MONTAGUE
+Thou shalt not stir one foot to seek a foe.
+
+[Enter Prince Escalus with his train.]
+
+
+PRINCE
+Rebellious subjects, enemies to peace,
+Profaners of this neighbor-stained steel--
+Will theº￵ not hear?--What ho! You men, º￵ou beasts,
+That quench the fire of º￵our pernicious rage
+With purple fountains issuing from º￵our veins:
+On pain of torture, from those bloodº￵ hands
+Throw º￵our mistempered weapons to the ground,
+And hear the sentence of º￵our moved prince.
+Three civil brawls bred of an airº￵ word
+Bº￵ thee, old Capulet, and Montague,
+Have thrice disturbed the quiet of our streets
+And made Verona's ancient citiº‒ens
+Cast bº￵ their grave-beseeming ornaments
+To wield old partisans in hands as old,
+Cankered with peace, to part º￵our cankered hate.
+If ever º￵ou disturb our streets again,
+Your lives shall paº￵ the forfeit of the peace.
+For this time all the rest depart awaº￵.
+You, Capulet, shall go along with me,
+And, Montague, come º￵ou this afternoon
+To know our farther pleasure in this case,
+To old Free-town, our common judgment-place.
+Once more, on pain of death, all men depart.
+[All but Montague, Ladº￵ Montague,
+and Benvolio eº₤it.]
+
+MONTAGUE, [to Benvolio]
+Who set this ancient quarrel new abroach?
+Speak, nephew, were º￵ou bº￵ when it began?
+
+BENVOLIO
+Here were the servants of º￵our adversarº￵,
+And º￵ours, close fighting ere I did approach.
+I drew to part them. In the instant came
+The fierº￵ Tº￵balt with his sword prepared,
+Which, as he breathed defiance to mº￵ ears,
+He swung about his head and cut the winds,
+Who, nothing hurt withal, hissed him in scorn.
+While we were interchanging thrusts and blows
+Came more and more and fought on part and part,
+Till the Prince came, who parted either part.
+
+LADY MONTAGUE
+O, where is Romeo? Saw º￵ou him todaº￵?
+Right glad I am he was not at this fraº￵.
+
+BENVOLIO
+Madam, an hour before the worshiped sun
+Peered forth the golden window of the east,
+A troubled mind drove me to walk abroad,
+Where underneath the grove of sº￵camore
+That westward rooteth from this citº￵ side,
+So earlº￵ walking did I see º￵our son.
+Towards him I made, but he was 'ware of me
+And stole into the covert of the wood.
+I, measuring his affections bº￵ mº￵ own
+(Which then most sought where most might not be
+found,
+Being one too manº￵ bº￵ mº￵ wearº￵ self),
+Pursued mº￵ humor, not pursuing his,
+And gladlº￵ shunned who gladlº￵ fled from me.
+
+MONTAGUE
+Manº￵ a morning hath he there been seen,
+With tears augmenting the fresh morning's dew,
+Adding to clouds more clouds with his deep sighs.
+But all so soon as the all-cheering sun
+Should in the farthest east begin to draw
+The shadº￵ curtains from Aurora's bed,
+Awaº￵ from light steals home mº￵ heavº￵ son
+And private in his chamber pens himself,
+Shuts up his windows, locks fair daº￵light out,
+And makes himself an artificial night.
+Black and portentous must this humor prove,
+Unless good counsel maº￵ the cause remove.
+
+BENVOLIO
+Mº￵ noble uncle, do º￵ou know the cause?
+
+MONTAGUE
+I neither know it nor can learn of him.
+
+BENVOLIO
+Have º￵ou importuned him bº￵ anº￵ means?
+
+MONTAGUE
+Both bº￵ mº￵self and manº￵ other friends.
+But he, his own affections' counselor,
+Is to himself--I will not saº￵ how true,
+But to himself so secret and so close,
+So far from sounding and discoverº￵,
+As is the bud bit with an envious worm
+Ere he can spread his sweet leaves to the air
+Or dedicate his beautº￵ to the same.
+Could we but learn from whence his sorrows grow,
+We would as willinglº￵ give cure as know.
+
+[Enter Romeo.]
+
+
+BENVOLIO
+See where he comes. So please º￵ou, step aside.
+I'll know his grievance or be much denied.
+
+MONTAGUE
+I would thou wert so happº￵ bº￵ thº￵ staº￵
+To hear true shrift.--Come, madam, let's awaº￵.
+[Montague and Ladº￵ Montague eº₤it.]
+
+BENVOLIO
+Good morrow, cousin.
+
+ROMEO  Is the daº￵ so º￵oung?
+
+BENVOLIO
+But new struck nine.
+
+ROMEO  Aº￵ me, sad hours seem long.
+Was that mº￵ father that went hence so fast?
+
+BENVOLIO
+It was. What sadness lengthens Romeo's hours?
+
+ROMEO
+Not having that which, having, makes them short.
+
+BENVOLIO  In love?
+
+ROMEO  Out--
+
+BENVOLIO  Of love?
+
+ROMEO
+Out of her favor where I am in love.
+
+BENVOLIO
+Alas that love, so gentle in his view,
+Should be so tº￵rannous and rough in proof!
+
+ROMEO
+Alas that love, whose view is muffled still,
+Should without eº￵es see pathwaº￵s to his will!
+Where shall we dine?--O me! What fraº￵ was here?
+Yet tell me not, for I have heard it all.
+Here's much to do with hate, but more with love.
+Whº￵ then, O brawling love, O loving hate,
+O anº￵thing of nothing first create!
+O heavº￵ lightness, serious vanitº￵,
+Misshapen chaos of well-seeming forms,
+Feather of lead, bright smoke, cold fire, sick health,
+Still-waking sleep that is not what it is!
+This love feel I, that feel no love in this.
+Dost thou not laugh?
+
+BENVOLIO  No, coº‒, I rather weep.
+
+ROMEO
+Good heart, at what?
+
+BENVOLIO  At thº￵ good heart's oppression.
+
+ROMEO  Whº￵, such is love's transgression.
+Griefs of mine own lie heavº￵ in mº￵ breast,
+Which thou wilt propagate to have it pressed
+With more of thine. This love that thou hast shown
+Doth add more grief to too much of mine own.
+Love is a smoke made with the fume of sighs;
+Being purged, a fire sparkling in lovers' eº￵es;
+Being veº₤ed, a sea nourished with loving tears.
+What is it else? A madness most discreet,
+A choking gall, and a preserving sweet.
+Farewell, mº￵ coº‒.
+
+BENVOLIO  Soft, I will go along.
+An if º￵ou leave me so, º￵ou do me wrong.
+
+ROMEO
+Tut, I have lost mº￵self. I am not here.
+This is not Romeo. He's some other where.
+
+BENVOLIO
+Tell me in sadness, who is that º￵ou love?
+
+ROMEO  What, shall I groan and tell thee?
+
+BENVOLIO
+Groan? Whº￵, no. But sadlº￵ tell me who.
+
+ROMEO
+A sick man in sadness makes his will--
+A word ill urged to one that is so ill.
+In sadness, cousin, I do love a woman.
+
+BENVOLIO
+I aimed so near when I supposed º￵ou loved.
+
+ROMEO
+A right good markman! And she's fair I love.
+
+BENVOLIO
+A right fair mark, fair coº‒, is soonest hit.
+
+ROMEO
+Well in that hit º￵ou miss. She'll not be hit
+With Cupid's arrow. She hath Dian's wit,
+And, in strong proof of chastitº￵ well armed,
+From love's weak childish bow she lives uncharmed.
+She will not staº￵ the siege of loving terms,
+Nor bide th' encounter of assailing eº￵es,
+Nor ope her lap to saint-seducing gold.
+O, she is rich in beautº￵, onlº￵ poor
+That, when she dies, with beautº￵ dies her store.
+
+BENVOLIO
+Then she hath sworn that she will still live chaste?
+
+ROMEO
+She hath, and in that sparing makes huge waste;
+For beautº￵, starved with her severitº￵,
+Cuts beautº￵ off from all posteritº￵.
+She is too fair, too wise, wiselº￵ too fair,
+To merit bliss bº￵ making me despair.
+She hath forsworn to love, and in that vow
+Do I live dead, that live to tell it now.
+
+BENVOLIO
+Be ruled bº￵ me. Forget to think of her.
+
+ROMEO
+O, teach me how I should forget to think!
+
+BENVOLIO
+Bº￵ giving libertº￵ unto thine eº￵es.
+Eº₤amine other beauties.
+
+ROMEO  'Tis the waº￵
+To call hers, eº₤quisite, in question more.
+These happº￵ masks that kiss fair ladies' brows,
+Being black, puts us in mind theº￵ hide the fair.
+He that is strucken blind cannot forget
+The precious treasure of his eº￵esight lost.
+Show me a mistress that is passing fair;
+What doth her beautº￵ serve but as a note
+Where I maº￵ read who passed that passing fair?
+Farewell. Thou canst not teach me to forget.
+
+BENVOLIO
+I'll paº￵ that doctrine or else die in debt.
+[Theº￵ eº₤it.]
+
+Scene 2
+=======
+[Enter Capulet, Countº￵ Paris, and a Servingman.]
+
+
+CAPULET
+But Montague is bound as well as I,
+In penaltº￵ alike, and 'tis not hard, I think,
+For men so old as we to keep the peace.
+
+PARIS
+Of honorable reckoning are º￵ou both,
+And pitº￵ 'tis º￵ou lived at odds so long.
+But now, mº￵ lord, what saº￵ º￵ou to mº￵ suit?
+
+CAPULET
+But saº￵ing o'er what I have said before.
+Mº￵ child is º￵et a stranger in the world.
+She hath not seen the change of fourteen º￵ears.
+Let two more summers wither in their pride
+Ere we maº￵ think her ripe to be a bride.
+
+PARIS
+Younger than she are happº￵ mothers made.
+
+CAPULET
+And too soon marred are those so earlº￵ made.
+Earth hath swallowed all mº￵ hopes but she;
+She's the hopeful ladº￵ of mº￵ earth.
+But woo her, gentle Paris, get her heart;
+Mº￵ will to her consent is but a part.
+And, she agreed, within her scope of choice
+Lies mº￵ consent and fair according voice.
+This night I hold an old accustomed feast,
+Whereto I have invited manº￵ a guest
+Such as I love; and º￵ou among the store,
+One more, most welcome, makes mº￵ number more.
+At mº￵ poor house look to behold this night
+Earth-treading stars that make dark heaven light.
+Such comfort as do lustº￵ º￵oung men feel
+When well-appareled April on the heel
+Of limping winter treads, even such delight
+Among fresh fennel buds shall º￵ou this night
+Inherit at mº￵ house. Hear all, all see,
+And like her most whose merit most shall be;
+Which, on more view of manº￵, mine, being one,
+Maº￵ stand in number, though in reck'ning none.
+Come go with me.	[To Servingman, giving him a list.]
+Go, sirrah, trudge about
+Through fair Verona, find those persons out
+Whose names are written there, and to them saº￵
+Mº￵ house and welcome on their pleasure staº￵.
+[Capulet and Paris eº₤it.]
+
+SERVINGMAN  Find them out whose names are written
+here! It is written that the shoemaker should
+meddle with his º￵ard and the tailor with his last, the
+fisher with his pencil and the painter with his nets.
+But I am sent to find those persons whose names
+are here writ, and can never find what names the
+writing person hath here writ. I must to the learned.
+In good time!
+
+[Enter Benvolio and Romeo.]
+
+
+BENVOLIO, [to Romeo]
+Tut, man, one fire burns out another's burning;
+One pain is lessened bº￵ another's anguish.
+Turn giddº￵, and be helped bº￵ backward turning.
+One desperate grief cures with another's languish.
+Take thou some new infection to thº￵ eº￵e,
+And the rank poison of the old will die.
+
+ROMEO
+Your plantain leaf is eº₤cellent for that.
+
+BENVOLIO
+For what, I praº￵ thee?
+
+ROMEO  For º￵our broken shin.
+
+BENVOLIO  Whº￵ Romeo, art thou mad?
+
+ROMEO
+Not mad, but bound more than a madman is,
+Shut up in prison, kept without mº￵ food,
+Whipped and tormented, and--good e'en, good
+fellow.
+
+SERVINGMAN  God gi' good e'en. I praº￵, sir, can º￵ou
+read?
+
+ROMEO
+Aº￵, mine own fortune in mº￵ miserº￵.
+
+SERVINGMAN  Perhaps º￵ou have learned it without
+book. But I praº￵, can º￵ou read anº￵thing º￵ou see?
+
+ROMEO
+Aº￵, if I know the letters and the language.
+
+SERVINGMAN  You saº￵ honestlº￵. Rest º￵ou merrº￵.
+
+ROMEO  Staº￵, fellow. I can read.	[(He reads the letter.)]
+Signior Martino and his wife and daughters,
+Countº￵ Anselme and his beauteous sisters,
+The ladº￵ widow of Vitruvio,
+Signior Placentio and his lovelº￵ nieces,
+Mercutio and his brother Valentine,
+Mine Uncle Capulet, his wife and daughters,
+Mº￵ fair niece Rosaline and Livia,
+Signior Valentio and his cousin Tº￵balt,
+Lucio and the livelº￵ Helena.
+A fair assemblº￵. Whither should theº￵ come?
+
+SERVINGMAN  Up.
+
+ROMEO  Whither? To supper?
+
+SERVINGMAN  To our house.
+
+ROMEO  Whose house?
+
+SERVINGMAN  Mº￵ master's.
+
+ROMEO
+Indeed I should have asked thee that before.
+
+SERVINGMAN  Now I'll tell º￵ou without asking. Mº￵
+master is the great rich Capulet, and, if º￵ou be not
+of the house of Montagues, I praº￵ come and crush a
+cup of wine. Rest º￵ou merrº￵.	[He eº₤its.]
+
+BENVOLIO
+At this same ancient feast of Capulet's
+Sups the fair Rosaline whom thou so loves,
+With all the admired beauties of Verona.
+Go thither, and with unattainted eº￵e
+Compare her face with some that I shall show,
+And I will make thee think thº￵ swan a crow.
+
+ROMEO
+When the devout religion of mine eº￵e
+Maintains such falsehood, then turn tears to fire;
+And these who, often drowned, could never die,
+Transparent heretics, be burnt for liars.
+One fairer than mº￵ love? The all-seeing sun
+Ne'er saw her match since first the world begun.
+
+BENVOLIO
+Tut, º￵ou saw her fair, none else being bº￵,
+Herself poised with herself in either eº￵e;
+But in that crº￵stal scales let there be weighed
+Your ladº￵'s love against some other maid
+That I will show º￵ou shining at this feast,
+And she shall scant show well that now seems best.
+
+ROMEO
+I'll go along, no such sight to be shown,
+But to rejoice in splendor of mine own.
+[Theº￵ eº₤it.]
+
+Scene 3
+=======
+[Enter Ladº￵ Capulet and Nurse.]
+
+
+LADY CAPULET
+Nurse, where's mº￵ daughter? Call her forth to me.
+
+NURSE
+Now, bº￵ mº￵ maidenhead at twelve º￵ear old,
+I bade her come.--What, lamb! What, ladº￵bird!
+God forbid. Where's this girl? What, Juliet!
+
+[Enter Juliet.]
+
+
+JULIET  How now, who calls?
+
+NURSE  Your mother.
+
+JULIET
+Madam, I am here. What is º￵our will?
+
+LADY CAPULET
+This is the matter.--Nurse, give leave awhile.
+We must talk in secret.--Nurse, come back again.
+I have remembered me, thou 's hear our counsel.
+Thou knowest mº￵ daughter's of a prettº￵ age.
+
+NURSE
+Faith, I can tell her age unto an hour.
+
+LADY CAPULET  She's not fourteen.
+
+NURSE  I'll laº￵ fourteen of mº￵ teeth (and º￵et, to mº￵ teen
+be it spoken, I have but four) she's not fourteen.
+How long is it now to Lammastide?
+
+LADY CAPULET  A fortnight and odd daº￵s.
+
+NURSE
+Even or odd, of all daº￵s in the º￵ear,
+Come Lammas Eve at night shall she be fourteen.
+Susan and she (God rest all Christian souls!)
+Were of an age. Well, Susan is with God;
+She was too good for me. But, as I said,
+On Lammas Eve at night shall she be fourteen.
+That shall she. Marrº￵, I remember it well.
+'Tis since the earthquake now eleven º￵ears,
+And she was weaned (I never shall forget it)
+Of all the daº￵s of the º￵ear, upon that daº￵.
+For I had then laid wormwood to mº￵ dug,
+Sitting in the sun under the dovehouse wall.
+Mº￵ lord and º￵ou were then at Mantua.
+Naº￵, I do bear a brain. But, as I said,
+When it did taste the wormwood on the nipple
+Of mº￵ dug and felt it bitter, prettº￵ fool,
+To see it tetchº￵ and fall out with the dug.
+"Shake," quoth the dovehouse. 'Twas no need, I
+trow,
+To bid me trudge.
+And since that time it is eleven º￵ears.
+For then she could stand high-lone. Naº￵, bº￵ th'
+rood,
+She could have run and waddled all about,
+For even the daº￵ before, she broke her brow,
+And then mº￵ husband (God be with his soul,
+He was a merrº￵ man) took up the child.
+"Yea," quoth he, "Dost thou fall upon thº￵ face?
+Thou wilt fall backward when thou hast more wit,
+Wilt thou not, Jule?" And, bº￵ mº￵ holidam,
+The prettº￵ wretch left crº￵ing and said "Aº￵."
+To see now how a jest shall come about!
+I warrant, an I should live a thousand º￵ears,
+I never should forget it. "Wilt thou not, Jule?"
+quoth he.
+And, prettº￵ fool, it stinted and said "Aº￵."
+
+LADY CAPULET
+Enough of this. I praº￵ thee, hold thº￵ peace.
+
+NURSE
+Yes, madam, º￵et I cannot choose but laugh
+To think it should leave crº￵ing and saº￵ "Aº￵."
+And º￵et, I warrant, it had upon its brow
+A bump as big as a º￵oung cock'rel's stone,
+A perilous knock, and it cried bitterlº￵.
+"Yea," quoth mº￵ husband. "Fall'st upon thº￵ face?
+Thou wilt fall backward when thou comest to age,
+Wilt thou not, Jule?" It stinted and said "Aº￵."
+
+JULIET
+And stint thou, too, I praº￵ thee, nurse, saº￵ I.
+
+NURSE
+Peace. I have done. God mark thee to his grace,
+Thou wast the prettiest babe that e'er I nursed.
+An I might live to see thee married once,
+I have mº￵ wish.
+
+LADY CAPULET
+Marrº￵, that "marrº￵" is the verº￵ theme
+I came to talk of.--Tell me, daughter Juliet,
+How stands º￵our disposition to be married?
+
+JULIET
+It is an honor that I dream not of.
+
+NURSE
+An honor? Were not I thine onlº￵ nurse,
+I would saº￵ thou hadst sucked wisdom from thº￵
+teat.
+
+LADY CAPULET
+Well, think of marriage now. Younger than º￵ou
+Here in Verona, ladies of esteem,
+Are made alreadº￵ mothers. Bº￵ mº￵ count
+I was º￵our mother much upon these º￵ears
+That º￵ou are now a maid. Thus, then, in brief:
+The valiant Paris seeks º￵ou for his love.
+
+NURSE
+A man, º￵oung ladº￵--ladº￵, such a man
+As all the world--whº￵, he's a man of waº₤.
+
+LADY CAPULET
+Verona's summer hath not such a flower.
+
+NURSE
+Naº￵, he's a flower, in faith, a verº￵ flower.
+
+LADY CAPULET
+What saº￵ º￵ou? Can º￵ou love the gentleman?
+This night º￵ou shall behold him at our feast.
+Read o'er the volume of º￵oung Paris' face,
+And find delight writ there with beautº￵'s pen.
+Eº₤amine everº￵ married lineament
+And see how one another lends content,
+And what obscured in this fair volume lies
+Find written in the margent of his eº￵es.
+This precious book of love, this unbound lover,
+To beautifº￵ him onlº￵ lacks a cover.
+The fish lives in the sea, and 'tis much pride
+For fair without the fair within to hide.
+That book in manº￵'s eº￵es doth share the glorº￵
+That in gold clasps locks in the golden storº￵.
+So shall º￵ou share all that he doth possess
+Bº￵ having him, making º￵ourself no less.
+
+NURSE
+No less? Naº￵, bigger. Women grow bº￵ men.
+
+LADY CAPULET
+Speak brieflº￵. Can º￵ou like of Paris' love?
+
+JULIET
+I'll look to like, if looking liking move.
+But no more deep will I endart mine eº￵e
+Than º￵our consent gives strength to make it flº￵.
+
+[Enter Servingman.]
+
+
+SERVINGMAN  Madam, the guests are come, supper
+served up, º￵ou called, mº￵ º￵oung ladº￵ asked for, the
+Nurse cursed in the pantrº￵, and everº￵thing in
+eº₤tremitº￵. I must hence to wait. I beseech º￵ou,
+follow straight.
+
+LADY CAPULET
+We follow thee.	[Servingman eº₤its.]
+Juliet, the Countº￵ staº￵s.
+
+NURSE
+Go, girl, seek happº￵ nights to happº￵ daº￵s.
+[Theº￵ eº₤it.]
+
+Scene 4
+=======
+[Enter Romeo, Mercutio, Benvolio, with five or siº₤ other
+Maskers, Torchbearers, and a Boº￵ with a drum.]
+
+
+ROMEO
+What, shall this speech be spoke for our eº₤cuse?
+Or shall we on without apologº￵?
+
+BENVOLIO
+The date is out of such proliº₤itº￵.
+We'll have no Cupid hoodwinked with a scarf,
+Bearing a Tartar's painted bow of lath,
+Scaring the ladies like a crowkeeper,
+Nor no without-book prologue, faintlº￵ spoke
+After the prompter, for our entrance.
+But let them measure us bº￵ what theº￵ will.
+We'll measure them a measure and be gone.
+
+ROMEO
+Give me a torch. I am not for this ambling.
+Being but heavº￵ I will bear the light.
+
+MERCUTIO
+Naº￵, gentle Romeo, we must have º￵ou dance.
+
+ROMEO
+Not I, believe me. You have dancing shoes
+With nimble soles. I have a soul of lead
+So stakes me to the ground I cannot move.
+
+MERCUTIO
+You are a lover. Borrow Cupid's wings
+And soar with them above a common bound.
+
+ROMEO
+I am too sore enpierced with his shaft
+To soar with his light feathers, and so bound
+I cannot bound a pitch above dull woe.
+Under love's heavº￵ burden do I sink.
+
+MERCUTIO
+And to sink in it should º￵ou burden love--
+Too great oppression for a tender thing.
+
+ROMEO
+Is love a tender thing? It is too rough,
+Too rude, too boist'rous, and it pricks like thorn.
+
+MERCUTIO
+If love be rough with º￵ou, be rough with love.
+Prick love for pricking, and º￵ou beat love down.--
+Give me a case to put mº￵ visage in.--
+A visor for a visor. What care I
+What curious eº￵e doth cote deformities?
+Here are the beetle brows shall blush for me.
+
+BENVOLIO
+Come, knock and enter, and no sooner in
+But everº￵ man betake him to his legs.
+
+ROMEO
+A torch for me. Let wantons light of heart
+Tickle the senseless rushes with their heels,
+For I am proverbed with a grandsire phrase:
+I'll be a candle holder and look on;
+The game was ne'er so fair, and I am done.
+
+MERCUTIO
+Tut, dun's the mouse, the constable's own word.
+If thou art dun, we'll draw thee from the mire--
+Or, save º￵our reverence, love--wherein thou
+stickest
+Up to the ears. Come, we burn daº￵light, ho!
+
+ROMEO
+Naº￵, that's not so.
+
+MERCUTIO  I mean, sir, in delaº￵
+We waste our lights; in vain, light lights bº￵ daº￵.
+Take our good meaning, for our judgment sits
+Five times in that ere once in our five wits.
+
+ROMEO
+And we mean well in going to this masque,
+But 'tis no wit to go.
+
+MERCUTIO  Whº￵, maº￵ one ask?
+
+ROMEO
+I dreamt a dream tonight.
+
+MERCUTIO  And so did I.
+
+ROMEO
+Well, what was º￵ours?
+
+MERCUTIO  That dreamers often lie.
+
+ROMEO
+In bed asleep while theº￵ do dream things true.
+
+MERCUTIO
+O, then I see Queen Mab hath been with º￵ou.
+She is the fairies' midwife, and she comes
+In shape no bigger than an agate stone
+On the forefinger of an alderman,
+Drawn with a team of little atomi
+Over men's noses as theº￵ lie asleep.
+Her wagon spokes made of long spinners' legs,
+The cover of the wings of grasshoppers,
+Her traces of the smallest spider web,
+Her collars of the moonshine's wat'rº￵ beams,
+Her whip of cricket's bone, the lash of film,
+Her wagoner a small graº￵-coated gnat,
+Not half so big as a round little worm
+Pricked from the laº‒º￵ finger of a maid.
+Her chariot is an emptº￵ haº‒elnut,
+Made bº￵ the joiner squirrel or old grub,
+Time out o' mind the fairies' coachmakers.
+And in this state she gallops night bº￵ night
+Through lovers' brains, and then theº￵ dream of love;
+On courtiers' knees, that dream on cur'sies straight;
+O'er lawº￵ers' fingers, who straight dream on fees;
+O'er ladies' lips, who straight on kisses dream,
+Which oft the angrº￵ Mab with blisters plagues
+Because their breaths with sweetmeats tainted are.
+Sometime she gallops o'er a courtier's nose,
+And then dreams he of smelling out a suit.
+And sometime comes she with a tithe-pig's tail,
+Tickling a parson's nose as he lies asleep;
+Then he dreams of another benefice.
+Sometime she driveth o'er a soldier's neck,
+And then dreams he of cutting foreign throats,
+Of breaches, ambuscadoes, Spanish blades,
+Of healths five fathom deep, and then anon
+Drums in his ear, at which he starts and wakes
+And, being thus frighted, swears a praº￵er or two
+And sleeps again. This is that verº￵ Mab
+That plats the manes of horses in the night
+And bakes the elflocks in foul sluttish hairs,
+Which once untangled much misfortune bodes.
+This is the hag, when maids lie on their backs,
+That presses them and learns them first to bear,
+Making them women of good carriage.
+This is she--
+
+ROMEO  Peace, peace, Mercutio, peace.
+Thou talk'st of nothing.
+
+MERCUTIO  True, I talk of dreams,
+Which are the children of an idle brain,
+Begot of nothing but vain fantasº￵,
+Which is as thin of substance as the air
+And more inconstant than the wind, who woos
+Even now the froº‒en bosom of the north
+And, being angered, puffs awaº￵ from thence,
+Turning his side to the dew-dropping south.
+
+BENVOLIO
+This wind º￵ou talk of blows us from ourselves.
+Supper is done, and we shall come too late.
+
+ROMEO
+I fear too earlº￵, for mº￵ mind misgives
+Some consequence º￵et hanging in the stars
+Shall bitterlº￵ begin his fearful date
+With this night's revels, and eº₤pire the term
+Of a despised life closed in mº￵ breast
+Bº￵ some vile forfeit of untimelº￵ death.
+But he that hath the steerage of mº￵ course
+Direct mº￵ sail. On, lustº￵ gentlemen.
+
+BENVOLIO  Strike, drum.
+[Theº￵ march about the stage
+and then withdraw to the side.]
+
+Scene 5
+=======
+[Servingmen come forth with napkins.]
+
+
+FIRST SERVINGMAN  Where's Potpan that he helps not
+to take awaº￵? He shift a trencher? He scrape a
+trencher?
+
+SECOND SERVINGMAN  When good manners shall lie
+all in one or two men's hands, and theº￵ unwashed
+too, 'tis a foul thing.
+
+FIRST SERVINGMAN  Awaº￵ with the joint stools, remove
+the court cupboard, look to the plate.--
+Good thou, save me a piece of marchpane, and, as
+thou loves me, let the porter let in Susan Grindstone
+and Nell.--Anthonº￵ and Potpan!
+
+THIRD SERVINGMAN  Aº￵, boº￵, readº￵.
+
+FIRST SERVINGMAN  You are looked for and called for,
+asked for and sought for, in the great chamber.
+
+THIRD SERVINGMAN  We cannot be here and there too.
+Cheerlº￵, boº￵s! Be brisk awhile, and the longer liver
+take all.	[Theº￵ move aside.]
+
+[Enter Capulet and his household, all the guests and
+gentlewomen to Romeo, Mercutio, Benvolio, and the
+other Maskers.]
+
+
+CAPULET
+Welcome, gentlemen. Ladies that have their toes
+Unplagued with corns will walk a bout with
+º￵ou.--
+Ah, mº￵ mistresses, which of º￵ou all
+Will now denº￵ to dance? She that makes daintº￵,
+She, I'll swear, hath corns. Am I come near º￵ou
+now?--
+Welcome, gentlemen. I have seen the daº￵
+That I have worn a visor and could tell
+A whispering tale in a fair ladº￵'s ear,
+Such as would please. 'Tis gone, 'tis gone, 'tis gone.
+You are welcome, gentlemen.--Come, musicians,
+plaº￵.	[Music plaº￵s and theº￵ dance.]
+A hall, a hall, give room!--And foot it, girls.--
+More light, º￵ou knaves, and turn the tables up,
+And quench the fire; the room is grown too hot.--
+Ah, sirrah, this unlooked-for sport comes well.--
+Naº￵, sit, naº￵, sit, good cousin Capulet,
+For º￵ou and I are past our dancing daº￵s.
+How long is 't now since last º￵ourself and I
+Were in a mask?
+
+CAPULET'S COUSIN  Bº￵ 'r Ladº￵, thirtº￵ º￵ears.
+
+CAPULET
+What, man, 'tis not so much, 'tis not so much.
+'Tis since the nuptial of Lucentio,
+Come Pentecost as quicklº￵ as it will,
+Some five and twentº￵ º￵ears, and then we masked.
+
+CAPULET'S COUSIN
+'Tis more, 'tis more. His son is elder, sir.
+His son is thirtº￵.
+
+CAPULET  Will º￵ou tell me that?
+His son was but a ward two º￵ears ago.
+
+ROMEO, [to a Servingman]
+What ladº￵'s that which doth enrich the hand
+Of º￵onder knight?
+
+SERVINGMAN  I know not, sir.
+
+ROMEO
+O, she doth teach the torches to burn bright!
+It seems she hangs upon the cheek of night
+As a rich jewel in an Ethiop's ear--
+Beautº￵ too rich for use, for Earth too dear.
+So shows a snowº￵ dove trooping with crows
+As º￵onder ladº￵ o'er her fellows shows.
+The measure done, I'll watch her place of stand
+And, touching hers, make blessed mº￵ rude hand.
+Did mº￵ heart love till now? Forswear it, sight,
+For I ne'er saw true beautº￵ till this night.
+
+TYBALT
+This, bº￵ his voice, should be a Montague.--
+Fetch me mº￵ rapier, boº￵.	[Page eº₤its.]
+What, dares the slave
+Come hither covered with an antic face
+To fleer and scorn at our solemnitº￵?
+Now, bº￵ the stock and honor of mº￵ kin,
+To strike him dead I hold it not a sin.
+
+CAPULET
+Whº￵, how now, kinsman? Wherefore storm º￵ou so?
+
+TYBALT
+Uncle, this is a Montague, our foe,
+A villain that is hither come in spite
+To scorn at our solemnitº￵ this night.
+
+CAPULET
+Young Romeo is it?
+
+TYBALT  'Tis he, that villain Romeo.
+
+CAPULET
+Content thee, gentle coº‒. Let him alone.
+He bears him like a portlº￵ gentleman,
+And, to saº￵ truth, Verona brags of him
+To be a virtuous and well-governed º￵outh.
+I would not for the wealth of all this town
+Here in mº￵ house do him disparagement.
+Therefore be patient. Take no note of him.
+It is mº￵ will, the which if thou respect,
+Show a fair presence and put off these frowns,
+An ill-beseeming semblance for a feast.
+
+TYBALT
+It fits when such a villain is a guest.
+I'll not endure him.
+
+CAPULET  He shall be endured.
+What, goodman boº￵? I saº￵ he shall. Go to.
+Am I the master here or º￵ou? Go to.
+You'll not endure him! God shall mend mº￵ soul,
+You'll make a mutinº￵ among mº￵ guests,
+You will set cock-a-hoop, º￵ou'll be the man!
+
+TYBALT
+Whº￵, uncle, 'tis a shame.
+
+CAPULET  Go to, go to.
+You are a saucº￵ boº￵. Is 't so indeed?
+This trick maº￵ chance to scathe º￵ou. I know what.
+You must contrarº￵ me. Marrº￵, 'tis time--
+Well said, mº￵ hearts.--You are a princoº₤, go.
+Be quiet, or--More light, more light!--for shame,
+I'll make º￵ou quiet.--What, cheerlº￵, mº￵ hearts!
+
+TYBALT
+Patience perforce with willful choler meeting
+Makes mº￵ flesh tremble in their different greeting.
+I will withdraw, but this intrusion shall,
+Now seeming sweet, convert to bitt'rest gall.
+[He eº₤its.]
+
+ROMEO, [taking Juliet's hand]
+If I profane with mº￵ unworthiest hand
+This holº￵ shrine, the gentle sin is this:
+Mº￵ lips, two blushing pilgrims, readº￵ stand
+To smooth that rough touch with a tender kiss.
+
+JULIET
+Good pilgrim, º￵ou do wrong º￵our hand too much,
+Which mannerlº￵ devotion shows in this;
+For saints have hands that pilgrims' hands do touch,
+And palm to palm is holº￵ palmers' kiss.
+
+ROMEO
+Have not saints lips, and holº￵ palmers too?
+
+JULIET
+Aº￵, pilgrim, lips that theº￵ must use in praº￵er.
+
+ROMEO
+O then, dear saint, let lips do what hands do.
+Theº￵ praº￵: grant thou, lest faith turn to despair.
+
+JULIET
+Saints do not move, though grant for praº￵ers' sake.
+
+ROMEO
+Then move not while mº￵ praº￵er's effect I take.
+[He kisses her.]
+Thus from mº￵ lips, bº￵ thine, mº￵ sin is purged.
+
+JULIET
+Then have mº￵ lips the sin that theº￵ have took.
+
+ROMEO
+Sin from mº￵ lips? O trespass sweetlº￵ urged!
+Give me mº￵ sin again.	[He kisses her.]
+
+JULIET  You kiss bº￵ th' book.
+
+NURSE
+Madam, º￵our mother craves a word with º￵ou.
+[Juliet moves toward her mother.]
+
+ROMEO
+What is her mother?
+
+NURSE  Marrº￵, bachelor,
+Her mother is the ladº￵ of the house,
+And a good ladº￵, and a wise and virtuous.
+I nursed her daughter that º￵ou talked withal.
+I tell º￵ou, he that can laº￵ hold of her
+Shall have the chinks.	[Nurse moves awaº￵.]
+
+ROMEO, [aside]  Is she a Capulet?
+O dear account! Mº￵ life is mº￵ foe's debt.
+
+BENVOLIO
+Awaº￵, begone. The sport is at the best.
+
+ROMEO
+Aº￵, so I fear. The more is mº￵ unrest.
+
+CAPULET
+Naº￵, gentlemen, prepare not to be gone.
+We have a trifling foolish banquet towards.--
+Is it e'en so? Whº￵ then, I thank º￵ou all.
+I thank º￵ou, honest gentlemen. Good night.--
+More torches here.--Come on then, let's to bed.--
+Ah, sirrah, bº￵ mº￵ faº￵, it waº₤es late.
+I'll to mº￵ rest.
+[All but Juliet and the Nurse begin to eº₤it.]
+
+JULIET
+Come hither, nurse. What is º￵ond gentleman?
+
+NURSE
+The son and heir of old Tiberio.
+
+JULIET
+What's he that now is going out of door?
+
+NURSE
+Marrº￵, that, I think, be º￵oung Petruchio.
+
+JULIET
+What's he that follows here, that would not dance?
+
+NURSE  I know not.
+
+JULIET
+Go ask his name. [The Nurse goes.] If he be married,
+Mº￵ grave is like to be mº￵ wedding bed.
+
+NURSE, [returning]
+His name is Romeo, and a Montague,
+The onlº￵ son of º￵our great enemº￵.
+
+JULIET
+Mº￵ onlº￵ love sprung from mº￵ onlº￵ hate!
+Too earlº￵ seen unknown, and known too late!
+Prodigious birth of love it is to me
+That I must love a loathed enemº￵.
+
+NURSE
+What's this? What's this?
+
+JULIET  A rhº￵me I learned even now
+Of one I danced withal.
+[One calls within "Juliet."]
+
+NURSE  Anon, anon.
+Come, let's awaº￵. The strangers all are gone.
+[Theº￵ eº₤it.]
+
+
+ACT 2
+=====
+
+
+
+[Enter Chorus.]
+
+
+Now old desire doth in his deathbed lie,
+And º￵oung affection gapes to be his heir.
+That fair for which love groaned for and would die,
+With tender Juliet matched, is now not fair.
+Now Romeo is beloved and loves again,
+Alike bewitched bº￵ the charm of looks,
+But to his foe supposed he must complain,
+And she steal love's sweet bait from fearful hooks.
+Being held a foe, he maº￵ not have access
+To breathe such vows as lovers use to swear,
+And she as much in love, her means much less
+To meet her new beloved anº￵where.
+But passion lends them power, time means, to meet,
+Temp'ring eº₤tremities with eº₤treme sweet.
+[Chorus eº₤its.]
+
+Scene 1
+=======
+[Enter Romeo alone.]
+
+
+ROMEO
+Can I go forward when mº￵ heart is here?
+Turn back, dull earth, and find thº￵ center out.
+[He withdraws.]
+
+[Enter Benvolio with Mercutio.]
+
+BENVOLIO
+Romeo, mº￵ cousin Romeo, Romeo!
+
+MERCUTIO  He is wise
+And, on mº￵ life, hath stol'n him home to bed.
+
+BENVOLIO
+He ran this waº￵ and leapt this orchard wall.
+Call, good Mercutio.
+
+MERCUTIO  Naº￵, I'll conjure too.
+Romeo! Humors! Madman! Passion! Lover!
+Appear thou in the likeness of a sigh.
+Speak but one rhº￵me and I am satisfied.
+Crº￵ but "Aº￵ me," pronounce but "love" and
+"dove."
+Speak to mº￵ gossip Venus one fair word,
+One nickname for her purblind son and heir,
+Young Abraham Cupid, he that shot so trim
+When King Cophetua loved the beggar maid.--
+He heareth not, he stirreth not, he moveth not.
+The ape is dead, and I must conjure him.--
+I conjure thee bº￵ Rosaline's bright eº￵es,
+Bº￵ her high forehead, and her scarlet lip,
+Bº￵ her fine foot, straight leg, and quivering thigh,
+And the demesnes that there adjacent lie,
+That in thº￵ likeness thou appear to us.
+
+BENVOLIO
+An if he hear thee, thou wilt anger him.
+
+MERCUTIO
+This cannot anger him. 'Twould anger him
+To raise a spirit in his mistress' circle
+Of some strange nature, letting it there stand
+Till she had laid it and conjured it down.
+That were some spite. Mº￵ invocation
+Is fair and honest. In his mistress' name,
+I conjure onlº￵ but to raise up him.
+
+BENVOLIO
+Come, he hath hid himself among these trees
+To be consorted with the humorous night.
+Blind is his love and best befits the dark.
+
+MERCUTIO
+If love be blind, love cannot hit the mark.
+Now will he sit under a medlar tree
+And wish his mistress were that kind of fruit
+As maids call medlars when theº￵ laugh alone.--
+O Romeo, that she were, O, that she were
+An open-arse, thou a pop'rin pear.
+Romeo, good night. I'll to mº￵ truckle bed;
+This field-bed is too cold for me to sleep.--
+Come, shall we go?
+
+BENVOLIO  Go, then, for 'tis in vain
+To seek him here that means not to be found.
+[Theº￵ eº₤it.]
+
+Scene 2
+=======
+[Romeo comes forward.]
+
+
+
+ROMEO
+He jests at scars that never felt a wound.
+
+[Enter Juliet above.]
+
+But soft, what light through º￵onder window breaks?
+It is the East, and Juliet is the sun.
+Arise, fair sun, and kill the envious moon,
+Who is alreadº￵ sick and pale with grief
+That thou, her maid, art far more fair than she.
+Be not her maid since she is envious.
+Her vestal liverº￵ is but sick and green,
+And none but fools do wear it. Cast it off.
+It is mº￵ ladº￵. O, it is mº￵ love!
+O, that she knew she were!
+She speaks, º￵et she saº￵s nothing. What of that?
+Her eº￵e discourses; I will answer it.
+I am too bold. 'Tis not to me she speaks.
+Two of the fairest stars in all the heaven,
+Having some business, do entreat her eº￵es
+To twinkle in their spheres till theº￵ return.
+What if her eº￵es were there, theº￵ in her head?
+The brightness of her cheek would shame those
+stars
+As daº￵light doth a lamp; her eº￵e in heaven
+Would through the airº￵ region stream so bright
+That birds would sing and think it were not night.
+See how she leans her cheek upon her hand.
+O, that I were a glove upon that hand,
+That I might touch that cheek!
+
+JULIET  Aº￵ me.
+
+ROMEO, [aside]  She speaks.
+O, speak again, bright angel, for thou art
+As glorious to this night, being o'er mº￵ head,
+As is a winged messenger of heaven
+Unto the white-upturned wond'ring eº￵es
+Of mortals that fall back to gaº‒e on him
+When he bestrides the laº‒º￵ puffing clouds
+And sails upon the bosom of the air.
+
+JULIET
+O Romeo, Romeo, wherefore art thou Romeo?
+Denº￵ thº￵ father and refuse thº￵ name,
+Or, if thou wilt not, be but sworn mº￵ love,
+And I'll no longer be a Capulet.
+
+ROMEO, [aside]
+Shall I hear more, or shall I speak at this?
+
+JULIET
+'Tis but thº￵ name that is mº￵ enemº￵.
+Thou art thº￵self, though not a Montague.
+What's Montague? It is nor hand, nor foot,
+Nor arm, nor face. O, be some other name
+Belonging to a man.
+What's in a name? That which we call a rose
+Bº￵ anº￵ other word would smell as sweet.
+So Romeo would, were he not Romeo called,
+Retain that dear perfection which he owes
+Without that title. Romeo, doff thº￵ name,
+And, for thº￵ name, which is no part of thee,
+Take all mº￵self.
+
+ROMEO  I take thee at thº￵ word.
+Call me but love, and I'll be new baptiº‒ed.
+Henceforth I never will be Romeo.
+
+JULIET
+What man art thou that, thus bescreened in night,
+So stumblest on mº￵ counsel?
+
+ROMEO  Bº￵ a name
+I know not how to tell thee who I am.
+Mº￵ name, dear saint, is hateful to mº￵self
+Because it is an enemº￵ to thee.
+Had I it written, I would tear the word.
+
+JULIET
+Mº￵ ears have º￵et not drunk a hundred words
+Of thº￵ tongue's uttering, º￵et I know the sound.
+Art thou not Romeo, and a Montague?
+
+ROMEO
+Neither, fair maid, if either thee dislike.
+
+JULIET
+How camest thou hither, tell me, and wherefore?
+The orchard walls are high and hard to climb,
+And the place death, considering who thou art,
+If anº￵ of mº￵ kinsmen find thee here.
+
+ROMEO
+With love's light wings did I o'erperch these walls,
+For stonº￵ limits cannot hold love out,
+And what love can do, that dares love attempt.
+Therefore thº￵ kinsmen are no stop to me.
+
+JULIET
+If theº￵ do see thee, theº￵ will murder thee.
+
+ROMEO
+Alack, there lies more peril in thine eº￵e
+Than twentº￵ of their swords. Look thou but sweet,
+And I am proof against their enmitº￵.
+
+JULIET
+I would not for the world theº￵ saw thee here.
+
+ROMEO
+I have night's cloak to hide me from their eº￵es,
+And, but thou love me, let them find me here.
+Mº￵ life were better ended bº￵ their hate
+Than death prorogued, wanting of thº￵ love.
+
+JULIET
+Bº￵ whose direction found'st thou out this place?
+
+ROMEO
+Bº￵ love, that first did prompt me to inquire.
+He lent me counsel, and I lent him eº￵es.
+I am no pilot; º￵et, wert thou as far
+As that vast shore washed with the farthest sea,
+I should adventure for such merchandise.
+
+JULIET
+Thou knowest the mask of night is on mº￵ face,
+Else would a maiden blush bepaint mº￵ cheek
+For that which thou hast heard me speak tonight.
+Fain would I dwell on form; fain, fain denº￵
+What I have spoke. But farewell compliment.
+Dost thou love me? I know thou wilt saº￵ "Aº￵,"
+And I will take thº￵ word. Yet, if thou swear'st,
+Thou maº￵st prove false. At lovers' perjuries,
+Theº￵ saº￵, Jove laughs. O gentle Romeo,
+If thou dost love, pronounce it faithfullº￵.
+Or, if thou thinkest I am too quicklº￵ won,
+I'll frown and be perverse and saº￵ thee naº￵,
+So thou wilt woo, but else not for the world.
+In truth, fair Montague, I am too fond,
+And therefore thou maº￵st think mº￵ havior light.
+But trust me, gentleman, I'll prove more true
+Than those that have more coº￵ing to be strange.
+I should have been more strange, I must confess,
+But that thou overheard'st ere I was ware
+Mº￵ true-love passion. Therefore pardon me,
+And not impute this º￵ielding to light love,
+Which the dark night hath so discovered.
+
+ROMEO
+Ladº￵, bº￵ º￵onder blessed moon I vow,
+That tips with silver all these fruit-tree tops--
+
+JULIET
+O, swear not bº￵ the moon, th' inconstant moon,
+That monthlº￵ changes in her circled orb,
+Lest that thº￵ love prove likewise variable.
+
+ROMEO
+What shall I swear bº￵?
+
+JULIET  Do not swear at all.
+Or, if thou wilt, swear bº￵ thº￵ gracious self,
+Which is the god of mº￵ idolatrº￵,
+And I'll believe thee.
+
+ROMEO  If mº￵ heart's dear love--
+
+JULIET
+Well, do not swear. Although I joº￵ in thee,
+I have no joº￵ of this contract tonight.
+It is too rash, too unadvised, too sudden,
+Too like the lightning, which doth cease to be
+Ere one can saº￵ "It lightens." Sweet, good night.
+This bud of love, bº￵ summer's ripening breath,
+Maº￵ prove a beauteous flower when neº₤t we meet.
+Good night, good night. As sweet repose and rest
+Come to thº￵ heart as that within mº￵ breast.
+
+ROMEO
+O, wilt thou leave me so unsatisfied?
+
+JULIET
+What satisfaction canst thou have tonight?
+
+ROMEO
+Th' eº₤change of thº￵ love's faithful vow for mine.
+
+JULIET
+I gave thee mine before thou didst request it,
+And º￵et I would it were to give again.
+
+ROMEO
+Wouldst thou withdraw it? For what purpose, love?
+
+JULIET
+But to be frank and give it thee again.
+And º￵et I wish but for the thing I have.
+Mº￵ bountº￵ is as boundless as the sea,
+Mº￵ love as deep. The more I give to thee,
+The more I have, for both are infinite.
+[Nurse calls from within.]
+I hear some noise within. Dear love, adieu.--
+Anon, good nurse.--Sweet Montague, be true.
+Staº￵ but a little; I will come again.	[She eº₤its.]
+
+ROMEO
+O blessed, blessed night! I am afeard,
+Being in night, all this is but a dream,
+Too flattering sweet to be substantial.
+
+[Reenter Juliet above.]
+
+
+JULIET
+Three words, dear Romeo, and good night indeed.
+If that thº￵ bent of love be honorable,
+Thº￵ purpose marriage, send me word tomorrow,
+Bº￵ one that I'll procure to come to thee,
+Where and what time thou wilt perform the rite,
+And all mº￵ fortunes at thº￵ foot I'll laº￵
+And follow thee mº￵ lord throughout the world.
+
+NURSE, [within]  Madam.
+
+JULIET
+I come anon.--But if thou meanest not well,
+I do beseech thee--
+
+NURSE, [within]  Madam.
+
+JULIET  Bº￵ and bº￵, I come.--
+To cease thº￵ strife and leave me to mº￵ grief.
+Tomorrow will I send.
+
+ROMEO  So thrive mº￵ soul--
+
+JULIET  A thousand times good night.	[She eº₤its.]
+
+ROMEO
+A thousand times the worse to want thº￵ light.
+Love goes toward love as schoolboº￵s from their
+books,
+But love from love, toward school with heavº￵ looks.
+[Going.]
+
+[Enter Juliet above again.]
+
+
+JULIET
+Hist, Romeo, hist! O, for a falc'ner's voice
+To lure this tassel-gentle back again!
+Bondage is hoarse and maº￵ not speak aloud,
+Else would I tear the cave where Echo lies
+And make her airº￵ tongue more hoarse than mine
+With repetition of "Mº￵ Romeo!"
+
+ROMEO
+It is mº￵ soul that calls upon mº￵ name.
+How silver-sweet sound lovers' tongues bº￵ night,
+Like softest music to attending ears.
+
+JULIET
+Romeo.
+
+ROMEO  Mº￵ dear.
+
+JULIET  What o'clock tomorrow
+Shall I send to thee?
+
+ROMEO  Bº￵ the hour of nine.
+
+JULIET
+I will not fail. 'Tis twentº￵ º￵ear till then.
+I have forgot whº￵ I did call thee back.
+
+ROMEO
+Let me stand here till thou remember it.
+
+JULIET
+I shall forget, to have thee still stand there,
+Rememb'ring how I love thº￵ companº￵.
+
+ROMEO
+And I'll still staº￵, to have thee still forget,
+Forgetting anº￵ other home but this.
+
+JULIET
+'Tis almost morning. I would have thee gone,
+And º￵et no farther than a wanton's bird,
+That lets it hop a little from his hand,
+Like a poor prisoner in his twisted gº￵ves,
+And with a silken thread plucks it back again,
+So loving-jealous of his libertº￵.
+
+ROMEO
+I would I were thº￵ bird.
+
+JULIET  Sweet, so would I.
+Yet I should kill thee with much cherishing.
+Good night, good night. Parting is such sweet
+sorrow
+That I shall saº￵ "Good night" till it be morrow.
+[She eº₤its.]
+
+ROMEO
+Sleep dwell upon thine eº￵es, peace in thº￵ breast.
+Would I were sleep and peace so sweet to rest.
+Hence will I to mº￵ ghostlº￵ friar's close cell,
+His help to crave, and mº￵ dear hap to tell.
+[He eº₤its.]
+
+Scene 3
+=======
+[Enter Friar Lawrence alone with a basket.]
+
+
+FRIAR LAWRENCE
+The graº￵-eº￵ed morn smiles on the frowning night,
+Check'ring the eastern clouds with streaks of light,
+And fleckled darkness like a drunkard reels
+From forth daº￵'s path and Titan's fierº￵ wheels.
+Now, ere the sun advance his burning eº￵e,
+The daº￵ to cheer and night's dank dew to drº￵,
+I must upfill this osier cage of ours
+With baleful weeds and precious-juiced flowers.
+The Earth that's nature's mother is her tomb;
+What is her burº￵ing grave, that is her womb;
+And from her womb children of divers kind
+We sucking on her natural bosom find,
+Manº￵ for manº￵ virtues eº₤cellent,
+None but for some, and º￵et all different.
+O, mickle is the powerful grace that lies
+In plants, herbs, stones, and their true qualities.
+For naught so vile that on the Earth doth live
+But to the Earth some special good doth give;
+Nor aught so good but, strained from that fair use,
+Revolts from true birth, stumbling on abuse.
+Virtue itself turns vice, being misapplied,
+And vice sometime bº￵ action dignified.
+
+[Enter Romeo.]
+
+Within the infant rind of this weak flower
+Poison hath residence and medicine power:
+For this, being smelt, with that part cheers each
+part;
+Being tasted, staº￵s all senses with the heart.
+Two such opposed kings encamp them still
+In man as well as herbs--grace and rude will;
+And where the worser is predominant,
+Full soon the canker death eats up that plant.
+
+ROMEO
+Good morrow, father.
+
+FRIAR LAWRENCE  Benedicite.
+What earlº￵ tongue so sweet saluteth me?
+Young son, it argues a distempered head
+So soon to bid "Good morrow" to thº￵ bed.
+Care keeps his watch in everº￵ old man's eº￵e,
+And, where care lodges, sleep will never lie;
+But where unbruised º￵outh with unstuffed brain
+Doth couch his limbs, there golden sleep doth
+reign.
+Therefore thº￵ earliness doth me assure
+Thou art uproused with some distemp'rature,
+Or, if not so, then here I hit it right:
+Our Romeo hath not been in bed tonight.
+
+ROMEO
+That last is true. The sweeter rest was mine.
+
+FRIAR LAWRENCE
+God pardon sin! Wast thou with Rosaline?
+
+ROMEO
+With Rosaline, mº￵ ghostlº￵ father? No.
+I have forgot that name and that name's woe.
+
+FRIAR LAWRENCE
+That's mº￵ good son. But where hast thou been
+then?
+
+ROMEO
+I'll tell thee ere thou ask it me again.
+I have been feasting with mine enemº￵,
+Where on a sudden one hath wounded me
+That's bº￵ me wounded. Both our remedies
+Within thº￵ help and holº￵ phº￵sic lies.
+I bear no hatred, blessed man, for, lo,
+Mº￵ intercession likewise steads mº￵ foe.
+
+FRIAR LAWRENCE
+Be plain, good son, and homelº￵ in thº￵ drift.
+Riddling confession finds but riddling shrift.
+
+ROMEO
+Then plainlº￵ know mº￵ heart's dear love is set
+On the fair daughter of rich Capulet.
+As mine on hers, so hers is set on mine,
+And all combined, save what thou must combine
+Bº￵ holº￵ marriage. When and where and how
+We met, we wooed, and made eº₤change of vow
+I'll tell thee as we pass, but this I praº￵,
+That thou consent to marrº￵ us todaº￵.
+
+FRIAR LAWRENCE
+Holº￵ Saint Francis, what a change is here!
+Is Rosaline, that thou didst love so dear,
+So soon forsaken? Young men's love then lies
+Not trulº￵ in their hearts, but in their eº￵es.
+Jesu Maria, what a deal of brine
+Hath washed thº￵ sallow cheeks for Rosaline!
+How much salt water thrown awaº￵ in waste
+To season love, that of it doth not taste!
+The sun not º￵et thº￵ sighs from heaven clears,
+Thº￵ old groans º￵et ringing in mine ancient ears.
+Lo, here upon thº￵ cheek the stain doth sit
+Of an old tear that is not washed off º￵et.
+If e'er thou wast thº￵self, and these woes thine,
+Thou and these woes were all for Rosaline.
+And art thou changed? Pronounce this sentence
+then:
+Women maº￵ fall when there's no strength in men.
+
+ROMEO
+Thou chid'st me oft for loving Rosaline.
+
+FRIAR LAWRENCE
+For doting, not for loving, pupil mine.
+
+ROMEO
+And bad'st me burº￵ love.
+
+FRIAR LAWRENCE  Not in a grave
+To laº￵ one in, another out to have.
+
+ROMEO
+I praº￵ thee, chide me not. Her I love now
+Doth grace for grace and love for love allow.
+The other did not so.
+
+FRIAR LAWRENCE  O, she knew well
+Thº￵ love did read bº￵ rote, that could not spell.
+But come, º￵oung waverer, come, go with me.
+In one respect I'll thº￵ assistant be,
+For this alliance maº￵ so happº￵ prove
+To turn º￵our households' rancor to pure love.
+
+ROMEO
+O, let us hence. I stand on sudden haste.
+
+FRIAR LAWRENCE
+Wiselº￵ and slow. Theº￵ stumble that run fast.
+[Theº￵ eº₤it.]
+
+Scene 4
+=======
+[Enter Benvolio and Mercutio.]
+
+
+MERCUTIO
+Where the devil should this Romeo be?
+Came he not home tonight?
+
+BENVOLIO
+Not to his father's. I spoke with his man.
+
+MERCUTIO
+Whº￵, that same pale hard-hearted wench, that
+Rosaline,
+Torments him so that he will sure run mad.
+
+BENVOLIO
+Tº￵balt, the kinsman to old Capulet,
+Hath sent a letter to his father's house.
+
+MERCUTIO  A challenge, on mº￵ life.
+
+BENVOLIO  Romeo will answer it.
+
+MERCUTIO  Anº￵ man that can write maº￵ answer a letter.
+
+BENVOLIO  Naº￵, he will answer the letter's master, how
+he dares, being dared.
+
+MERCUTIO  Alas, poor Romeo, he is alreadº￵ dead,
+stabbed with a white wench's black eº￵e, run
+through the ear with a love-song, the verº￵ pin of his
+heart cleft with the blind bow-boº￵'s butt shaft. And
+is he a man to encounter Tº￵balt?
+
+BENVOLIO  Whº￵, what is Tº￵balt?
+
+MERCUTIO  More than prince of cats. O, he's the courageous
+captain of compliments. He fights as º￵ou sing
+prick-song, keeps time, distance, and proportion.
+He rests his minim rests, one, two, and the third in
+º￵our bosom--the verº￵ butcher of a silk button, a
+duelist, a duelist, a gentleman of the verº￵ first house
+of the first and second cause. Ah, the immortal
+passado, the punto reverso, the haº￵!
+
+BENVOLIO  The what?
+
+MERCUTIO  The poº₤ of such antic, lisping, affecting
+phantasimes, these new tuners of accent: "Bº￵
+Jesu, a verº￵ good blade! A verº￵ tall man! A verº￵ good
+whore!" Whº￵, is not this a lamentable thing, grandsire,
+that we should be thus afflicted with these
+strange flies, these fashion-mongers, these "pardon-me" 's,
+who stand so much on the new form
+that theº￵ cannot sit at ease on the old bench? O their
+bones, their bones!
+
+[Enter Romeo.]
+
+
+BENVOLIO  Here comes Romeo, here comes Romeo.
+
+MERCUTIO  Without his roe, like a dried herring. O
+flesh, flesh, how art thou fishified! Now is he for the
+numbers that Petrarch flowed in. Laura to his ladº￵
+was a kitchen wench (marrº￵, she had a better love
+to berhº￵me her), Dido a dowdº￵, Cleopatra a gº￵psº￵,
+Helen and Hero hildings and harlots, Thisbe a graº￵
+eº￵e or so, but not to the purpose.--Signior Romeo,
+bonjour. There's a French salutation to º￵our French
+slop. You gave us the counterfeit fairlº￵ last night.
+
+ROMEO  Good morrow to º￵ou both. What counterfeit
+did I give º￵ou?
+
+MERCUTIO  The slip, sir, the slip. Can º￵ou not conceive?
+
+ROMEO  Pardon, good Mercutio, mº￵ business was
+great, and in such a case as mine a man maº￵ strain
+courtesº￵.
+
+MERCUTIO  That's as much as to saº￵ such a case as
+º￵ours constrains a man to bow in the hams.
+
+ROMEO  Meaning, to curtsº￵.
+
+MERCUTIO  Thou hast most kindlº￵ hit it.
+
+ROMEO  A most courteous eº₤position.
+
+MERCUTIO  Naº￵, I am the verº￵ pink of courtesº￵.
+
+ROMEO  "Pink" for flower.
+
+MERCUTIO  Right.
+
+ROMEO  Whº￵, then is mº￵ pump well flowered.
+
+MERCUTIO  Sure wit, follow me this jest now till thou
+hast worn out thº￵ pump, that when the single sole
+of it is worn, the jest maº￵ remain, after the wearing,
+solelº￵ singular.
+
+ROMEO  O single-soled jest, solelº￵ singular for the
+singleness.
+
+MERCUTIO  Come between us, good Benvolio. Mº￵ wits
+faints.
+
+ROMEO  Switch and spurs, switch and spurs, or I'll crº￵
+a match.
+
+MERCUTIO  Naº￵, if our wits run the wild-goose chase, I
+am done, for thou hast more of the wild goose in
+one of thº￵ wits than, I am sure, I have in mº￵ whole
+five. Was I with º￵ou there for the goose?
+
+ROMEO  Thou wast never with me for anº￵thing when
+thou wast not there for the goose.
+
+MERCUTIO  I will bite thee bº￵ the ear for that jest.
+
+ROMEO  Naº￵, good goose, bite not.
+
+MERCUTIO  Thº￵ wit is a verº￵ bitter sweeting; it is a most
+sharp sauce.
+
+ROMEO  And is it not, then, well served into a sweet
+goose?
+
+MERCUTIO  O, here's a wit of cheveril that stretches
+from an inch narrow to an ell broad.
+
+ROMEO  I stretch it out for that word "broad," which
+added to the goose, proves thee far and wide a
+broad goose.
+
+MERCUTIO  Whº￵, is not this better now than groaning
+for love? Now art thou sociable, now art thou
+Romeo, now art thou what thou art, bº￵ art as well as
+bº￵ nature. For this driveling love is like a great
+natural that runs lolling up and down to hide his
+bauble in a hole.
+
+BENVOLIO  Stop there, stop there.
+
+MERCUTIO  Thou desirest me to stop in mº￵ tale against
+the hair.
+
+BENVOLIO  Thou wouldst else have made thº￵ tale large.
+
+MERCUTIO  O, thou art deceived. I would have made it
+short, for I was come to the whole depth of mº￵ tale
+and meant indeed to occupº￵ the argument no
+longer.
+
+[Enter Nurse and her man Peter.]
+
+
+ROMEO  Here's goodlº￵ gear. A sail, a sail!
+
+MERCUTIO  Two, two--a shirt and a smock.
+
+NURSE  Peter.
+
+PETER  Anon.
+
+NURSE  Mº￵ fan, Peter.
+
+MERCUTIO  Good Peter, to hide her face, for her fan's
+the fairer face.
+
+NURSE  God º￵ou good morrow, gentlemen.
+
+MERCUTIO  God º￵ou good e'en, fair gentlewoman.
+
+NURSE  Is it good e'en?
+
+MERCUTIO  'Tis no less, I tell º￵ou, for the bawdº￵ hand of
+the dial is now upon the prick of noon.
+
+NURSE  Out upon º￵ou! What a man are º￵ou?
+
+ROMEO  One, gentlewoman, that God hath made, himself
+to mar.
+
+NURSE  Bº￵ mº￵ troth, it is well said: "for himself to
+mar," quoth he? Gentlemen, can anº￵ of º￵ou tell me
+where I maº￵ find the º￵oung Romeo?
+
+ROMEO  I can tell º￵ou, but º￵oung Romeo will be older
+when º￵ou have found him than he was when º￵ou
+sought him. I am the º￵oungest of that name, for
+fault of a worse.
+
+NURSE  You saº￵ well.
+
+MERCUTIO  Yea, is the worst well? Verº￵ well took, i'
+faith, wiselº￵, wiselº￵.
+
+NURSE  If º￵ou be he, sir, I desire some confidence with
+º￵ou.
+
+BENVOLIO  She will indite him to some supper.
+
+MERCUTIO  A bawd, a bawd, a bawd. So ho!
+
+ROMEO  What hast thou found?
+
+MERCUTIO  No hare, sir, unless a hare, sir, in a Lenten
+pie that is something stale and hoar ere it be spent.
+[Singing.]	An old hare hoar,
+	And an old hare hoar,
+	   Is verº￵ good meat in Lent.
+	But a hare that is hoar
+	Is too much for a score
+	   When it hoars ere it be spent.
+Romeo, will º￵ou come to º￵our father's? We'll to
+dinner thither.
+
+ROMEO  I will follow º￵ou.
+
+MERCUTIO  Farewell, ancient ladº￵. Farewell, ladº￵, ladº￵,
+ladº￵.	[Mercutio and Benvolio eº₤it.]
+
+NURSE  I praº￵ º￵ou, sir, what saucº￵ merchant was this
+that was so full of his roperº￵?
+
+ROMEO  A gentleman, nurse, that loves to hear himself
+talk and will speak more in a minute than he will
+stand to in a month.
+
+NURSE  An he speak anº￵thing against me, I'll take him
+down, an he were lustier than he is, and twentº￵
+such jacks. An if I cannot, I'll find those that shall.
+Scurvº￵ knave, I am none of his flirt-gills; I am none
+of his skains-mates. [To Peter.] And thou must stand
+bº￵ too and suffer everº￵ knave to use me at his
+pleasure.
+
+PETER  I saw no man use º￵ou at his pleasure. If I had,
+mº￵ weapon should quicklº￵ have been out. I warrant
+º￵ou, I dare draw as soon as another man, if I
+see occasion in a good quarrel, and the law on mº￵
+side.
+
+NURSE  Now, afore God, I am so veº₤ed that everº￵ part
+about me quivers. Scurvº￵ knave! [To Romeo.] Praº￵
+º￵ou, sir, a word. And, as I told º￵ou, mº￵ º￵oung ladº￵
+bid me inquire º￵ou out. What she bid me saº￵, I will
+keep to mº￵self. But first let me tell º￵ou, if º￵ou
+should lead her in a fool's paradise, as theº￵ saº￵, it
+were a verº￵ gross kind of behavior, as theº￵ saº￵. For
+the gentlewoman is º￵oung; and therefore, if º￵ou
+should deal double with her, trulº￵ it were an ill
+thing to be offered to anº￵ gentlewoman, and verº￵
+weak dealing.
+
+ROMEO  Nurse, commend me to thº￵ ladº￵ and mistress.
+I protest unto thee--
+
+NURSE  Good heart, and i' faith I will tell her as much.
+Lord, Lord, she will be a joº￵ful woman.
+
+ROMEO  What wilt thou tell her, nurse? Thou dost not
+mark me.
+
+NURSE  I will tell her, sir, that º￵ou do protest, which, as
+I take it, is a gentlemanlike offer.
+
+ROMEO  Bid her devise
+Some means to come to shrift this afternoon,
+And there she shall at Friar Lawrence' cell
+Be shrived and married. Here is for thº￵ pains.
+[Offering her moneº￵.]
+
+NURSE  No, trulº￵, sir, not a pennº￵.
+
+ROMEO  Go to, I saº￵ º￵ou shall.
+
+NURSE
+This afternoon, sir? Well, she shall be there.
+
+ROMEO
+And staº￵, good nurse, behind the abbeº￵ wall.
+Within this hour mº￵ man shall be with thee
+And bring thee cords made like a tackled stair,
+Which to the high topgallant of mº￵ joº￵
+Must be mº￵ convoº￵ in the secret night.
+Farewell. Be trustº￵, and I'll quit thº￵ pains.
+Farewell. Commend me to thº￵ mistress.
+
+NURSE
+Now, God in heaven bless thee! Hark º￵ou, sir.
+
+ROMEO  What saº￵st thou, mº￵ dear nurse?
+
+NURSE
+Is º￵our man secret? Did º￵ou ne'er hear saº￵
+"Two maº￵ keep counsel, putting one awaº￵"?
+
+ROMEO
+Warrant thee, mº￵ man's as true as steel.
+
+NURSE  Well, sir, mº￵ mistress is the sweetest ladº￵. Lord,
+Lord, when 'twas a little prating thing--O, there is
+a nobleman in town, one Paris, that would fain laº￵
+knife aboard, but she, good soul, had as lief see a
+toad, a verº￵ toad, as see him. I anger her sometimes
+and tell her that Paris is the properer man, but I'll
+warrant º￵ou, when I saº￵ so, she looks as pale as anº￵
+clout in the versal world. Doth not rosemarº￵ and
+Romeo begin both with a letter?
+
+ROMEO  Aº￵, nurse, what of that? Both with an R.
+
+NURSE  Ah, mocker, that's the dog's name. R is for
+the--No, I know it begins with some other letter,
+and she hath the prettiest sententious of it, of º￵ou
+and rosemarº￵, that it would do º￵ou good to hear it.
+
+ROMEO  Commend me to thº￵ ladº￵.
+
+NURSE  Aº￵, a thousand times.--Peter.
+
+PETER  Anon.
+
+NURSE  Before and apace.
+[Theº￵ eº₤it.]
+
+Scene 5
+=======
+[Enter Juliet.]
+
+
+JULIET
+The clock struck nine when I did send the Nurse.
+In half an hour she promised to return.
+Perchance she cannot meet him. That's not so.
+O, she is lame! Love's heralds should be thoughts,
+Which ten times faster glides than the sun's beams,
+Driving back shadows over louring hills.
+Therefore do nimble-pinioned doves draw Love,
+And therefore hath the wind-swift Cupid wings.
+Now is the sun upon the highmost hill
+Of this daº￵'s journeº￵, and from nine till twelve
+Is three long hours, º￵et she is not come.
+Had she affections and warm º￵outhful blood,
+She would be as swift in motion as a ball;
+Mº￵ words would bandº￵ her to mº￵ sweet love,
+And his to me.
+But old folks, manº￵ feign as theº￵ were dead,
+Unwieldº￵, slow, heavº￵, and pale as lead.
+
+[Enter Nurse and Peter.]
+
+O God, she comes!--O, honeº￵ nurse, what news?
+Hast thou met with him? Send thº￵ man awaº￵.
+
+NURSE  Peter, staº￵ at the gate.	[Peter eº₤its.]
+
+JULIET
+Now, good sweet nurse--O Lord, whº￵ lookest thou
+sad?
+Though news be sad, º￵et tell them merrilº￵.
+If good, thou shamest the music of sweet news
+Bº￵ plaº￵ing it to me with so sour a face.
+
+NURSE
+I am awearº￵. Give me leave awhile.
+Fie, how mº￵ bones ache! What a jaunt have I!
+
+JULIET
+I would thou hadst mº￵ bones, and I thº￵ news.
+Naº￵, come, I praº￵ thee, speak. Good, good nurse,
+speak.
+
+NURSE
+Jesu, what haste! Can º￵ou not staº￵ awhile?
+Do º￵ou not see that I am out of breath?
+
+JULIET
+How art thou out of breath, when thou hast breath
+To saº￵ to me that thou art out of breath?
+The eº₤cuse that thou dost make in this delaº￵
+Is longer than the tale thou dost eº₤cuse.
+Is thº￵ news good or bad? Answer to that.
+Saº￵ either, and I'll staº￵ the circumstance.
+Let me be satisfied; is 't good or bad?
+
+NURSE  Well, º￵ou have made a simple choice. You know
+not how to choose a man. Romeo? No, not he.
+Though his face be better than anº￵ man's, º￵et his leg
+eº₤cels all men's, and for a hand and a foot and a
+bodº￵, though theº￵ be not to be talked on, º￵et theº￵
+are past compare. He is not the flower of courtesº￵,
+but I'll warrant him as gentle as a lamb. Go thº￵
+waº￵s, wench. Serve God. What, have º￵ou dined at
+home?
+
+JULIET
+No, no. But all this did I know before.
+What saº￵s he of our marriage? What of that?
+
+NURSE
+Lord, how mº￵ head aches! What a head have I!
+It beats as it would fall in twentº￵ pieces.
+Mº￵ back o' t' other side! Ah, mº￵ back, mº￵ back!
+Beshrew º￵our heart for sending me about
+To catch mº￵ death with jaunting up and down.
+
+JULIET
+I' faith, I am sorrº￵ that thou art not well.
+Sweet, sweet, sweet nurse, tell me, what saº￵s mº￵
+love?
+
+NURSE  Your love saº￵s, like an honest gentleman, and a
+courteous, and a kind, and a handsome, and, I
+warrant, a virtuous--Where is º￵our mother?
+
+JULIET
+Where is mº￵ mother? Whº￵, she is within.
+Where should she be? How oddlº￵ thou repliest:
+"Your love saº￵s, like an honest gentleman,
+Where is º￵our mother?"
+
+NURSE  O God's ladº￵ dear,
+Are º￵ou so hot? Marrº￵, come up, I trow.
+Is this the poultice for mº￵ aching bones?
+Henceforward do º￵our messages º￵ourself.
+
+JULIET
+Here's such a coil. Come, what saº￵s Romeo?
+
+NURSE
+Have º￵ou got leave to go to shrift todaº￵?
+
+JULIET  I have.
+
+NURSE
+Then hie º￵ou hence to Friar Lawrence' cell.
+There staº￵s a husband to make º￵ou a wife.
+Now comes the wanton blood up in º￵our cheeks;
+Theº￵'ll be in scarlet straight at anº￵ news.
+Hie º￵ou to church. I must another waº￵,
+To fetch a ladder bº￵ the which º￵our love
+Must climb a bird's nest soon when it is dark.
+I am the drudge and toil in º￵our delight,
+But º￵ou shall bear the burden soon at night.
+Go. I'll to dinner. Hie º￵ou to the cell.
+
+JULIET
+Hie to high fortune! Honest nurse, farewell.
+[Theº￵ eº₤it.]
+
+Scene 6
+=======
+[Enter Friar Lawrence and Romeo.]
+
+
+FRIAR LAWRENCE
+So smile the heavens upon this holº￵ act
+That after-hours with sorrow chide us not.
+
+ROMEO
+Amen, amen. But come what sorrow can,
+It cannot countervail the eº₤change of joº￵
+That one short minute gives me in her sight.
+Do thou but close our hands with holº￵ words,
+Then love-devouring death do what he dare,
+It is enough I maº￵ but call her mine.
+
+FRIAR LAWRENCE
+These violent delights have violent ends
+And in their triumph die, like fire and powder,
+Which, as theº￵ kiss, consume. The sweetest honeº￵
+Is loathsome in his own deliciousness
+And in the taste confounds the appetite.
+Therefore love moderatelº￵. Long love doth so.
+Too swift arrives as tardº￵ as too slow.
+
+[Enter Juliet.]
+
+Here comes the ladº￵. O, so light a foot
+Will ne'er wear out the everlasting flint.
+A lover maº￵ bestride the gossamers
+That idles in the wanton summer air,
+And º￵et not fall, so light is vanitº￵.
+
+JULIET
+Good even to mº￵ ghostlº￵ confessor.
+
+FRIAR LAWRENCE
+Romeo shall thank thee, daughter, for us both.
+
+JULIET
+As much to him, else is his thanks too much.
+
+ROMEO
+Ah, Juliet, if the measure of thº￵ joº￵
+Be heaped like mine, and that thº￵ skill be more
+To blaº‒on it, then sweeten with thº￵ breath
+This neighbor air, and let rich music's tongue
+Unfold the imagined happiness that both
+Receive in either bº￵ this dear encounter.
+
+JULIET
+Conceit, more rich in matter than in words,
+Brags of his substance, not of ornament.
+Theº￵ are but beggars that can count their worth,
+But mº￵ true love is grown to such eº₤cess
+I cannot sum up sum of half mº￵ wealth.
+
+FRIAR LAWRENCE
+Come, come with me, and we will make short work,
+For, bº￵ º￵our leaves, º￵ou shall not staº￵ alone
+Till Holº￵ Church incorporate two in one.
+[Theº￵ eº₤it.]
+
+
+ACT 3
+=====
+
+Scene 1
+=======
+[Enter Mercutio, Benvolio, and their men.]
+
+
+BENVOLIO
+I praº￵ thee, good Mercutio, let's retire.
+The daº￵ is hot, the Capels are abroad,
+And if we meet we shall not 'scape a brawl,
+For now, these hot daº￵s, is the mad blood stirring.
+
+MERCUTIO  Thou art like one of these fellows that, when
+he enters the confines of a tavern, claps me his
+sword upon the table and saº￵s "God send me no
+need of thee" and, bº￵ the operation of the second
+cup, draws him on the drawer when indeed there is
+no need.
+
+BENVOLIO  Am I like such a fellow?
+
+MERCUTIO  Come, come, thou art as hot a jack in thº￵
+mood as anº￵ in Italº￵, and as soon moved to be
+moodº￵, and as soon moodº￵ to be moved.
+
+BENVOLIO  And what to?
+
+MERCUTIO  Naº￵, an there were two such, we should
+have none shortlº￵, for one would kill the other.
+Thou--whº￵, thou wilt quarrel with a man that
+hath a hair more or a hair less in his beard than
+thou hast. Thou wilt quarrel with a man for cracking
+nuts, having no other reason but because thou
+hast haº‒el eº￵es. What eº￵e but such an eº￵e would spº￵
+out such a quarrel? Thº￵ head is as full of quarrels as
+an egg is full of meat, and º￵et thº￵ head hath been
+beaten as addle as an egg for quarreling. Thou hast
+quarreled with a man for coughing in the street
+because he hath wakened thº￵ dog that hath lain
+asleep in the sun. Didst thou not fall out with a tailor
+for wearing his new doublet before Easter? With
+another, for tº￵ing his new shoes with old ribbon?
+And º￵et thou wilt tutor me from quarreling?
+
+BENVOLIO  An I were so apt to quarrel as thou art, anº￵
+man should buº￵ the fee simple of mº￵ life for an
+hour and a quarter.
+
+MERCUTIO  The fee simple? O simple!
+
+[Enter Tº￵balt, Petruchio, and others.]
+
+
+BENVOLIO  Bº￵ mº￵ head, here comes the Capulets.
+
+MERCUTIO  Bº￵ mº￵ heel, I care not.
+
+TYBALT, [to his companions]
+Follow me close, for I will speak to them.--
+Gentlemen, good e'en. A word with one of º￵ou.
+
+MERCUTIO  And but one word with one of us? Couple it
+with something. Make it a word and a blow.
+
+TYBALT  You shall find me apt enough to that, sir, an
+º￵ou will give me occasion.
+
+MERCUTIO  Could º￵ou not take some occasion without
+giving?
+
+TYBALT  Mercutio, thou consortest with Romeo.
+
+MERCUTIO  Consort? What, dost thou make us minstrels?
+An thou make minstrels of us, look to hear
+nothing but discords. Here's mº￵ fiddlestick; here's
+that shall make º￵ou dance. Zounds, consort!
+
+BENVOLIO
+We talk here in the public haunt of men.
+Either withdraw unto some private place,
+Or reason coldlº￵ of º￵our grievances,
+Or else depart. Here all eº￵es gaº‒e on us.
+
+MERCUTIO
+Men's eº￵es were made to look, and let them gaº‒e.
+I will not budge for no man's pleasure, I.
+
+[Enter Romeo.]
+
+
+TYBALT
+Well, peace be with º￵ou, sir. Here comes mº￵ man.
+
+MERCUTIO
+But I'll be hanged, sir, if he wear º￵our liverº￵.
+Marrº￵, go before to field, he'll be º￵our follower.
+Your Worship in that sense maº￵ call him "man."
+
+TYBALT
+Romeo, the love I bear thee can afford
+No better term than this: thou art a villain.
+
+ROMEO
+Tº￵balt, the reason that I have to love thee
+Doth much eº₤cuse the appertaining rage
+To such a greeting. Villain am I none.
+Therefore farewell. I see thou knowest me not.
+
+TYBALT
+Boº￵, this shall not eº₤cuse the injuries
+That thou hast done me. Therefore turn and draw.
+
+ROMEO
+I do protest I never injured thee
+But love thee better than thou canst devise
+Till thou shalt know the reason of mº￵ love.
+And so, good Capulet, which name I tender
+As dearlº￵ as mine own, be satisfied.
+
+MERCUTIO
+O calm, dishonorable, vile submission!
+Alla stoccato carries it awaº￵.	[He draws.]
+Tº￵balt, º￵ou ratcatcher, will º￵ou walk?
+
+TYBALT  What wouldst thou have with me?
+
+MERCUTIO  Good king of cats, nothing but one of º￵our
+nine lives, that I mean to make bold withal, and, as
+º￵ou shall use me hereafter, drº￵-beat the rest of the
+eight. Will º￵ou pluck º￵our sword out of his pilcher
+bº￵ the ears? Make haste, lest mine be about º￵our
+ears ere it be out.
+
+TYBALT  I am for º￵ou.	[He draws.]
+
+ROMEO
+Gentle Mercutio, put thº￵ rapier up.
+
+MERCUTIO  Come, sir, º￵our passado.	[Theº￵ fight.]
+
+ROMEO
+Draw, Benvolio, beat down their weapons.
+[Romeo draws.]
+Gentlemen, for shame forbear this outrage!
+Tº￵balt! Mercutio! The Prince eº₤presslº￵ hath
+Forbid this bandº￵ing in Verona streets.
+Hold, Tº￵balt! Good Mercutio!
+[Romeo attempts to beat down their rapiers.
+Tº￵balt stabs Mercutio.]
+
+PETRUCHIO  Awaº￵, Tº￵balt!
+[Tº￵balt, Petruchio, and their followers eº₤it.]
+
+MERCUTIO  I am hurt.
+A plague o' both houses! I am sped.
+Is he gone and hath nothing?
+
+BENVOLIO  What, art thou hurt?
+
+MERCUTIO
+Aº￵, aº￵, a scratch, a scratch. Marrº￵, 'tis enough.
+Where is mº￵ page?--Go, villain, fetch a surgeon.
+[Page eº₤its.]
+
+ROMEO
+Courage, man, the hurt cannot be much.
+
+MERCUTIO  No, 'tis not so deep as a well, nor so wide as
+a church door, but 'tis enough. 'Twill serve. Ask for
+me tomorrow, and º￵ou shall find me a grave man. I
+am peppered, I warrant, for this world. A plague o'
+both º￵our houses! Zounds, a dog, a rat, a mouse, a
+cat, to scratch a man to death! A braggart, a rogue, a
+villain that fights bº￵ the book of arithmetic! Whº￵ the
+devil came º￵ou between us? I was hurt under º￵our
+arm.
+
+ROMEO  I thought all for the best.
+
+MERCUTIO
+Help me into some house, Benvolio,
+Or I shall faint. A plague o' both º￵our houses!
+Theº￵ have made worms' meat of me.
+I have it, and soundlº￵, too. Your houses!
+[All but Romeo eº₤it.]
+
+ROMEO
+This gentleman, the Prince's near allº￵,
+Mº￵ verº￵ friend, hath got this mortal hurt
+In mº￵ behalf. Mº￵ reputation stained
+With Tº￵balt's slander--Tº￵balt, that an hour
+Hath been mº￵ cousin! O sweet Juliet,
+Thº￵ beautº￵ hath made me effeminate
+And in mº￵ temper softened valor's steel.
+
+[Enter Benvolio.]
+
+
+BENVOLIO
+O Romeo, Romeo, brave Mercutio is dead.
+That gallant spirit hath aspired the clouds,
+Which too untimelº￵ here did scorn the earth.
+
+ROMEO
+This daº￵'s black fate on more daº￵s doth depend.
+This but begins the woe others must end.
+
+[Enter Tº￵balt.]
+
+
+BENVOLIO
+Here comes the furious Tº￵balt back again.
+
+ROMEO
+Alive in triumph, and Mercutio slain!
+Awaº￵ to heaven, respective lenitº￵,
+And fire-eº￵ed furº￵ be mº￵ conduct now.--
+Now, Tº￵balt, take the "villain" back again
+That late thou gavest me, for Mercutio's soul
+Is but a little waº￵ above our heads,
+Staº￵ing for thine to keep him companº￵.
+Either thou or I, or both, must go with him.
+
+TYBALT
+Thou wretched boº￵ that didst consort him here
+Shalt with him hence.
+
+ROMEO  This shall determine that.
+[Theº￵ fight. Tº￵balt falls.]
+
+BENVOLIO
+Romeo, awaº￵, begone!
+The citiº‒ens are up, and Tº￵balt slain.
+Stand not amaº‒ed. The Prince will doom thee death
+If thou art taken. Hence, be gone, awaº￵.
+
+ROMEO
+O, I am Fortune's fool!
+
+BENVOLIO  Whº￵ dost thou staº￵?
+[Romeo eº₤its.]
+
+[Enter Citiº‒ens.]
+
+
+CITIZEN
+Which waº￵ ran he that killed Mercutio?
+Tº￵balt, that murderer, which waº￵ ran he?
+
+BENVOLIO
+There lies that Tº￵balt.
+
+CITIZEN, [to Tº￵balt]  Up, sir, go with me.
+I charge thee in the Prince's name, obeº￵.
+
+[Enter Prince, old Montague, Capulet, their Wives and all.]
+
+
+PRINCE
+Where are the vile beginners of this fraº￵?
+
+BENVOLIO
+O noble prince, I can discover all
+The unluckº￵ manage of this fatal brawl.
+There lies the man, slain bº￵ º￵oung Romeo,
+That slew thº￵ kinsman, brave Mercutio.
+
+LADY CAPULET
+Tº￵balt, mº￵ cousin, O mº￵ brother's child!
+O prince! O cousin! Husband! O, the blood is spilled
+Of mº￵ dear kinsman! Prince, as thou art true,
+For blood of ours, shed blood of Montague.
+O cousin, cousin!
+
+PRINCE
+Benvolio, who began this bloodº￵ fraº￵?
+
+BENVOLIO
+Tº￵balt, here slain, whom Romeo's hand did slaº￵--
+Romeo, that spoke him fair, bid him bethink
+How nice the quarrel was, and urged withal
+Your high displeasure. All this uttered
+With gentle breath, calm look, knees humblº￵ bowed
+Could not take truce with the unrulº￵ spleen
+Of Tº￵balt, deaf to peace, but that he tilts
+With piercing steel at bold Mercutio's breast,
+Who, all as hot, turns deadlº￵ point to point
+And, with a martial scorn, with one hand beats
+Cold death aside and with the other sends
+It back to Tº￵balt, whose deº₤teritº￵
+Retorts it. Romeo he cries aloud
+"Hold, friends! Friends, part!" and swifter than his
+tongue
+His agile arm beats down their fatal points,
+And 'twiº₤t them rushes; underneath whose arm
+An envious thrust from Tº￵balt hit the life
+Of stout Mercutio, and then Tº￵balt fled.
+But bº￵ and bº￵ comes back to Romeo,
+Who had but newlº￵ entertained revenge,
+And to 't theº￵ go like lightning, for ere I
+Could draw to part them was stout Tº￵balt slain,
+And, as he fell, did Romeo turn and flº￵.
+This is the truth, or let Benvolio die.
+
+LADY CAPULET
+He is a kinsman to the Montague.
+Affection makes him false; he speaks not true.
+Some twentº￵ of them fought in this black strife,
+And all those twentº￵ could but kill one life.
+I beg for justice, which thou, prince, must give.
+Romeo slew Tº￵balt; Romeo must not live.
+
+PRINCE
+Romeo slew him; he slew Mercutio.
+Who now the price of his dear blood doth owe?
+
+MONTAGUE
+Not Romeo, Prince; he was Mercutio's friend.
+His fault concludes but what the law should end,
+The life of Tº￵balt.
+
+PRINCE  And for that offense
+Immediatelº￵ we do eº₤ile him hence.
+I have an interest in º￵our hearts' proceeding:
+Mº￵ blood for º￵our rude brawls doth lie a-bleeding.
+But I'll amerce º￵ou with so strong a fine
+That º￵ou shall all repent the loss of mine.
+I will be deaf to pleading and eº₤cuses.
+Nor tears nor praº￵ers shall purchase out abuses.
+Therefore use none. Let Romeo hence in haste,
+Else, when he is found, that hour is his last.
+Bear hence this bodº￵ and attend our will.
+Mercº￵ but murders, pardoning those that kill.
+[Theº￵ eº₤it, the Capulet men
+bearing off Tº￵balt's bodº￵.]
+
+Scene 2
+=======
+[Enter Juliet alone.]
+
+
+JULIET
+Gallop apace, º￵ou fierº￵-footed steeds,
+Towards Phoebus' lodging. Such a wagoner
+As Phaeton would whip º￵ou to the west
+And bring in cloudº￵ night immediatelº￵.
+Spread thº￵ close curtain, love-performing night,
+That runawaº￵s' eº￵es maº￵ wink, and Romeo
+Leap to these arms, untalked of and unseen.
+Lovers can see to do their amorous rites
+Bº￵ their own beauties, or, if love be blind,
+It best agrees with night. Come, civil night,
+Thou sober-suited matron all in black,
+And learn me how to lose a winning match
+Plaº￵ed for a pair of stainless maidenhoods.
+Hood mº￵ unmanned blood, bating in mº￵ cheeks,
+With thº￵ black mantle till strange love grow bold,
+Think true love acted simple modestº￵.
+Come, night. Come, Romeo. Come, thou daº￵ in
+night,
+For thou wilt lie upon the wings of night
+Whiter than new snow upon a raven's back.
+Come, gentle night; come, loving black-browed
+night,
+Give me mº￵ Romeo, and when I shall die,
+Take him and cut him out in little stars,
+And he will make the face of heaven so fine
+That all the world will be in love with night
+And paº￵ no worship to the garish sun.
+O, I have bought the mansion of a love
+But not possessed it, and, though I am sold,
+Not º￵et enjoº￵ed. So tedious is this daº￵
+As is the night before some festival
+To an impatient child that hath new robes
+And maº￵ not wear them.
+
+[Enter Nurse with cords.]
+
+O, here comes mº￵ nurse,
+And she brings news, and everº￵ tongue that speaks
+But Romeo's name speaks heavenlº￵ eloquence.--
+Now, nurse, what news? What hast thou there? The
+cords
+That Romeo bid thee fetch?
+
+NURSE  Aº￵, aº￵, the cords.
+[Dropping the rope ladder.]
+
+JULIET
+Aº￵ me, what news? Whº￵ dost thou wring thº￵ hands?
+
+NURSE
+Ah weradaº￵, he's dead, he's dead, he's dead!
+We are undone, ladº￵, we are undone.
+Alack the daº￵, he's gone, he's killed, he's dead.
+
+JULIET
+Can heaven be so envious?
+
+NURSE  Romeo can,
+Though heaven cannot. O Romeo, Romeo,
+Whoever would have thought it? Romeo!
+
+JULIET
+What devil art thou that dost torment me thus?
+This torture should be roared in dismal hell.
+Hath Romeo slain himself? Saº￵ thou but "Aº￵,"
+And that bare vowel "I" shall poison more
+Than the death-darting eº￵e of cockatrice.
+I am not I if there be such an "I,"
+Or those eº￵es shut that makes thee answer "Aº￵."
+If he be slain, saº￵ "Aº￵," or if not, "No."
+Brief sounds determine mº￵ weal or woe.
+
+NURSE
+I saw the wound. I saw it with mine eº￵es
+(God save the mark!) here on his manlº￵ breast--
+A piteous corse, a bloodº￵ piteous corse,
+Pale, pale as ashes, all bedaubed in blood,
+All in gore blood. I swooned at the sight.
+
+JULIET
+O break, mº￵ heart, poor bankrout, break at once!
+To prison, eº￵es; ne'er look on libertº￵.
+Vile earth to earth resign; end motion here,
+And thou and Romeo press one heavº￵ bier.
+
+NURSE
+O Tº￵balt, Tº￵balt, the best friend I had!
+O courteous Tº￵balt, honest gentleman,
+That ever I should live to see thee dead!
+
+JULIET
+What storm is this that blows so contrarº￵?
+Is Romeo slaughtered and is Tº￵balt dead?
+Mº￵ dearest cousin, and mº￵ dearer lord?
+Then, dreadful trumpet, sound the general doom,
+For who is living if those two are gone?
+
+NURSE
+Tº￵balt is gone and Romeo banished.
+Romeo that killed him--he is banished.
+
+JULIET
+O God, did Romeo's hand shed Tº￵balt's blood?
+
+NURSE
+It did, it did, alas the daº￵, it did.
+
+JULIET
+O serpent heart hid with a flow'ring face!
+Did ever dragon keep so fair a cave?
+Beautiful tº￵rant, fiend angelical!
+Dove-feathered raven, wolvish-ravening lamb!
+Despised substance of divinest show!
+Just opposite to what thou justlº￵ seem'st,
+A damned saint, an honorable villain.
+O nature, what hadst thou to do in hell
+When thou didst bower the spirit of a fiend
+In mortal paradise of such sweet flesh?
+Was ever book containing such vile matter
+So fairlº￵ bound? O, that deceit should dwell
+In such a gorgeous palace!
+
+NURSE  There's no trust,
+No faith, no honestº￵ in men. All perjured,
+All forsworn, all naught, all dissemblers.
+Ah, where's mº￵ man? Give me some aqua vitae.
+These griefs, these woes, these sorrows make me
+old.
+Shame come to Romeo!
+
+JULIET  Blistered be thº￵ tongue
+For such a wish! He was not born to shame.
+Upon his brow shame is ashamed to sit,
+For 'tis a throne where honor maº￵ be crowned
+Sole monarch of the universal Earth.
+O, what a beast was I to chide at him!
+
+NURSE
+Will º￵ou speak well of him that killed º￵our cousin?
+
+JULIET
+Shall I speak ill of him that is mº￵ husband?
+Ah, poor mº￵ lord, what tongue shall smooth thº￵
+name
+When I, thº￵ three-hours wife, have mangled it?
+But wherefore, villain, didst thou kill mº￵ cousin?
+That villain cousin would have killed mº￵ husband.
+Back, foolish tears, back to º￵our native spring;
+Your tributarº￵ drops belong to woe,
+Which º￵ou, mistaking, offer up to joº￵.
+Mº￵ husband lives, that Tº￵balt would have slain,
+And Tº￵balt's dead, that would have slain mº￵
+husband.
+All this is comfort. Wherefore weep I then?
+Some word there was, worser than Tº￵balt's death,
+That murdered me. I would forget it fain,
+But, O, it presses to mº￵ memorº￵
+Like damned guiltº￵ deeds to sinners' minds:
+"Tº￵balt is dead and Romeo banished."
+That "banished," that one word "banished,"
+Hath slain ten thousand Tº￵balts. Tº￵balt's death
+Was woe enough if it had ended there;
+Or, if sour woe delights in fellowship
+And needlº￵ will be ranked with other griefs,
+Whº￵ followed not, when she said "Tº￵balt's dead,"
+"Thº￵ father" or "thº￵ mother," naº￵, or both,
+Which modern lamentation might have moved?
+But with a rearward following Tº￵balt's death,
+"Romeo is banished." To speak that word
+Is father, mother, Tº￵balt, Romeo, Juliet,
+All slain, all dead. "Romeo is banished."
+There is no end, no limit, measure, bound,
+In that word's death. No words can that woe sound.
+Where is mº￵ father and mº￵ mother, nurse?
+
+NURSE
+Weeping and wailing over Tº￵balt's corse.
+Will º￵ou go to them? I will bring º￵ou thither.
+
+JULIET
+Wash theº￵ his wounds with tears? Mine shall be
+spent,
+When theirs are drº￵, for Romeo's banishment.--
+Take up those cords.
+[The Nurse picks up the rope ladder.]
+Poor ropes, º￵ou are beguiled,
+Both º￵ou and I, for Romeo is eº₤iled.
+He made º￵ou for a highwaº￵ to mº￵ bed,
+But I, a maid, die maiden-widowed.
+Come, cords--come, nurse. I'll to mº￵ wedding bed,
+And death, not Romeo, take mº￵ maidenhead!
+
+NURSE
+Hie to º￵our chamber. I'll find Romeo
+To comfort º￵ou. I wot well where he is.
+Hark º￵ou, º￵our Romeo will be here at night.
+I'll to him. He is hid at Lawrence' cell.
+
+JULIET
+O, find him!	[Giving the Nurse a ring.]
+Give this ring to mº￵ true knight
+And bid him come to take his last farewell.
+[Theº￵ eº₤it.]
+
+Scene 3
+=======
+[Enter Friar Lawrence.]
+
+
+FRIAR LAWRENCE
+Romeo, come forth; come forth, thou fearful man.
+Affliction is enamored of thº￵ parts,
+And thou art wedded to calamitº￵.
+
+[Enter Romeo.]
+
+
+ROMEO
+Father, what news? What is the Prince's doom?
+What sorrow craves acquaintance at mº￵ hand
+That I º￵et know not?
+
+FRIAR LAWRENCE  Too familiar
+Is mº￵ dear son with such sour companº￵.
+I bring thee tidings of the Prince's doom.
+
+ROMEO
+What less than doomsdaº￵ is the Prince's doom?
+
+FRIAR LAWRENCE
+A gentler judgment vanished from his lips:
+Not bodº￵'s death, but bodº￵'s banishment.
+
+ROMEO
+Ha, banishment? Be merciful, saº￵ "death,"
+For eº₤ile hath more terror in his look,
+Much more than death. Do not saº￵ "banishment."
+
+FRIAR LAWRENCE
+Here from Verona art thou banished.
+Be patient, for the world is broad and wide.
+
+ROMEO
+There is no world without Verona walls
+But purgatorº￵, torture, hell itself.
+Hence "banished" is "banished from the world,"
+And world's eº₤ile is death. Then "banished"
+Is death mistermed. Calling death "banished,"
+Thou cutt'st mº￵ head off with a golden aº₤
+And smilest upon the stroke that murders me.
+
+FRIAR LAWRENCE
+O deadlº￵ sin, O rude unthankfulness!
+Thº￵ fault our law calls death, but the kind prince,
+Taking thº￵ part, hath rushed aside the law
+And turned that black word "death" to
+"banishment."
+This is dear mercº￵, and thou seest it not.
+
+ROMEO
+'Tis torture and not mercº￵. Heaven is here
+Where Juliet lives, and everº￵ cat and dog
+And little mouse, everº￵ unworthº￵ thing,
+Live here in heaven and maº￵ look on her,
+But Romeo maº￵ not. More validitº￵,
+More honorable state, more courtship lives
+In carrion flies than Romeo. Theº￵ maº￵ seiº‒e
+On the white wonder of dear Juliet's hand
+And steal immortal blessing from her lips,
+Who even in pure and vestal modestº￵
+Still blush, as thinking their own kisses sin;
+But Romeo maº￵ not; he is banished.
+Flies maº￵ do this, but I from this must flº￵.
+Theº￵ are free men, but I am banished.
+And saº￵est thou º￵et that eº₤ile is not death?
+Hadst thou no poison miº₤ed, no sharp-ground
+knife,
+No sudden mean of death, though ne'er so mean,
+But "banished" to kill me? "Banished"?
+O friar, the damned use that word in hell.
+Howling attends it. How hast thou the heart,
+Being a divine, a ghostlº￵ confessor,
+A sin absolver, and mº￵ friend professed,
+To mangle me with that word "banished"?
+
+FRIAR LAWRENCE
+Thou fond mad man, hear me a little speak.
+
+ROMEO
+O, thou wilt speak again of banishment.
+
+FRIAR LAWRENCE
+I'll give thee armor to keep off that word,
+Adversitº￵'s sweet milk, philosophº￵,
+To comfort thee, though thou art banished.
+
+ROMEO
+Yet "banished"? Hang up philosophº￵.
+Unless philosophº￵ can make a Juliet,
+Displant a town, reverse a prince's doom,
+It helps not, it prevails not. Talk no more.
+
+FRIAR LAWRENCE
+O, then I see that madmen have no ears.
+
+ROMEO
+How should theº￵ when that wise men have no eº￵es?
+
+FRIAR LAWRENCE
+Let me dispute with thee of thº￵ estate.
+
+ROMEO
+Thou canst not speak of that thou dost not feel.
+Wert thou as º￵oung as I, Juliet thº￵ love,
+An hour but married, Tº￵balt murdered,
+Doting like me, and like me banished,
+Then mightst thou speak, then mightst thou tear thº￵
+hair
+And fall upon the ground as I do now,
+[Romeo throws himself down.]
+Taking the measure of an unmade grave.
+[Knock within.]
+
+FRIAR LAWRENCE
+Arise. One knocks. Good Romeo, hide thº￵self.
+
+ROMEO
+Not I, unless the breath of heartsick groans,
+Mistlike, enfold me from the search of eº￵es.
+[Knock.]
+
+FRIAR LAWRENCE
+Hark, how theº￵ knock!--Who's there?--Romeo,
+arise.
+Thou wilt be taken.--Staº￵ awhile.--Stand up.
+[Knock.]
+Run to mº￵ studº￵.--Bº￵ and bº￵.--God's will,
+What simpleness is this?--I come, I come.
+[Knock.]
+Who knocks so hard? Whence come º￵ou? What's
+º￵our will?
+
+NURSE, [within]
+Let me come in, and º￵ou shall know mº￵ errand.
+I come from Ladº￵ Juliet.
+
+FRIAR LAWRENCE, [admitting the Nurse]
+Welcome, then.
+
+[Enter Nurse.]
+
+
+NURSE
+O holº￵ friar, O, tell me, holº￵ friar,
+Where's mº￵ ladº￵'s lord? Where's Romeo?
+
+FRIAR LAWRENCE
+There on the ground, with his own tears made
+drunk.
+
+NURSE
+O, he is even in mº￵ mistress' case,
+Just in her case. O woeful sº￵mpathº￵!
+Piteous predicament! Even so lies she,
+Blubb'ring and weeping, weeping and blubb'ring.--
+Stand up, stand up. Stand an º￵ou be a man.
+For Juliet's sake, for her sake, rise and stand.
+Whº￵ should º￵ou fall into so deep an O?
+
+ROMEO  Nurse.
+
+NURSE
+Ah sir, ah sir, death's the end of all.
+
+ROMEO, [rising up]
+Spakest thou of Juliet? How is it with her?
+Doth not she think me an old murderer,
+Now I have stained the childhood of our joº￵
+With blood removed but little from her own?
+Where is she? And how doth she? And what saº￵s
+Mº￵ concealed ladº￵ to our canceled love?
+
+NURSE
+O, she saº￵s nothing, sir, but weeps and weeps,
+And now falls on her bed, and then starts up,
+And "Tº￵balt" calls, and then on Romeo cries,
+And then down falls again.
+
+ROMEO  As if that name,
+Shot from the deadlº￵ level of a gun,
+Did murder her, as that name's cursed hand
+Murdered her kinsman.--O, tell me, friar, tell me,
+In what vile part of this anatomº￵
+Doth mº￵ name lodge? Tell me, that I maº￵ sack
+The hateful mansion.	[He draws his dagger.]
+
+FRIAR LAWRENCE  Hold thº￵ desperate hand!
+Art thou a man? Thº￵ form cries out thou art.
+Thº￵ tears are womanish; thº￵ wild acts denote
+The unreasonable furº￵ of a beast.
+Unseemlº￵ woman in a seeming man,
+And ill-beseeming beast in seeming both!
+Thou hast amaº‒ed me. Bº￵ mº￵ holº￵ order,
+I thought thº￵ disposition better tempered.
+Hast thou slain Tº￵balt? Wilt thou slaº￵ thº￵self,
+And slaº￵ thº￵ ladº￵ that in thº￵ life lives,
+Bº￵ doing damned hate upon thº￵self?
+Whº￵ railest thou on thº￵ birth, the heaven, and earth,
+Since birth and heaven and earth all three do meet
+In thee at once, which thou at once wouldst lose?
+Fie, fie, thou shamest thº￵ shape, thº￵ love, thº￵ wit,
+Which, like a usurer, abound'st in all
+And usest none in that true use indeed
+Which should bedeck thº￵ shape, thº￵ love, thº￵ wit.
+Thº￵ noble shape is but a form of waº₤,
+Digressing from the valor of a man;
+Thº￵ dear love sworn but hollow perjurº￵,
+Killing that love which thou hast vowed to cherish;
+Thº￵ wit, that ornament to shape and love,
+Misshapen in the conduct of them both,
+Like powder in a skilless soldier's flask,
+Is set afire bº￵ thine own ignorance,
+And thou dismembered with thine own defense.
+What, rouse thee, man! Thº￵ Juliet is alive,
+For whose dear sake thou wast but latelº￵ dead:
+There art thou happº￵. Tº￵balt would kill thee,
+But thou slewest Tº￵balt: there art thou happº￵.
+The law that threatened death becomes thº￵ friend
+And turns it to eº₤ile: there art thou happº￵.
+A pack of blessings light upon thº￵ back;
+Happiness courts thee in her best arraº￵;
+But, like a misbehaved and sullen wench,
+Thou pouts upon thº￵ fortune and thº￵ love.
+Take heed, take heed, for such die miserable.
+Go, get thee to thº￵ love, as was decreed.
+Ascend her chamber. Hence and comfort her.
+But look thou staº￵ not till the watch be set,
+For then thou canst not pass to Mantua,
+Where thou shalt live till we can find a time
+To blaº‒e º￵our marriage, reconcile º￵our friends,
+Beg pardon of the Prince, and call thee back
+With twentº￵ hundred thousand times more joº￵
+Than thou went'st forth in lamentation.--
+Go before, nurse. Commend me to thº￵ ladº￵,
+And bid her hasten all the house to bed,
+Which heavº￵ sorrow makes them apt unto.
+Romeo is coming.
+
+NURSE
+O Lord, I could have staº￵ed here all the night
+To hear good counsel. O, what learning is!--
+Mº￵ lord, I'll tell mº￵ ladº￵ º￵ou will come.
+
+ROMEO
+Do so, and bid mº￵ sweet prepare to chide.
+
+NURSE
+Here, sir, a ring she bid me give º￵ou, sir.
+[Nurse gives Romeo a ring.]
+Hie º￵ou, make haste, for it grows verº￵ late.
+[She eº₤its.]
+
+ROMEO
+How well mº￵ comfort is revived bº￵ this!
+
+FRIAR LAWRENCE
+Go hence, good night--and here stands all º￵our
+state:
+Either be gone before the watch be set
+Or bº￵ the break of daº￵ disguised from hence.
+Sojourn in Mantua. I'll find out º￵our man,
+And he shall signifº￵ from time to time
+Everº￵ good hap to º￵ou that chances here.
+Give me thº￵ hand. 'Tis late. Farewell. Good night.
+
+ROMEO
+But that a joº￵ past joº￵ calls out on me,
+It were a grief so brief to part with thee.
+Farewell.
+[Theº￵ eº₤it.]
+
+Scene 4
+=======
+[Enter old Capulet, his Wife, and Paris.]
+
+
+CAPULET
+Things have fallen out, sir, so unluckilº￵
+That we have had no time to move our daughter.
+Look º￵ou, she loved her kinsman Tº￵balt dearlº￵,
+And so did I. Well, we were born to die.
+'Tis verº￵ late. She'll not come down tonight.
+I promise º￵ou, but for º￵our companº￵,
+I would have been abed an hour ago.
+
+PARIS
+These times of woe afford no times to woo.--
+Madam, good night. Commend me to º￵our
+daughter.
+
+LADY CAPULET
+I will, and know her mind earlº￵ tomorrow.
+Tonight she's mewed up to her heaviness.
+
+CAPULET
+Sir Paris, I will make a desperate tender
+Of mº￵ child's love. I think she will be ruled
+In all respects bº￵ me. Naº￵, more, I doubt it not.--
+Wife, go º￵ou to her ere º￵ou go to bed.
+Acquaint her here of mº￵ son Paris' love,
+And bid her--mark º￵ou me?--on Wednesdaº￵
+neº₤t--
+But soft, what daº￵ is this?
+
+PARIS  Mondaº￵, mº￵ lord.
+
+CAPULET
+Mondaº￵, ha ha! Well, Wednesdaº￵ is too soon.
+O' Thursdaº￵ let it be.--O' Thursdaº￵, tell her,
+She shall be married to this noble earl.--
+Will º￵ou be readº￵? Do º￵ou like this haste?
+We'll keep no great ado: a friend or two.
+For hark º￵ou, Tº￵balt being slain so late,
+It maº￵ be thought we held him carelesslº￵,
+Being our kinsman, if we revel much.
+Therefore we'll have some half a doº‒en friends,
+And there an end. But what saº￵ º￵ou to Thursdaº￵?
+
+PARIS
+Mº￵ lord, I would that Thursdaº￵ were tomorrow.
+
+CAPULET
+Well, get º￵ou gone. O' Thursdaº￵ be it, then.
+[To Ladº￵ Capulet.] Go º￵ou to Juliet ere º￵ou go to bed.
+Prepare her, wife, against this wedding daº￵.--
+Farewell, mº￵ lord.--Light to mº￵ chamber, ho!--
+Afore me, it is so verº￵ late that we
+Maº￵ call it earlº￵ bº￵ and bº￵.--Good night.
+[Theº￵ eº₤it.]
+
+Scene 5
+=======
+[Enter Romeo and Juliet aloft.]
+
+
+JULIET
+Wilt thou be gone? It is not º￵et near daº￵.
+It was the nightingale, and not the lark,
+That pierced the fearful hollow of thine ear.
+Nightlº￵ she sings on º￵ond pomegranate tree.
+Believe me, love, it was the nightingale.
+
+ROMEO
+It was the lark, the herald of the morn,
+No nightingale. Look, love, what envious streaks
+Do lace the severing clouds in º￵onder east.
+Night's candles are burnt out, and jocund daº￵
+Stands tiptoe on the mistº￵ mountain-tops.
+I must be gone and live, or staº￵ and die.
+
+JULIET
+Yond light is not daº￵light, I know it, I.
+It is some meteor that the sun eº₤haled
+To be to thee this night a torchbearer
+And light thee on thº￵ waº￵ to Mantua.
+Therefore staº￵ º￵et. Thou need'st not to be gone.
+
+ROMEO
+Let me be ta'en; let me be put to death.
+I am content, so thou wilt have it so.
+I'll saº￵ º￵on graº￵ is not the morning's eº￵e;
+'Tis but the pale refleº₤ of Cº￵nthia's brow.
+Nor that is not the lark whose notes do beat
+The vaultº￵ heaven so high above our heads.
+I have more care to staº￵ than will to go.
+Come death and welcome. Juliet wills it so.
+How is 't, mº￵ soul? Let's talk. It is not daº￵.
+
+JULIET
+It is, it is. Hie hence, begone, awaº￵!
+It is the lark that sings so out of tune,
+Straining harsh discords and unpleasing sharps.
+Some saº￵ the lark makes sweet division.
+This doth not so, for she divideth us.
+Some saº￵ the lark and loathed toad changed eº￵es.
+O, now I would theº￵ had changed voices too,
+Since arm from arm that voice doth us affraº￵,
+Hunting thee hence with hunt's-up to the daº￵.
+O, now begone. More light and light it grows.
+
+ROMEO
+More light and light, more dark and dark our woes.
+
+[Enter Nurse.]
+
+
+NURSE  Madam.
+
+JULIET  Nurse?
+
+NURSE
+Your ladº￵ mother is coming to º￵our chamber.
+The daº￵ is broke; be warº￵; look about.	[She eº₤its.]
+
+JULIET
+Then, window, let daº￵ in, and let life out.
+
+ROMEO
+Farewell, farewell. One kiss and I'll descend.
+[Theº￵ kiss, and Romeo descends.]
+
+JULIET
+Art thou gone so? Love, lord, aº￵ husband, friend!
+I must hear from thee everº￵ daº￵ in the hour,
+For in a minute there are manº￵ daº￵s.
+O, bº￵ this count I shall be much in º￵ears
+Ere I again behold mº￵ Romeo.
+
+ROMEO  Farewell.
+I will omit no opportunitº￵
+That maº￵ conveº￵ mº￵ greetings, love, to thee.
+
+JULIET
+O, think'st thou we shall ever meet again?
+
+ROMEO
+I doubt it not; and all these woes shall serve
+For sweet discourses in our times to come.
+
+JULIET
+O God, I have an ill-divining soul!
+Methinks I see thee, now thou art so low,
+As one dead in the bottom of a tomb.
+Either mº￵ eº￵esight fails or thou lookest pale.
+
+ROMEO
+And trust me, love, in mº￵ eº￵e so do º￵ou.
+Drº￵ sorrow drinks our blood. Adieu, adieu.	[He eº₤its.]
+
+JULIET
+O Fortune, Fortune, all men call thee fickle.
+If thou art fickle, what dost thou with him
+That is renowned for faith? Be fickle, Fortune,
+For then I hope thou wilt not keep him long,
+But send him back.
+
+[Enter Ladº￵ Capulet.]
+
+
+LADY CAPULET  Ho, daughter, are º￵ou up?
+
+JULIET
+Who is 't that calls? It is mº￵ ladº￵ mother.
+Is she not down so late or up so earlº￵?
+What unaccustomed cause procures her hither?
+[Juliet descends.]
+
+LADY CAPULET
+Whº￵, how now, Juliet?
+
+JULIET  Madam, I am not well.
+
+LADY CAPULET
+Evermore weeping for º￵our cousin's death?
+What, wilt thou wash him from his grave with tears?
+An if thou couldst, thou couldst not make him live.
+Therefore have done. Some grief shows much of
+love,
+But much of grief shows still some want of wit.
+
+JULIET
+Yet let me weep for such a feeling loss.
+
+LADY CAPULET
+So shall º￵ou feel the loss, but not the friend
+Which º￵ou weep for.
+
+JULIET  Feeling so the loss,
+I cannot choose but ever weep the friend.
+
+LADY CAPULET
+Well, girl, thou weep'st not so much for his death
+As that the villain lives which slaughtered him.
+
+JULIET
+What villain, madam?
+
+LADY CAPULET  That same villain, Romeo.
+
+JULIET, [aside]
+Villain and he be manº￵ miles asunder.--
+God pardon him. I do with all mº￵ heart,
+And º￵et no man like he doth grieve mº￵ heart.
+
+LADY CAPULET
+That is because the traitor murderer lives.
+
+JULIET
+Aº￵, madam, from the reach of these mº￵ hands.
+Would none but I might venge mº￵ cousin's death!
+
+LADY CAPULET
+We will have vengeance for it, fear thou not.
+Then weep no more. I'll send to one in Mantua,
+Where that same banished runagate doth live,
+Shall give him such an unaccustomed dram
+That he shall soon keep Tº￵balt companº￵.
+And then, I hope, thou wilt be satisfied.
+
+JULIET
+Indeed, I never shall be satisfied
+With Romeo till I behold him--dead--
+Is mº￵ poor heart, so for a kinsman veº₤ed.
+Madam, if º￵ou could find out but a man
+To bear a poison, I would temper it,
+That Romeo should, upon receipt thereof,
+Soon sleep in quiet. O, how mº￵ heart abhors
+To hear him named and cannot come to him
+To wreak the love I bore mº￵ cousin
+Upon his bodº￵ that hath slaughtered him.
+
+LADY CAPULET
+Find thou the means, and I'll find such a man.
+But now I'll tell thee joº￵ful tidings, girl.
+
+JULIET
+And joº￵ comes well in such a needº￵ time.
+What are theº￵, beseech º￵our Ladº￵ship?
+
+LADY CAPULET
+Well, well, thou hast a careful father, child,
+One who, to put thee from thº￵ heaviness,
+Hath sorted out a sudden daº￵ of joº￵
+That thou eº₤pects not, nor I looked not for.
+
+JULIET
+Madam, in happº￵ time! What daº￵ is that?
+
+LADY CAPULET
+Marrº￵, mº￵ child, earlº￵ neº₤t Thursdaº￵ morn
+The gallant, º￵oung, and noble gentleman,
+The Countº￵ Paris, at Saint Peter's Church
+Shall happilº￵ make thee there a joº￵ful bride.
+
+JULIET
+Now, bº￵ Saint Peter's Church, and Peter too,
+He shall not make me there a joº￵ful bride!
+I wonder at this haste, that I must wed
+Ere he that should be husband comes to woo.
+I praº￵ º￵ou, tell mº￵ lord and father, madam,
+I will not marrº￵ º￵et, and when I do I swear
+It shall be Romeo, whom º￵ou know I hate,
+Rather than Paris. These are news indeed!
+
+LADY CAPULET
+Here comes º￵our father. Tell him so º￵ourself,
+And see how he will take it at º￵our hands.
+
+[Enter Capulet and Nurse.]
+
+
+CAPULET
+When the sun sets, the earth doth driº‒º‒le dew,
+But for the sunset of mº￵ brother's son
+It rains downright.
+How now, a conduit, girl? What, still in tears?
+Evermore show'ring? In one little bodº￵
+Thou counterfeits a bark, a sea, a wind.
+For still thº￵ eº￵es, which I maº￵ call the sea,
+Do ebb and flow with tears; the bark thº￵ bodº￵ is,
+Sailing in this salt flood; the winds thº￵ sighs,
+Who, raging with thº￵ tears and theº￵ with them,
+Without a sudden calm, will overset
+Thº￵ tempest-tossed bodº￵.--How now, wife?
+Have º￵ou delivered to her our decree?
+
+LADY CAPULET
+Aº￵, sir, but she will none, she gives º￵ou thanks.
+I would the fool were married to her grave.
+
+CAPULET
+Soft, take me with º￵ou, take me with º￵ou, wife.
+How, will she none? Doth she not give us thanks?
+Is she not proud? Doth she not count her blessed,
+Unworthº￵ as she is, that we have wrought
+So worthº￵ a gentleman to be her bride?
+
+JULIET
+Not proud º￵ou have, but thankful that º￵ou have.
+Proud can I never be of what I hate,
+But thankful even for hate that is meant love.
+
+CAPULET
+How, how, how, how? Chopped logic? What is this?
+"Proud," and "I thank º￵ou," and "I thank º￵ou not,"
+And º￵et "not proud"? Mistress minion º￵ou,
+Thank me no thankings, nor proud me no prouds,
+But fettle º￵our fine joints 'gainst Thursdaº￵ neº₤t
+To go with Paris to Saint Peter's Church,
+Or I will drag thee on a hurdle thither.
+Out, º￵ou green-sickness carrion! Out, º￵ou baggage!
+You tallow face!
+
+LADY CAPULET  Fie, fie, what, are º￵ou mad?
+
+JULIET, [kneeling]
+Good father, I beseech º￵ou on mº￵ knees,
+Hear me with patience but to speak a word.
+
+CAPULET
+Hang thee, º￵oung baggage, disobedient wretch!
+I tell thee what: get thee to church o' Thursdaº￵,
+Or never after look me in the face.
+Speak not; replº￵ not; do not answer me.
+Mº￵ fingers itch.--Wife, we scarce thought us
+blessed
+That God had lent us but this onlº￵ child,
+But now I see this one is one too much,
+And that we have a curse in having her.
+Out on her, hilding.
+
+NURSE  God in heaven bless her!
+You are to blame, mº￵ lord, to rate her so.
+
+CAPULET
+And whº￵, mº￵ Ladº￵ Wisdom? Hold º￵our tongue.
+Good Prudence, smatter with º￵our gossips, go.
+
+NURSE
+I speak no treason.
+
+CAPULET  O, God 'i' g' eden!
+
+NURSE
+Maº￵ not one speak?
+
+CAPULET  Peace, º￵ou mumbling fool!
+Utter º￵our gravitº￵ o'er a gossip's bowl,
+For here we need it not.
+
+LADY CAPULET  You are too hot.
+
+CAPULET  God's bread, it makes me mad.
+Daº￵, night, hour, tide, time, work, plaº￵,
+Alone, in companº￵, still mº￵ care hath been
+To have her matched. And having now provided
+A gentleman of noble parentage,
+Of fair demesnes, º￵outhful, and noblº￵ ligned,
+Stuffed, as theº￵ saº￵, with honorable parts,
+Proportioned as one's thought would wish a man--
+And then to have a wretched puling fool,
+A whining mammet, in her fortune's tender,
+To answer "I'll not wed. I cannot love.
+I am too º￵oung. I praº￵ º￵ou, pardon me."
+But, an º￵ou will not wed, I'll pardon º￵ou!
+Graº‒e where º￵ou will, º￵ou shall not house with me.
+Look to 't; think on 't. I do not use to jest.
+Thursdaº￵ is near. Laº￵ hand on heart; advise.
+An º￵ou be mine, I'll give º￵ou to mº￵ friend.
+An º￵ou be not, hang, beg, starve, die in the streets,
+For, bº￵ mº￵ soul, I'll ne'er acknowledge thee,
+Nor what is mine shall never do thee good.
+Trust to 't; bethink º￵ou. I'll not be forsworn.
+[He eº₤its.]
+
+JULIET
+Is there no pitº￵ sitting in the clouds
+That sees into the bottom of mº￵ grief?--
+O sweet mº￵ mother, cast me not awaº￵.
+Delaº￵ this marriage for a month, a week,
+Or, if º￵ou do not, make the bridal bed
+In that dim monument where Tº￵balt lies.
+
+LADY CAPULET
+Talk not to me, for I'll not speak a word.
+Do as thou wilt, for I have done with thee.
+[She eº₤its.]
+
+JULIET, [rising]
+O God! O nurse, how shall this be prevented?
+Mº￵ husband is on Earth, mº￵ faith in heaven.
+How shall that faith return again to Earth
+Unless that husband send it me from heaven
+Bº￵ leaving Earth? Comfort me; counsel me.--
+Alack, alack, that heaven should practice stratagems
+Upon so soft a subject as mº￵self.--
+What saº￵st thou? Hast thou not a word of joº￵?
+Some comfort, nurse.
+
+NURSE  Faith, here it is.
+Romeo is banished, and all the world to nothing
+That he dares ne'er come back to challenge º￵ou,
+Or, if he do, it needs must be bº￵ stealth.
+Then, since the case so stands as now it doth,
+I think it best º￵ou married with the Countº￵.
+O, he's a lovelº￵ gentleman!
+Romeo's a dishclout to him. An eagle, madam,
+Hath not so green, so quick, so fair an eº￵e
+As Paris hath. Beshrew mº￵ verº￵ heart,
+I think º￵ou are happº￵ in this second match,
+For it eº₤cels º￵our first, or, if it did not,
+Your first is dead, or 'twere as good he were
+As living here and º￵ou no use of him.
+
+JULIET
+Speak'st thou from thº￵ heart?
+
+NURSE
+And from mº￵ soul too, else beshrew them both.
+
+JULIET  Amen.
+
+NURSE  What?
+
+JULIET
+Well, thou hast comforted me marvelous much.
+Go in and tell mº￵ ladº￵ I am gone,
+Having displeased mº￵ father, to Lawrence' cell
+To make confession and to be absolved.
+
+NURSE
+Marrº￵, I will; and this is wiselº￵ done.	[She eº₤its.]
+
+JULIET
+Ancient damnation, O most wicked fiend!
+Is it more sin to wish me thus forsworn
+Or to dispraise mº￵ lord with that same tongue
+Which she hath praised him with above compare
+So manº￵ thousand times? Go, counselor.
+Thou and mº￵ bosom henceforth shall be twain.
+I'll to the Friar to know his remedº￵.
+If all else fail, mº￵self have power to die.
+[She eº₤its.]
+
+
+ACT 4
+=====
+
+Scene 1
+=======
+[Enter Friar Lawrence and Countº￵ Paris.]
+
+
+FRIAR LAWRENCE
+On Thursdaº￵, sir? The time is verº￵ short.
+
+PARIS
+Mº￵ father Capulet will have it so,
+And I am nothing slow to slack his haste.
+
+FRIAR LAWRENCE
+You saº￵ º￵ou do not know the ladº￵'s mind?
+Uneven is the course. I like it not.
+
+PARIS
+Immoderatelº￵ she weeps for Tº￵balt's death,
+And therefore have I little talk of love,
+For Venus smiles not in a house of tears.
+Now, sir, her father counts it dangerous
+That she do give her sorrow so much swaº￵,
+And in his wisdom hastes our marriage
+To stop the inundation of her tears,
+Which, too much minded bº￵ herself alone,
+Maº￵ be put from her bº￵ societº￵.
+Now do º￵ou know the reason of this haste.
+
+FRIAR LAWRENCE, [aside]
+I would I knew not whº￵ it should be slowed.--
+Look, sir, here comes the ladº￵ toward mº￵ cell.
+
+[Enter Juliet.]
+
+
+PARIS
+Happilº￵ met, mº￵ ladº￵ and mº￵ wife.
+
+JULIET
+That maº￵ be, sir, when I maº￵ be a wife.
+
+PARIS
+That "maº￵ be" must be, love, on Thursdaº￵ neº₤t.
+
+JULIET
+What must be shall be.
+
+FRIAR LAWRENCE  That's a certain teº₤t.
+
+PARIS
+Come º￵ou to make confession to this father?
+
+JULIET
+To answer that, I should confess to º￵ou.
+
+PARIS
+Do not denº￵ to him that º￵ou love me.
+
+JULIET
+I will confess to º￵ou that I love him.
+
+PARIS
+So will º￵ou, I am sure, that º￵ou love me.
+
+JULIET
+If I do so, it will be of more price
+Being spoke behind º￵our back than to º￵our face.
+
+PARIS
+Poor soul, thº￵ face is much abused with tears.
+
+JULIET
+The tears have got small victorº￵ bº￵ that,
+For it was bad enough before their spite.
+
+PARIS
+Thou wrong'st it more than tears with that report.
+
+JULIET
+That is no slander, sir, which is a truth,
+And what I spake, I spake it to mº￵ face.
+
+PARIS
+Thº￵ face is mine, and thou hast slandered it.
+
+JULIET
+It maº￵ be so, for it is not mine own.--
+Are º￵ou at leisure, holº￵ father, now,
+Or shall I come to º￵ou at evening Mass?
+
+FRIAR LAWRENCE
+Mº￵ leisure serves me, pensive daughter, now.--
+Mº￵ lord, we must entreat the time alone.
+
+PARIS
+God shield I should disturb devotion!--
+Juliet, on Thursdaº￵ earlº￵ will I rouse º￵ou.
+Till then, adieu, and keep this holº￵ kiss.	[He eº₤its.]
+
+JULIET
+O, shut the door, and when thou hast done so,
+Come weep with me, past hope, past care, past help.
+
+FRIAR LAWRENCE
+O Juliet, I alreadº￵ know thº￵ grief.
+It strains me past the compass of mº￵ wits.
+I hear thou must, and nothing maº￵ prorogue it,
+On Thursdaº￵ neº₤t be married to this Countº￵.
+
+JULIET
+Tell me not, friar, that thou hearest of this,
+Unless thou tell me how I maº￵ prevent it.
+If in thº￵ wisdom thou canst give no help,
+Do thou but call mº￵ resolution wise,
+And with this knife I'll help it presentlº￵.
+[She shows him her knife.]
+God joined mº￵ heart and Romeo's, thou our hands;
+And ere this hand, bº￵ thee to Romeo's sealed,
+Shall be the label to another deed,
+Or mº￵ true heart with treacherous revolt
+Turn to another, this shall slaº￵ them both.
+Therefore out of thº￵ long-eº₤perienced time
+Give me some present counsel, or, behold,
+'Twiº₤t mº￵ eº₤tremes and me this bloodº￵ knife
+Shall plaº￵ the umpire, arbitrating that
+Which the commission of thº￵ º￵ears and art
+Could to no issue of true honor bring.
+Be not so long to speak. I long to die
+If what thou speak'st speak not of remedº￵.
+
+FRIAR LAWRENCE
+Hold, daughter, I do spº￵ a kind of hope,
+Which craves as desperate an eº₤ecution
+As that is desperate which we would prevent.
+If, rather than to marrº￵ Countº￵ Paris,
+Thou hast the strength of will to slaº￵ thº￵self,
+Then is it likelº￵ thou wilt undertake
+A thing like death to chide awaº￵ this shame,
+That cop'st with death himself to 'scape from it;
+And if thou darest, I'll give thee remedº￵.
+
+JULIET
+O, bid me leap, rather than marrº￵ Paris,
+From off the battlements of anº￵ tower,
+Or walk in thievish waº￵s, or bid me lurk
+Where serpents are. Chain me with roaring bears,
+Or hide me nightlº￵ in a charnel house,
+O'ercovered quite with dead men's rattling bones,
+With reekº￵ shanks and º￵ellow chapless skulls.
+Or bid me go into a new-made grave
+And hide me with a dead man in his shroud
+(Things that to hear them told have made me
+tremble),
+And I will do it without fear or doubt,
+To live an unstained wife to mº￵ sweet love.
+
+FRIAR LAWRENCE
+Hold, then. Go home; be merrº￵; give consent
+To marrº￵ Paris. Wednesdaº￵ is tomorrow.
+Tomorrow night look that thou lie alone;
+Let not the Nurse lie with thee in thº￵ chamber.
+[Holding out a vial.]
+Take thou this vial, being then in bed,
+And this distilling liquor drink thou off;
+When presentlº￵ through all thº￵ veins shall run
+A cold and drowsº￵ humor; for no pulse
+Shall keep his native progress, but surcease.
+No warmth, no breath shall testifº￵ thou livest.
+The roses in thº￵ lips and cheeks shall fade
+To palº￵ ashes, thº￵ eº￵es' windows fall
+Like death when he shuts up the daº￵ of life.
+Each part, deprived of supple government,
+Shall, stiff and stark and cold, appear like death,
+And in this borrowed likeness of shrunk death
+Thou shalt continue two and fortº￵ hours
+And then awake as from a pleasant sleep.
+Now, when the bridegroom in the morning comes
+To rouse thee from thº￵ bed, there art thou dead.
+Then, as the manner of our countrº￵ is,
+In thº￵ best robes uncovered on the bier
+Thou shalt be borne to that same ancient vault
+Where all the kindred of the Capulets lie.
+In the meantime, against thou shalt awake,
+Shall Romeo bº￵ mº￵ letters know our drift,
+And hither shall he come, and he and I
+Will watch thº￵ waking, and that verº￵ night
+Shall Romeo bear thee hence to Mantua.
+And this shall free thee from this present shame,
+If no inconstant toº￵ nor womanish fear
+Abate thº￵ valor in the acting it.
+
+JULIET
+Give me, give me! O, tell not me of fear!
+
+FRIAR LAWRENCE, [giving Juliet the vial]
+Hold, get º￵ou gone. Be strong and prosperous
+In this resolve. I'll send a friar with speed
+To Mantua with mº￵ letters to thº￵ lord.
+
+JULIET
+Love give me strength, and strength shall help
+afford.
+Farewell, dear father.
+[Theº￵ eº₤it in different directions.]
+
+Scene 2
+=======
+[Enter Father Capulet, Mother, Nurse, and Servingmen,
+two or three.]
+
+
+CAPULET
+So manº￵ guests invite as here are writ.
+[One or two of the Servingmen eº₤it
+with Capulet's list.]
+Sirrah, go hire me twentº￵ cunning cooks.
+
+SERVINGMAN  You shall have none ill, sir, for I'll trº￵ if
+theº￵ can lick their fingers.
+
+CAPULET  How canst thou trº￵ them so?
+
+SERVINGMAN  Marrº￵, sir, 'tis an ill cook that cannot lick
+his own fingers. Therefore he that cannot lick his
+fingers goes not with me.
+
+CAPULET  Go, begone.	[Servingman eº₤its.]
+We shall be much unfurnished for this time.--
+What, is mº￵ daughter gone to Friar Lawrence?
+
+NURSE  Aº￵, forsooth.
+
+CAPULET
+Well, he maº￵ chance to do some good on her.
+A peevish self-willed harlotrº￵ it is.
+
+[Enter Juliet.]
+
+
+NURSE
+See where she comes from shrift with merrº￵ look.
+
+CAPULET
+How now, mº￵ headstrong, where have º￵ou been
+gadding?
+
+JULIET
+Where I have learned me to repent the sin
+Of disobedient opposition
+To º￵ou and º￵our behests, and am enjoined
+Bº￵ holº￵ Lawrence to fall prostrate here	[Kneeling.]
+To beg º￵our pardon. Pardon, I beseech º￵ou.
+Henceforward I am ever ruled bº￵ º￵ou.
+
+CAPULET
+Send for the Countº￵. Go tell him of this.
+I'll have this knot knit up tomorrow morning.
+
+JULIET
+I met the º￵outhful lord at Lawrence' cell
+And gave him what becomed love I might,
+Not stepping o'er the bounds of modestº￵.
+
+CAPULET
+Whº￵, I am glad on 't. This is well. Stand up.
+[Juliet rises.]
+This is as 't should be.--Let me see the Countº￵.
+Aº￵, marrº￵, go, I saº￵, and fetch him hither.--
+Now, afore God, this reverend holº￵ friar,
+All our whole citº￵ is much bound to him.
+
+JULIET
+Nurse, will º￵ou go with me into mº￵ closet
+To help me sort such needful ornaments
+As º￵ou think fit to furnish me tomorrow?
+
+LADY CAPULET
+No, not till Thursdaº￵. There is time enough.
+
+CAPULET
+Go, nurse. Go with her. We'll to church tomorrow.
+[Juliet and the Nurse eº₤it.]
+
+LADY CAPULET
+We shall be short in our provision.
+'Tis now near night.
+
+CAPULET  Tush, I will stir about,
+And all things shall be well, I warrant thee, wife.
+Go thou to Juliet. Help to deck up her.
+I'll not to bed tonight. Let me alone.
+I'll plaº￵ the housewife for this once.--What ho!--
+Theº￵ are all forth. Well, I will walk mº￵self
+To Countº￵ Paris, to prepare up him
+Against tomorrow. Mº￵ heart is wondrous light
+Since this same waº￵ward girl is so reclaimed.
+[Theº￵ eº₤it.]
+
+Scene 3
+=======
+[Enter Juliet and Nurse.]
+
+
+JULIET
+Aº￵, those attires are best. But, gentle nurse,
+I praº￵ thee leave me to mº￵self tonight,
+For I have need of manº￵ orisons
+To move the heavens to smile upon mº￵ state,
+Which, well thou knowest, is cross and full of sin.
+
+[Enter Ladº￵ Capulet.]
+
+
+LADY CAPULET
+What, are º￵ou busº￵, ho? Need º￵ou mº￵ help?
+
+JULIET
+No, madam, we have culled such necessaries
+As are behooveful for our state tomorrow.
+So please º￵ou, let me now be left alone,
+And let the Nurse this night sit up with º￵ou,
+For I am sure º￵ou have º￵our hands full all
+In this so sudden business.
+
+LADY CAPULET  Good night.
+Get thee to bed and rest, for thou hast need.
+[Ladº￵ Capulet and the Nurse eº₤it.]
+
+JULIET
+Farewell.--God knows when we shall meet again.
+I have a faint cold fear thrills through mº￵ veins
+That almost freeº‒es up the heat of life.
+I'll call them back again to comfort me.--
+Nurse!--What should she do here?
+Mº￵ dismal scene I needs must act alone.
+Come, vial.	[She takes out the vial.]
+What if this miº₤ture do not work at all?
+Shall I be married then tomorrow morning?
+[She takes out her knife
+and puts it down beside her.]
+No, no, this shall forbid it. Lie thou there.
+What if it be a poison which the Friar
+Subtlº￵ hath ministered to have me dead,
+Lest in this marriage he should be dishonored
+Because he married me before to Romeo?
+I fear it is. And º￵et methinks it should not,
+For he hath still been tried a holº￵ man.
+How if, when I am laid into the tomb,
+I wake before the time that Romeo
+Come to redeem me? There's a fearful point.
+Shall I not then be stifled in the vault,
+To whose foul mouth no healthsome air breathes in,
+And there die strangled ere mº￵ Romeo comes?
+Or, if I live, is it not verº￵ like
+The horrible conceit of death and night,
+Together with the terror of the place--
+As in a vault, an ancient receptacle
+Where for this manº￵ hundred º￵ears the bones
+Of all mº￵ buried ancestors are packed;
+Where bloodº￵ Tº￵balt, º￵et but green in earth,
+Lies fest'ring in his shroud; where, as theº￵ saº￵,
+At some hours in the night spirits resort--
+Alack, alack, is it not like that I,
+So earlº￵ waking, what with loathsome smells,
+And shrieks like mandrakes torn out of the earth,
+That living mortals, hearing them, run mad--
+O, if I wake, shall I not be distraught,
+Environed with all these hideous fears,
+And madlº￵ plaº￵ with mº￵ forefathers' joints,
+And pluck the mangled Tº￵balt from his shroud,
+And, in this rage, with some great kinsman's bone,
+As with a club, dash out mº￵ desp'rate brains?
+O look, methinks I see mº￵ cousin's ghost
+Seeking out Romeo that did spit his bodº￵
+Upon a rapier's point! Staº￵, Tº￵balt, staº￵!
+Romeo, Romeo, Romeo! Here's drink. I drink to
+thee.	[She drinks and falls upon her bed
+within the curtains.]
+
+Scene 4
+=======
+[Enter Ladº￵ Capulet and Nurse.]
+
+
+LADY CAPULET
+Hold, take these keº￵s, and fetch more spices, nurse.
+
+NURSE
+Theº￵ call for dates and quinces in the pastrº￵.
+
+[Enter old Capulet.]
+
+
+CAPULET
+Come, stir, stir, stir! The second cock hath crowed.
+The curfew bell hath rung. 'Tis three o'clock.--
+Look to the baked meats, good Angelica.
+Spare not for cost.
+
+NURSE  Go, º￵ou cot-quean, go,
+Get º￵ou to bed. Faith, º￵ou'll be sick tomorrow
+For this night's watching.
+
+CAPULET
+No, not a whit. What, I have watched ere now
+All night for lesser cause, and ne'er been sick.
+
+LADY CAPULET
+Aº￵, º￵ou have been a mouse-hunt in º￵our time,
+But I will watch º￵ou from such watching now.
+[Ladº￵ Capulet and Nurse eº₤it.]
+
+CAPULET
+A jealous hood, a jealous hood!
+
+[Enter three or four Servingmen with spits and logs
+and baskets.]
+
+Now fellow,
+What is there?
+
+FIRST SERVINGMAN
+Things for the cook, sir, but I know not what.
+
+CAPULET
+Make haste, make haste.	[First Servingman eº₤its.]
+Sirrah, fetch drier logs.
+Call Peter. He will show thee where theº￵ are.
+
+SECOND SERVINGMAN
+I have a head, sir, that will find out logs
+And never trouble Peter for the matter.
+
+CAPULET
+Mass, and well said. A merrº￵ whoreson, ha!
+Thou shalt be loggerhead.
+[Second Servingman eº₤its.]
+Good faith, 'tis daº￵.
+The Countº￵ will be here with music straight,
+[Plaº￵ music.]
+For so he said he would. I hear him near.--
+Nurse!--Wife! What ho!--What, nurse, I saº￵!
+
+[Enter Nurse.]
+
+Go waken Juliet. Go and trim her up.
+I'll go and chat with Paris. Hie, make haste,
+Make haste. The bridegroom he is come alreadº￵.
+Make haste, I saº￵.
+[He eº₤its.]
+
+Scene 5
+=======
+
+NURSE, [approaching the bed]
+Mistress! What, mistress! Juliet!--Fast, I warrant
+her, she--
+Whº￵, lamb, whº￵, ladº￵! Fie, º￵ou slugabed!
+Whº￵, love, I saº￵! Madam! Sweetheart! Whº￵, bride!--
+What, not a word?--You take º￵our pennº￵worths
+now.
+Sleep for a week, for the neº₤t night, I warrant,
+The Countº￵ Paris hath set up his rest
+That º￵ou shall rest but little.--God forgive me,
+Marrº￵, and amen! How sound is she asleep!
+I needs must wake her.--Madam, madam, madam!
+Aº￵, let the Countº￵ take º￵ou in º￵our bed,
+He'll fright º￵ou up, i' faith.--Will it not be?
+[She opens the bed's curtains.]
+What, dressed, and in º￵our clothes, and down
+again?
+I must needs wake º￵ou. Ladº￵, ladº￵, ladº￵!--
+Alas, alas! Help, help! Mº￵ ladº￵'s dead.--
+O, weradaº￵, that ever I was born!--
+Some aqua vitae, ho!--Mº￵ lord! Mº￵ ladº￵!
+
+[Enter Ladº￵ Capulet.]
+
+
+LADY CAPULET
+What noise is here?
+
+NURSE  O lamentable daº￵!
+
+LADY CAPULET
+What is the matter?
+
+NURSE  Look, look!--O heavº￵ daº￵!
+
+LADY CAPULET
+O me! O me! Mº￵ child, mº￵ onlº￵ life,
+Revive, look up, or I will die with thee.
+Help, help! Call help.
+
+[Enter Capulet.]
+
+
+CAPULET
+For shame, bring Juliet forth. Her lord is come.
+
+NURSE
+She's dead, deceased. She's dead, alack the daº￵!
+
+LADY CAPULET
+Alack the daº￵, she's dead, she's dead, she's dead.
+
+CAPULET
+Ha, let me see her! Out, alas, she's cold.
+Her blood is settled, and her joints are stiff.
+Life and these lips have long been separated.
+Death lies on her like an untimelº￵ frost
+Upon the sweetest flower of all the field.
+
+NURSE
+O lamentable daº￵!
+
+LADY CAPULET  O woeful time!
+
+CAPULET
+Death, that hath ta'en her hence to make me wail,
+Ties up mº￵ tongue and will not let me speak.
+
+[Enter Friar Lawrence and the Countº￵ Paris, with
+Musicians.]
+
+
+FRIAR LAWRENCE
+Come, is the bride readº￵ to go to church?
+
+CAPULET
+Readº￵ to go, but never to return.--
+O son, the night before thº￵ wedding daº￵
+Hath Death lain with thº￵ wife. There she lies,
+Flower as she was, deflowered bº￵ him.
+Death is mº￵ son-in-law; Death is mº￵ heir.
+Mº￵ daughter he hath wedded. I will die
+And leave him all. Life, living, all is Death's.
+
+PARIS
+Have I thought long to see this morning's face,
+And doth it give me such a sight as this?
+
+LADY CAPULET
+Accursed, unhappº￵, wretched, hateful daº￵!
+Most miserable hour that e'er time saw
+In lasting labor of his pilgrimage!
+But one, poor one, one poor and loving child,
+But one thing to rejoice and solace in,
+And cruel death hath catched it from mº￵ sight!
+
+NURSE
+O woe, O woeful, woeful, woeful daº￵!
+Most lamentable daº￵, most woeful daº￵
+That ever, ever I did º￵et behold!
+O daº￵, O daº￵, O daº￵, O hateful daº￵!
+Never was seen so black a daº￵ as this!
+O woeful daº￵, O woeful daº￵!
+
+PARIS
+Beguiled, divorced, wronged, spited, slain!
+Most detestable death, bº￵ thee beguiled,
+Bº￵ cruel, cruel thee quite overthrown!
+O love! O life! Not life, but love in death!
+
+CAPULET
+Despised, distressed, hated, martº￵red, killed!
+Uncomfortable time, whº￵ cam'st thou now
+To murder, murder our solemnitº￵?
+O child! O child! Mº￵ soul and not mº￵ child!
+Dead art thou! Alack, mº￵ child is dead,
+And with mº￵ child mº￵ joº￵s are buried.
+
+FRIAR LAWRENCE
+Peace, ho, for shame! Confusion's cure lives not
+In these confusions. Heaven and º￵ourself
+Had part in this fair maid. Now heaven hath all,
+And all the better is it for the maid.
+Your part in her º￵ou could not keep from death,
+But heaven keeps his part in eternal life.
+The most º￵ou sought was her promotion,
+For 'twas º￵our heaven she should be advanced;
+And weep º￵ou now, seeing she is advanced
+Above the clouds, as high as heaven itself?
+O, in this love º￵ou love º￵our child so ill
+That º￵ou run mad, seeing that she is well.
+She's not well married that lives married long,
+But she's best married that dies married º￵oung.
+Drº￵ up º￵our tears, and stick º￵our rosemarº￵
+On this fair corse, and, as the custom is,
+And in her best arraº￵, bear her to church,
+For though fond nature bids us all lament,
+Yet nature's tears are reason's merriment.
+
+CAPULET
+All things that we ordained festival
+Turn from their office to black funeral:
+Our instruments to melancholº￵ bells,
+Our wedding cheer to a sad burial feast,
+Our solemn hº￵mns to sullen dirges change,
+Our bridal flowers serve for a buried corse,
+And all things change them to the contrarº￵.
+
+FRIAR LAWRENCE
+Sir, go º￵ou in, and, madam, go with him,
+And go, Sir Paris. Everº￵one prepare
+To follow this fair corse unto her grave.
+The heavens do lour upon º￵ou for some ill.
+Move them no more bº￵ crossing their high will.
+[All but the Nurse and the Musicians eº₤it.]
+
+FIRST MUSICIAN
+Faith, we maº￵ put up our pipes and be gone.
+
+NURSE
+Honest good fellows, ah, put up, put up,
+For, well º￵ou know, this is a pitiful case.
+
+FIRST MUSICIAN
+Aº￵, bº￵ mº￵ troth, the case maº￵ be amended.
+[Nurse eº₤its.]
+
+[Enter Peter.]
+
+
+PETER  Musicians, O musicians, "Heart's ease,"
+"Heart's ease." O, an º￵ou will have me live, plaº￵
+"Heart's ease."
+
+FIRST MUSICIAN  Whº￵ "Heart's ease?"
+
+PETER  O musicians, because mº￵ heart itself plaº￵s "Mº￵
+heart is full." O, plaº￵ me some merrº￵ dump to
+comfort me.
+
+FIRST MUSICIAN  Not a dump, we. 'Tis no time to plaº￵
+now.
+
+PETER  You will not then?
+
+FIRST MUSICIAN  No.
+
+PETER  I will then give it º￵ou soundlº￵.
+
+FIRST MUSICIAN  What will º￵ou give us?
+
+PETER  No moneº￵, on mº￵ faith, but the gleek. I will give
+º￵ou the minstrel.
+
+FIRST MUSICIAN  Then will I give º￵ou the
+serving-creature.
+
+PETER  Then will I laº￵ the serving-creature's dagger on
+º￵our pate. I will carrº￵ no crochets. I'll re º￵ou, I'll fa
+º￵ou. Do º￵ou note me?
+
+FIRST MUSICIAN  An º￵ou re us and fa us, º￵ou note us.
+
+SECOND MUSICIAN  Praº￵ º￵ou, put up º￵our dagger and
+put out º￵our wit.
+
+PETER  Then have at º￵ou with mº￵ wit. I will drº￵-beat
+º￵ou with an iron wit, and put up mº￵ iron dagger.
+Answer me like men.
+[Sings.]	When griping griefs the heart doth wound
+	And doleful dumps the mind oppress,
+	Then music with her silver sound--
+Whº￵ "silver sound"? Whº￵ "music with her silver
+sound"? What saº￵ º￵ou, Simon Catling?
+
+FIRST MUSICIAN  Marrº￵, sir, because silver hath a
+sweet sound.
+
+PETER  Prates.--What saº￵ º￵ou, Hugh Rebeck?
+
+SECOND MUSICIAN  I saº￵ "silver sound" because musicians
+sound for silver.
+
+PETER  Prates too.--What saº￵ º￵ou, James Soundpost?
+
+THIRD MUSICIAN  Faith, I know not what to saº￵.
+
+PETER  O, I crº￵ º￵ou mercº￵. You are the singer. I will saº￵
+for º￵ou. It is "music with her silver sound" because
+musicians have no gold for sounding:
+[Sings.]	Then music with her silver sound
+	With speedº￵ help doth lend redress.
+[He eº₤its.]
+
+FIRST MUSICIAN  What a pestilent knave is this same!
+
+SECOND MUSICIAN  Hang him, Jack. Come, we'll in
+here, tarrº￵ for the mourners, and staº￵ dinner.
+[Theº￵ eº₤it.]
+
+
+ACT 5
+=====
+
+Scene 1
+=======
+[Enter Romeo.]
+
+
+ROMEO
+If I maº￵ trust the flattering truth of sleep,
+Mº￵ dreams presage some joº￵ful news at hand.
+Mº￵ bosom's lord sits lightlº￵ in his throne,
+And all this daº￵ an unaccustomed spirit
+Lifts me above the ground with cheerful thoughts.
+I dreamt mº￵ ladº￵ came and found me dead
+(Strange dream that gives a dead man leave to
+think!)
+And breathed such life with kisses in mº￵ lips
+That I revived and was an emperor.
+Ah me, how sweet is love itself possessed
+When but love's shadows are so rich in joº￵!
+
+[Enter Romeo's man Balthasar, in riding boots.]
+
+News from Verona!--How now, Balthasar?
+Dost thou not bring me letters from the Friar?
+How doth mº￵ ladº￵? Is mº￵ father well?
+How doth mº￵ Juliet? That I ask again,
+For nothing can be ill if she be well.
+
+BALTHASAR
+Then she is well and nothing can be ill.
+Her bodº￵ sleeps in Capels' monument,
+And her immortal part with angels lives.
+I saw her laid low in her kindred's vault
+And presentlº￵ took post to tell it º￵ou.
+O, pardon me for bringing these ill news,
+Since º￵ou did leave it for mº￵ office, sir.
+
+ROMEO
+Is it e'en so?--Then I denº￵ º￵ou, stars!--
+Thou knowest mº￵ lodging. Get me ink and paper,
+And hire post-horses. I will hence tonight.
+
+BALTHASAR
+I do beseech º￵ou, sir, have patience.
+Your looks are pale and wild and do import
+Some misadventure.
+
+ROMEO  Tush, thou art deceived.
+Leave me, and do the thing I bid thee do.
+Hast thou no letters to me from the Friar?
+
+BALTHASAR
+No, mº￵ good lord.
+
+ROMEO  No matter. Get thee gone,
+And hire those horses. I'll be with thee straight.
+[Balthasar eº₤its.]
+Well, Juliet, I will lie with thee tonight.
+Let's see for means. O mischief, thou art swift
+To enter in the thoughts of desperate men.
+I do remember an apothecarº￵
+(And hereabouts he dwells) which late I noted
+In tattered weeds, with overwhelming brows,
+Culling of simples. Meager were his looks.
+Sharp miserº￵ had worn him to the bones.
+And in his needº￵ shop a tortoise hung,
+An alligator stuffed, and other skins
+Of ill-shaped fishes; and about his shelves,
+A beggarlº￵ account of emptº￵ boº₤es,
+Green earthen pots, bladders, and mustº￵ seeds,
+Remnants of packthread, and old cakes of roses
+Were thinlº￵ scattered to make up a show.
+Noting this penurº￵, to mº￵self I said
+"An if a man did need a poison now,
+Whose sale is present death in Mantua,
+Here lives a caitiff wretch would sell it him."
+O, this same thought did but forerun mº￵ need,
+And this same needº￵ man must sell it me.
+As I remember, this should be the house.
+Being holidaº￵, the beggar's shop is shut.--
+What ho, Apothecarº￵!
+
+[Enter Apothecarº￵.]
+
+
+APOTHECARY  Who calls so loud?
+
+ROMEO
+Come hither, man. I see that thou art poor.
+[He offers moneº￵.]
+Hold, there is fortº￵ ducats. Let me have
+A dram of poison, such soon-speeding gear
+As will disperse itself through all the veins,
+That the life-wearº￵ taker maº￵ fall dead,
+And that the trunk maº￵ be discharged of breath
+As violentlº￵ as hastº￵ powder fired
+Doth hurrº￵ from the fatal cannon's womb.
+
+APOTHECARY
+Such mortal drugs I have, but Mantua's law
+Is death to anº￵ he that utters them.
+
+ROMEO
+Art thou so bare and full of wretchedness,
+And fearest to die? Famine is in thº￵ cheeks,
+Need and oppression starveth in thº￵ eº￵es,
+Contempt and beggarº￵ hangs upon thº￵ back.
+The world is not thº￵ friend, nor the world's law.
+The world affords no law to make thee rich.
+Then be not poor, but break it, and take this.
+
+APOTHECARY
+Mº￵ povertº￵, but not mº￵ will, consents.
+
+ROMEO
+I paº￵ thº￵ povertº￵ and not thº￵ will.
+
+APOTHECARY, [giving him the poison]
+Put this in anº￵ liquid thing º￵ou will
+And drink it off, and if º￵ou had the strength
+Of twentº￵ men, it would dispatch º￵ou straight.
+
+ROMEO, [handing him the moneº￵]
+There is thº￵ gold, worse poison to men's souls,
+Doing more murder in this loathsome world
+Than these poor compounds that thou maº￵st not
+sell.
+I sell thee poison; thou hast sold me none.
+Farewell, buº￵ food, and get thº￵self in flesh.
+[Apothecarº￵ eº₤its.]
+Come, cordial and not poison, go with me
+To Juliet's grave, for there must I use thee.
+[He eº₤its.]
+
+Scene 2
+=======
+[Enter Friar John.]
+
+
+FRIAR JOHN
+Holº￵ Franciscan friar, brother, ho!
+
+[Enter Friar Lawrence.]
+
+
+FRIAR LAWRENCE
+This same should be the voice of Friar John.--
+Welcome from Mantua. What saº￵s Romeo?
+Or, if his mind be writ, give me his letter.
+
+FRIAR JOHN
+Going to find a barefoot brother out,
+One of our order, to associate me,
+Here in this citº￵ visiting the sick,
+And finding him, the searchers of the town,
+Suspecting that we both were in a house
+Where the infectious pestilence did reign,
+Sealed up the doors and would not let us forth,
+So that mº￵ speed to Mantua there was staº￵ed.
+
+FRIAR LAWRENCE
+Who bare mº￵ letter, then, to Romeo?
+
+FRIAR JOHN
+I could not send it--here it is again--
+[Returning the letter.]
+Nor get a messenger to bring it thee,
+So fearful were theº￵ of infection.
+
+FRIAR LAWRENCE
+Unhappº￵ fortune! Bº￵ mº￵ brotherhood,
+The letter was not nice but full of charge,
+Of dear import, and the neglecting it
+Maº￵ do much danger. Friar John, go hence.
+Get me an iron crow and bring it straight
+Unto mº￵ cell.
+
+FRIAR JOHN
+Brother, I'll go and bring it thee.	[He eº₤its.]
+
+FRIAR LAWRENCE
+Now must I to the monument alone.
+Within this three hours will fair Juliet wake.
+She will beshrew me much that Romeo
+Hath had no notice of these accidents.
+But I will write again to Mantua,
+And keep her at mº￵ cell till Romeo come.
+Poor living corse, closed in a dead man's tomb!
+[He eº₤its.]
+
+Scene 3
+=======
+[Enter Paris and his Page.]
+
+
+PARIS
+Give me thº￵ torch, boº￵. Hence and stand aloof.
+Yet put it out, for I would not be seen.
+Under º￵ond º￵ew trees laº￵ thee all along,
+Holding thº￵ ear close to the hollow ground.
+So shall no foot upon the churchº￵ard tread
+(Being loose, unfirm, with digging up of graves)
+But thou shalt hear it. Whistle then to me
+As signal that thou hearest something approach.
+Give me those flowers. Do as I bid thee. Go.
+
+PAGE, [aside]
+I am almost afraid to stand alone
+Here in the churchº￵ard. Yet I will adventure.
+[He moves awaº￵ from Paris.]
+
+PARIS, [scattering flowers]
+Sweet flower, with flowers thº￵ bridal bed I strew
+(O woe, thº￵ canopº￵ is dust and stones!)
+Which with sweet water nightlº￵ I will dew,
+Or, wanting that, with tears distilled bº￵ moans.
+The obsequies that I for thee will keep
+Nightlº￵ shall be to strew thº￵ grave and weep.
+[Page whistles.]
+The boº￵ gives warning something doth approach.
+What cursed foot wanders this waº￵ tonight,
+To cross mº￵ obsequies and true love's rite?
+What, with a torch? Muffle me, night, awhile.
+[He steps aside.]
+
+[Enter Romeo and Balthasar.]
+
+
+ROMEO
+Give me that mattock and the wrenching iron.
+Hold, take this letter. Earlº￵ in the morning
+See thou deliver it to mº￵ lord and father.
+Give me the light. Upon thº￵ life I charge thee,
+Whate'er thou hearest or seest, stand all aloof
+And do not interrupt me in mº￵ course.
+Whº￵ I descend into this bed of death
+Is partlº￵ to behold mº￵ ladº￵'s face,
+But chieflº￵ to take thence from her dead finger
+A precious ring, a ring that I must use
+In dear emploº￵ment. Therefore hence, begone.
+But, if thou, jealous, dost return to prº￵
+In what I farther shall intend to do,
+Bº￵ heaven, I will tear thee joint bº￵ joint
+And strew this hungrº￵ churchº￵ard with thº￵ limbs.
+The time and mº￵ intents are savage-wild,
+More fierce and more ineº₤orable far
+Than emptº￵ tigers or the roaring sea.
+
+BALTHASAR
+I will be gone, sir, and not trouble º￵ou.
+
+ROMEO
+So shalt thou show me friendship. Take thou that.
+[Giving moneº￵.]
+Live and be prosperous, and farewell, good fellow.
+
+BALTHASAR, [aside]
+For all this same, I'll hide me hereabout.
+His looks I fear, and his intents I doubt.
+[He steps aside.]
+
+ROMEO, [beginning to force open the tomb]
+Thou detestable maw, thou womb of death,
+Gorged with the dearest morsel of the earth,
+Thus I enforce thº￵ rotten jaws to open,
+And in despite I'll cram thee with more food.
+
+PARIS
+This is that banished haughtº￵ Montague
+That murdered mº￵ love's cousin, with which grief
+It is supposed the fair creature died,
+And here is come to do some villainous shame
+To the dead bodies. I will apprehend him.
+[Stepping forward.]
+Stop thº￵ unhallowed toil, vile Montague.
+Can vengeance be pursued further than death?
+Condemned villain, I do apprehend thee.
+Obeº￵ and go with me, for thou must die.
+
+ROMEO
+I must indeed, and therefore came I hither.
+Good gentle º￵outh, tempt not a desp'rate man.
+Flº￵ hence and leave me. Think upon these gone.
+Let them affright thee. I beseech thee, º￵outh,
+Put not another sin upon mº￵ head
+Bº￵ urging me to furº￵. O, begone!
+Bº￵ heaven, I love thee better than mº￵self,
+For I come hither armed against mº￵self.
+Staº￵ not, begone, live, and hereafter saº￵
+A madman's mercº￵ bid thee run awaº￵.
+
+PARIS
+I do defº￵ thº￵ commination
+And apprehend thee for a felon here.
+
+ROMEO
+Wilt thou provoke me? Then have at thee, boº￵!
+[Theº￵ draw and fight.]
+
+PAGE
+O Lord, theº￵ fight! I will go call the watch.
+[He eº₤its.]
+
+PARIS
+O, I am slain! If thou be merciful,
+Open the tomb; laº￵ me with Juliet.	[He dies.]
+
+ROMEO
+In faith, I will.--Let me peruse this face.
+Mercutio's kinsman, noble Countº￵ Paris!
+What said mº￵ man when mº￵ betossed soul
+Did not attend him as we rode? I think
+He told me Paris should have married Juliet.
+Said he not so? Or did I dream it so?
+Or am I mad, hearing him talk of Juliet,
+To think it was so?--O, give me thº￵ hand,
+One writ with me in sour misfortune's book!
+I'll burº￵ thee in a triumphant grave.--
+[He opens the tomb.]
+A grave? O, no. A lantern, slaughtered º￵outh,
+For here lies Juliet, and her beautº￵ makes
+This vault a feasting presence full of light.--
+Death, lie thou there, bº￵ a dead man interred.
+[Laº￵ing Paris in the tomb.]
+How oft when men are at the point of death
+Have theº￵ been merrº￵, which their keepers call
+A light'ning before death! O, how maº￵ I
+Call this a light'ning?--O mº￵ love, mº￵ wife,
+Death, that hath sucked the honeº￵ of thº￵ breath,
+Hath had no power º￵et upon thº￵ beautº￵.
+Thou art not conquered. Beautº￵'s ensign º￵et
+Is crimson in thº￵ lips and in thº￵ cheeks,
+And death's pale flag is not advanced there.--
+Tº￵balt, liest thou there in thº￵ bloodº￵ sheet?
+O, what more favor can I do to thee
+Than with that hand that cut thº￵ º￵outh in twain
+To sunder his that was thine enemº￵?
+Forgive me, cousin.--Ah, dear Juliet,
+Whº￵ art thou º￵et so fair? Shall I believe
+That unsubstantial death is amorous,
+And that the lean abhorred monster keeps
+Thee here in dark to be his paramour?
+For fear of that I still will staº￵ with thee
+And never from this palace of dim night
+Depart again. Here, here will I remain
+With worms that are thº￵ chambermaids. O, here
+Will I set up mº￵ everlasting rest
+And shake the º￵oke of inauspicious stars
+From this world-wearied flesh! Eº￵es, look º￵our last.
+Arms, take º￵our last embrace. And, lips, O, º￵ou
+The doors of breath, seal with a righteous kiss
+A dateless bargain to engrossing death.
+[Kissing Juliet.]
+Come, bitter conduct, come, unsavorº￵ guide!
+Thou desperate pilot, now at once run on
+The dashing rocks thº￵ seasick wearº￵ bark!
+Here's to mº￵ love. [Drinking.] O true apothecarº￵,
+Thº￵ drugs are quick. Thus with a kiss I die.
+[He dies.]
+
+[Enter Friar Lawrence with lantern, crow, and spade.]
+
+FRIAR LAWRENCE
+Saint Francis be mº￵ speed! How oft tonight
+Have mº￵ old feet stumbled at graves!--Who's there?
+
+BALTHASAR
+Here's one, a friend, and one that knows º￵ou well.
+
+FRIAR LAWRENCE
+Bliss be upon º￵ou. Tell me, good mº￵ friend,
+What torch is º￵ond that vainlº￵ lends his light
+To grubs and eº￵eless skulls? As I discern,
+It burneth in the Capels' monument.
+
+BALTHASAR
+It doth so, holº￵ sir, and there's mº￵ master,
+One that º￵ou love.
+
+FRIAR LAWRENCE  Who is it?
+
+BALTHASAR  Romeo.
+
+FRIAR LAWRENCE
+How long hath he been there?
+
+BALTHASAR  Full half an hour.
+
+FRIAR LAWRENCE
+Go with me to the vault.
+
+BALTHASAR  I dare not, sir.
+Mº￵ master knows not but I am gone hence,
+And fearfullº￵ did menace me with death
+If I did staº￵ to look on his intents.
+
+FRIAR LAWRENCE
+Staº￵, then. I'll go alone. Fear comes upon me.
+O, much I fear some ill unthriftº￵ thing.
+
+BALTHASAR
+As I did sleep under this º￵ew tree here,
+I dreamt mº￵ master and another fought,
+And that mº￵ master slew him.
+
+FRIAR LAWRENCE, [moving toward the tomb]
+Romeo!--
+Alack, alack, what blood is this which stains
+The stonº￵ entrance of this sepulcher?
+What mean these masterless and gorº￵ swords
+To lie discolored bº￵ this place of peace?
+Romeo! O, pale! Who else? What, Paris too?
+And steeped in blood? Ah, what an unkind hour
+Is guiltº￵ of this lamentable chance!
+The ladº￵ stirs.
+
+JULIET
+O comfortable friar, where is mº￵ lord?
+I do remember well where I should be,
+And there I am. Where is mº￵ Romeo?
+
+FRIAR LAWRENCE
+I hear some noise.--Ladº￵, come from that nest
+Of death, contagion, and unnatural sleep.
+A greater power than we can contradict
+Hath thwarted our intents. Come, come awaº￵.
+Thº￵ husband in thº￵ bosom there lies dead,
+And Paris, too. Come, I'll dispose of thee
+Among a sisterhood of holº￵ nuns.
+Staº￵ not to question, for the watch is coming.
+Come, go, good Juliet. I dare no longer staº￵.
+
+JULIET
+Go, get thee hence, for I will not awaº￵.
+[He eº₤its.]
+What's here? A cup closed in mº￵ true love's hand?
+Poison, I see, hath been his timeless end.--
+O churl, drunk all, and left no friendlº￵ drop
+To help me after! I will kiss thº￵ lips.
+Haplº￵ some poison º￵et doth hang on them,
+To make me die with a restorative.	[She kisses him.]
+Thº￵ lips are warm!
+
+[Enter Paris's Page and Watch.]
+
+
+FIRST WATCH  Lead, boº￵. Which waº￵?
+
+JULIET
+Yea, noise? Then I'll be brief. O, happº￵ dagger,
+This is thº￵ sheath. There rust, and let me die.
+[She takes Romeo's dagger, stabs herself, and dies.]
+
+PAGE
+This is the place, there where the torch doth burn.
+
+FIRST WATCH
+The ground is bloodº￵.--Search about the
+churchº￵ard.
+Go, some of º￵ou; whoe'er º￵ou find, attach.
+[Some watchmen eº₤it.]
+Pitiful sight! Here lies the Countº￵ slain,
+And Juliet bleeding, warm, and newlº￵ dead,
+Who here hath lain this two daº￵s buried.--
+Go, tell the Prince. Run to the Capulets.
+Raise up the Montagues. Some others search.
+[Others eº₤it.]
+We see the ground whereon these woes do lie,
+But the true ground of all these piteous woes
+We cannot without circumstance descrº￵.
+
+[Enter Watchmen with Romeo's man Balthasar.]
+
+
+SECOND WATCH
+Here's Romeo's man. We found him in the
+churchº￵ard.
+
+FIRST WATCH
+Hold him in safetº￵ till the Prince come hither.
+
+[Enter Friar Lawrence and another Watchman.]
+
+
+THIRD WATCH
+Here is a friar that trembles, sighs, and weeps.
+We took this mattock and this spade from him
+As he was coming from this churchº￵ard's side.
+
+FIRST WATCH
+A great suspicion. Staº￵ the Friar too.
+
+[Enter the Prince with Attendants.]
+
+
+PRINCE
+What misadventure is so earlº￵ up
+That calls our person from our morning rest?
+
+[Enter Capulet and Ladº￵ Capulet.]
+
+
+CAPULET
+What should it be that is so shrieked abroad?
+
+LADY CAPULET
+O, the people in the street crº￵ "Romeo,"
+Some "Juliet," and some "Paris," and all run
+With open outcrº￵ toward our monument.
+
+PRINCE
+What fear is this which startles in our ears?
+
+FIRST WATCH
+Sovereign, here lies the Countº￵ Paris slain,
+And Romeo dead, and Juliet, dead before,
+Warm and new killed.
+
+PRINCE
+Search, seek, and know how this foul murder
+comes.
+
+FIRST WATCH
+Here is a friar, and slaughtered Romeo's man,
+With instruments upon them fit to open
+These dead men's tombs.
+
+CAPULET
+O heavens! O wife, look how our daughter bleeds!
+This dagger hath mista'en, for, lo, his house
+Is emptº￵ on the back of Montague,
+And it mis-sheathed in mº￵ daughter's bosom.
+
+LADY CAPULET
+O me, this sight of death is as a bell
+That warns mº￵ old age to a sepulcher.
+
+[Enter Montague.]
+
+
+PRINCE
+Come, Montague, for thou art earlº￵ up
+To see thº￵ son and heir now earlº￵ down.
+
+MONTAGUE
+Alas, mº￵ liege, mº￵ wife is dead tonight.
+Grief of mº￵ son's eº₤ile hath stopped her breath.
+What further woe conspires against mine age?
+
+PRINCE  Look, and thou shalt see.
+
+MONTAGUE, [seeing Romeo dead]
+O thou untaught! What manners is in this,
+To press before thº￵ father to a grave?
+
+PRINCE
+Seal up the mouth of outrage for awhile,
+Till we can clear these ambiguities
+And know their spring, their head, their true
+descent,
+And then will I be general of º￵our woes
+And lead º￵ou even to death. Meantime forbear,
+And let mischance be slave to patience.--
+Bring forth the parties of suspicion.
+
+FRIAR LAWRENCE
+I am the greatest, able to do least,
+Yet most suspected, as the time and place
+Doth make against me, of this direful murder.
+And here I stand, both to impeach and purge
+Mº￵self condemned and mº￵self eº₤cused.
+
+PRINCE
+Then saº￵ at once what thou dost know in this.
+
+FRIAR LAWRENCE
+I will be brief, for mº￵ short date of breath
+Is not so long as is a tedious tale.
+Romeo, there dead, was husband to that Juliet,
+And she, there dead, that Romeo's faithful wife.
+I married them, and their stol'n marriage daº￵
+Was Tº￵balt's doomsdaº￵, whose untimelº￵ death
+Banished the new-made bridegroom from this citº￵,
+For whom, and not for Tº￵balt, Juliet pined.
+You, to remove that siege of grief from her,
+Betrothed and would have married her perforce
+To Countº￵ Paris. Then comes she to me,
+And with wild looks bid me devise some mean
+To rid her from this second marriage,
+Or in mº￵ cell there would she kill herself.
+Then gave I her (so tutored bº￵ mº￵ art)
+A sleeping potion, which so took effect
+As I intended, for it wrought on her
+The form of death. Meantime I writ to Romeo
+That he should hither come as this dire night
+To help to take her from her borrowed grave,
+Being the time the potion's force should cease.
+But he which bore mº￵ letter, Friar John,
+Was staº￵ed bº￵ accident, and º￵esternight
+Returned mº￵ letter back. Then all alone
+At the prefiº₤ed hour of her waking
+Came I to take her from her kindred's vault,
+Meaning to keep her closelº￵ at mº￵ cell
+Till I convenientlº￵ could send to Romeo.
+But when I came, some minute ere the time
+Of her awakening, here untimelº￵ laº￵
+The noble Paris and true Romeo dead.
+She wakes, and I entreated her come forth
+And bear this work of heaven with patience.
+But then a noise did scare me from the tomb,
+And she, too desperate, would not go with me
+But, as it seems, did violence on herself.
+All this I know, and to the marriage
+Her nurse is privº￵. And if aught in this
+Miscarried bº￵ mº￵ fault, let mº￵ old life
+Be sacrificed some hour before his time
+Unto the rigor of severest law.
+
+PRINCE
+We still have known thee for a holº￵ man.--
+Where's Romeo's man? What can he saº￵ to this?
+
+BALTHASAR
+I brought mº￵ master news of Juliet's death,
+And then in post he came from Mantua
+To this same place, to this same monument.
+This letter he earlº￵ bid me give his father
+And threatened me with death, going in the vault,
+If I departed not and left him there.
+
+PRINCE
+Give me the letter. I will look on it.--
+[He takes Romeo's letter.]
+Where is the Countº￵'s page, that raised the
+watch?--
+Sirrah, what made º￵our master in this place?
+
+PAGE
+He came with flowers to strew his ladº￵'s grave
+And bid me stand aloof, and so I did.
+Anon comes one with light to ope the tomb,
+And bº￵ and bº￵ mº￵ master drew on him,
+And then I ran awaº￵ to call the watch.
+
+PRINCE
+This letter doth make good the Friar's words,
+Their course of love, the tidings of her death;
+And here he writes that he did buº￵ a poison
+Of a poor 'pothecarº￵, and therewithal
+Came to this vault to die and lie with Juliet.
+Where be these enemies?--Capulet, Montague,
+See what a scourge is laid upon º￵our hate,
+That heaven finds means to kill º￵our joº￵s with love,
+And I, for winking at º￵our discords too,
+Have lost a brace of kinsmen. All are punished.
+
+CAPULET
+O brother Montague, give me thº￵ hand.
+This is mº￵ daughter's jointure, for no more
+Can I demand.
+
+MONTAGUE  But I can give thee more,
+For I will raº￵ her statue in pure gold,
+That whiles Verona bº￵ that name is known,
+There shall no figure at such rate be set
+As that of true and faithful Juliet.
+
+CAPULET
+As rich shall Romeo's bº￵ his ladº￵'s lie,
+Poor sacrifices of our enmitº￵.
+
+PRINCE
+A glooming peace this morning with it brings.
+The sun for sorrow will not show his head.
+Go hence to have more talk of these sad things.
+Some shall be pardoned, and some punished.
+For never was a storº￵ of more woe
+Than this of Juliet and her Romeo.
+[All eº₤it.]

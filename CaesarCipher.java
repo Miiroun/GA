@@ -3,15 +3,9 @@ import Interfaces.StringEncrytionInterface;
 public class CaesarCipher implements StringEncrytionInterface {
     int key = 0;
 
-
     public char shitChar(char cha, int n) {
-        char c = Character.toLowerCase(cha);
-
-        c = Utility.alphabet[( Utility.indexOf(c) + n + 29) % 29];
-
-        if (cha == ' ') {
-            c = cha;
-        }
+        //int i = Utility.indexOf(cha) + n + Utility.signs.length;
+        char c = (char) (cha + n);//Utility.signs[i % Utility.signs.length];
 
         return c;
     }
@@ -31,7 +25,7 @@ public class CaesarCipher implements StringEncrytionInterface {
         String message = "";
 
         for (char c : data.toCharArray()) {
-            message = message + shitChar(c, (-1)*key);
+            message = message + shitChar(c, -key);
         }
 
         return message;

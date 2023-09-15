@@ -278,17 +278,30 @@ class Main {
         } else {
             System.out.println("attacking data");
 
-            inputString = readData("data/encryptedText");
+            inputString = readData("data/encryptedText.txt");
 
             doAttacking();
 
-            writeData(outputString, "data/attackedText");
+            System.out.println("guess of key:" + outputString);
+
+            keyString = outputString;
+
+            doCryption(false);
+
+            if (keyString.equals(readData("data/encryptKey.txt") )){System.out.println("The attack got the correct answer");
+            } else {System.out.println("The attack got the wrong answer");}
+            
+            writeData(outputString, "data/attackedText.txt");
         }
         Statistics.recordeStats();
 
     }
 
-    public static void main(String[] args) {
+    
+
+   
+
+    public static void testKrypto() {
         varibleSetUp(EncStandard.CC, AttStandard.FA);
         Statistics.startCollecting();
 
@@ -298,11 +311,29 @@ class Main {
 
         decryptData();
 
-        //attackData();
+        attackData();
 
         System.out.println("Done!");
 
         Statistics.endCollecting(false);
+    }
+    
+    public static void anaCharFrec () {
+        FrequencyAnalysis fa = new FrequencyAnalysis();
+        String str = readData("data/texts/hamlet.txt");
+        System.out.println(fa.analysLetters(str.toCharArray()));
+    }
+
+
+
+
+
+
+
+
+    public static void main(String[] args) {
+        testKrypto();
+        //anaCharFrec();
     }
 
 }

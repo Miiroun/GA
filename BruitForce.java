@@ -30,9 +30,31 @@ public class BruitForce implements AttackInterface{
 
     }
 
-    @Override
+    public int evaluteText(String data) {
+        //not yet implemented
+        return 0;
+    }
+
     public String attackCC(String data) {
-        throw new UnsupportedOperationException("Unimplemented method 'attackCC'");
+        String[] message = new String[29];
+        CaesarCipher cc = new CaesarCipher();
+
+        for(int i = 0; i < 29; i++) {
+            cc.setKey(Integer.toString(i));
+            message[29] = cc.dec(data);
+        }
+
+        int bestMatch = -1;
+        int bestValue = Integer.MAX_VALUE;
+        for(int i = 0; i < 29; i++) {
+            int value = evaluteText(data);
+            if(value > bestValue) {
+                bestMatch  = i;
+                bestValue = value;
+            }
+        }
+
+        return message[bestMatch];
     }
 
     @Override

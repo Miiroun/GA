@@ -8,96 +8,90 @@ import static java.util.Map.entry;
 public class FrequencyAnalysis implements AttackInterface{
 
     public Map<Character, Integer> englishFrequency = Map.ofEntries(
-        entry('a', 0),
-        entry('b', 0),
-        entry('c', 0),
-        entry('d', 0),
-        entry('e', 0),
-        entry('f', 0),
-        entry('g', 0),
-        entry('h', 0),
-        entry('i', 0),
-        entry('j', 0),
-        entry('k', 0),
-        entry('l', 0),
-        entry('m', 0),
-        entry('n', 0),
-        entry('o', 0),
-        entry('p', 0),
-        entry('q', 0),
-        entry('r', 0),
-        entry('s', 0),
-        entry('t', 0),
-        entry('u', 0),
-        entry('v', 0),
-        entry('w', 0),
-        entry('x', 0),
-        entry('y', 0),
-        entry('z', 0),
-        entry('å', 0),
-        entry('ä', 0),
-        entry('ö', 0),
-        entry('0', 0),
-        entry('1', 0),
-        entry('2', 0),
-        entry('3', 0),
-        entry('4', 0),
-        entry('5', 0),
-        entry('6', 0),
-        entry('7', 0),
-        entry('8', 0),
-        entry('9', 0)
+        entry('a', 720),
+        entry('b', 120),
+        entry('c', 180),
+        entry('d', 360),
+        entry('e', 1120),
+        entry('f', 180),
+        entry('g', 170),
+        entry('h', 610),
+        entry('i', 620),
+        entry('j', 10),
+        entry('k', 90),
+        entry('l', 440),
+        entry('m', 290),
+        entry('n', 590),
+        entry('o', 800),
+        entry('p', 140),
+        entry('q', 10),
+        entry('r', 560),
+        entry('s', 600),
+        entry('t', 870),
+        entry('u', 300),
+        entry('v', 80),
+        entry('w', 210),
+        entry('x', 10),
+        entry('y', 220),
+        entry('z', 10),
+        entry('å', 10),
+        entry('ä', 10),
+        entry('ö', 10)
     );
 
     public Map<Character, Integer> analysLetters(char[] wordlist) {
         Map<Character, Integer> frequency = new TreeMap<>();
-        for (char c : Utility.alphabet) {frequency.put(Character.toLowerCase(c), 0);} // sets each letter to zero
-        for (char c : Utility.nummbers) {frequency.put(Character.toLowerCase(c), 0);} // sets each letter to zero
-//
+        //for (char c : Utility.alphabet) {frequency.put(Character.toLowerCase(c), 0);} // sets each letter to zero
+        //for (char c : Utility.nummbers) {frequency.put(Character.toLowerCase(c), 0);} // sets each nummber to zero
+        //for (char c : Utility.signs) {frequency.put(Character.toLowerCase(c), 0);} // sets each sign to zero
+
+        //
 
         for (char cha: wordlist) {
-            char charL = Character.toLowerCase(cha);
-            int num = frequency.get(cha);
-            frequency.put(charL, num);
+            char chaL = Character.toLowerCase(cha);
+            Integer num = frequency.get(chaL); if(num == null) {num = 0;}
+
+            frequency.put(chaL, num + 1);
         }
 
-        int size = wordlist.length;
+        //refaktor code to be in promille
+        int size = 0; //wordlist.length ;//- 6079 - 28050 -742 -3193 - 442 - 2098;//- frequency.get(' ') - frequency.get('\n');
+        for (char c : Utility.alphabet) {Integer frec = frequency.get(Character.toLowerCase(c)); if (frec != null){size += frec;}} //counts total amout of letters
 
-        for ( int i = 0; i < 29; i++) {
-            frequency.put(Utility.alphabet[i], Math.round(frequency.get(Utility.alphabet[i]) / size * 1000 ));
+        for ( int i = 0; i < Utility.alphabet.length; i++) {
+            Character cha = Utility.alphabet[i];
+            Integer in = frequency.get(cha); if (in == null){in = 0;}
+            int x = Math.round(((in * 10000 / size)));
+            //x = in;
+            frequency.put(cha, x);
         }
 
         return frequency;
     }
 
     public String attackCC(String data) {
-        String message = "";
         char[] charArray = data.toCharArray();
 
         Map<Character, Integer> frequency = analysLetters(charArray);
 
         int lowestDisplasment = Integer.MAX_VALUE;
         int bestMatch = -1;
-        for(int i = 0; i < 29; i++) 
+        for(int i = 0; i < 29; i++) //i = diffrent keys
         {
             int currentDis = 0;
             for(int j = 0; j < 29; j++)
             {
+            char absChar = Utility.alphabet[(j) % 29];
             char locChar = Utility.alphabet[(j + i) % 29];
-            currentDis = currentDis + Math.abs(englishFrequency.get(locChar) - frequency.get(locChar));
+            int dis = Math.abs(englishFrequency.get(absChar) - frequency.get(locChar));
+            currentDis += dis;
+            //System.out.println(dis);
+
             }
-            if ( currentDis < lowestDisplasment) {
-                lowestDisplasment = currentDis;
-                bestMatch = i;
-            }
+            if ( currentDis < lowestDisplasment) {lowestDisplasment = currentDis;bestMatch = i;}
         }
 
-        CaesarCipher caesarCipher = new CaesarCipher();
-        caesarCipher.setKey(Integer.toString(bestMatch));
-
-        message = caesarCipher.dec(data);
-
-        return message;
+        return Integer.toString(bestMatch);
     }
 
 
