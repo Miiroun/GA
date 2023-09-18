@@ -30,6 +30,10 @@ public class Statistics {
 
     }
 
+    public static void timeDump() {
+        
+    }
+
     public void compileData() {
 
     }
