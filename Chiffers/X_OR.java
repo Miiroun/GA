@@ -1,3 +1,4 @@
+package Chiffers;
 import Interfaces.StringEncrytionInterface;
 
 public class X_OR implements StringEncrytionInterface {

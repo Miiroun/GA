@@ -14,6 +14,16 @@ public class Statistics {
         timeStart = java.time.LocalTime.now();
     }
 
+    public static void timeStamp() {timeStamp("");}
+    
+    public static void timeStamp(String message) {
+        LocalTime now = java.time.LocalTime.now();
+        String mess = "TimeStamp:" + now.compareTo(timeStart) + "." + message;
+        data += mess + "\n";
+        System.out.println(mess);
+
+    }
+
     public static void endCollecting(Boolean saveData) {
         data = "";
         if(saveData){saveData();}
@@ -28,10 +38,6 @@ public class Statistics {
             e.printStackTrace();
         }
 
-    }
-
-    public static void timeDump() {
-        
     }
 
     public void compileData() {

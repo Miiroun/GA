@@ -1,3 +1,4 @@
+package Chiffers;
 import Interfaces.StringEncrytionInterface;
 
 public class Substitution implements StringEncrytionInterface {

@@ -8,6 +8,9 @@ import java.nio.file.Paths;
 import AdvancedEncryption.DES;
 import AdvancedEncryption.DiffieHellman;
 import AdvancedEncryption.TriDES;
+import Chiffers.CaesarCipher;
+import Chiffers.Substitution;
+import Chiffers.X_OR;
 import Interfaces.AttackInterface;
 import Interfaces.ByteEncrytionInterface;
 import Interfaces.StringEncrytionInterface;
@@ -17,10 +20,11 @@ class Main {
     public enum EncStandard {
         DES,
         TriDES,
-        D_H,
+        DH,
         CC,
         XOR,
-        Sub
+        Sub,
+        CT
     }
 
     public enum AttStandard {
@@ -40,14 +44,19 @@ class Main {
         encStandard = encStand;
         attStandard = attStand;
 
-        if (encStandard == EncStandard.DES || encStandard == EncStandard.TriDES || encStandard == EncStandard.D_H) {
+        if (encStandard == EncStandard.DES || encStandard == EncStandard.TriDES || encStandard == EncStandard.XOR || encStandard == EncStandard.DH) {
             doBytes = true;
             blockSize = 64;
             byteSize = blockSize / 8;
             charset = Charset.forName("UTF-8");
-        } else if (encStandard == EncStandard.CC) {
+        } else if (encStandard == EncStandard.CC || encStandard == EncStandard.Sub || encStandard == EncStandard.CT) {
             doBytes = false;
+            charset = Charset.forName("UTF-8");
+
         }
+
+
+        Statistics.startCollecting();
     }
 
     // setup
@@ -158,7 +167,7 @@ class Main {
             encClass = new DES();
         } else if (encStandard == EncStandard.TriDES) {
             encClass = new TriDES();
-        } else if (encStandard == EncStandard.D_H) {
+        } else if (encStandard == EncStandard.DH) {
             encClass = new DiffieHellman();
         } else {
             // error, should never be here
@@ -179,9 +188,11 @@ class Main {
             encClass = new X_OR();
         } else if (encStandard == EncStandard.Sub) {
             encClass = new Substitution();
+        }else if (encStandard == EncStandard.CT) {
+            encClass = new ColumnarTransposition();
         } else {
             // error, should never be here
-            encClass = new CaesarCipher();
+            encClass = null;
         }
 
         encClass.setKey(keyString);
@@ -302,8 +313,7 @@ class Main {
    
 
     public static void testKrypto() {
-        varibleSetUp(EncStandard.CC, AttStandard.FA);
-        Statistics.startCollecting();
+        varibleSetUp(EncStandard.CT, AttStandard.FA);
 
         System.out.println("Staring...");
 
@@ -311,7 +321,7 @@ class Main {
 
         decryptData();
 
-        attackData();
+        //attackData();
 
         System.out.println("Done!");
 

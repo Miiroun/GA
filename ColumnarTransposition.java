@@ -1,38 +1,62 @@
+
 import Interfaces.StringEncrytionInterface;
 
 public class ColumnarTransposition implements StringEncrytionInterface {
     public int[] key;
 
-    public char[][] createMatrix(String data) {
-        char[][] matrix = new char[key.length][];
+    public char[][] createMatrixEnc(String data) {
         int width = key.length;
+        int hight = (int)Math.ceil(data.length() / width);
+        char[][] matrix = new char[width][hight];
 
-        for (int i = 0; i < width; i++) {
-            for (int j = 0; j < Math.ceil(data.length() / width); j++) {
+        for (int i = 0; i < hight; i++) {
+            for (int j = 0; j < width; j++) {
                 char c;
                 if (i * width + j < data.length()) {
                     c = data.charAt(i * width + j);
                 } else {
                     c = 'q';
                 }
-                matrix[i][j] = c;
+                matrix[j][i] = c;
             }
         }
         return matrix;
     }
 
-    @Override
+    public char[][] createMatrixDec(String data) {
+        int width = key.length;
+        int hight = (int)Math.ceil(data.length() / width);
+        char[][] matrix = new char[width][hight];
+
+
+        for (int i = 0; i < hight; i++) {
+            for (int j = 0; j < width; j++) {
+                char c = data.charAt((i * width) + j);
+                matrix[j][i] = c;
+            }
+        }
+
+
+        return matrix;
+    }
+
+    public int indexOfvalue(int[] data, int i) {
+        Integer l = null;
+        for (int k = 0; k < data.length; k++) {
+            if (i == data[k]) {
+                l = k;
+            }
+        } // translates i till l
+        return l;
+    }
+
+    @Override // encryption works, not decrypt
     public String enc(String data) {
-        char[][] matrix = createMatrix(data);
+        char[][] matrix = createMatrixEnc(data);
         String message = "";
 
-        for (int i = 0; i < matrix[0].length; i++) {
-            int l = 0;
-            for (int k = 0; k < key.length; k++) {
-                if (i == key[i]) {
-                    l = k;
-                }
-            } // translates i inte l
+        for (int i = 0; i < key.length; i++) {
+            int l = indexOfvalue(key, i);
 
             char[] cs = matrix[l];
             for (int j = 0; j < cs.length; j++) {
@@ -46,31 +70,45 @@ public class ColumnarTransposition implements StringEncrytionInterface {
 
     @Override
     public String dec(String data) {
-        throw new UnsupportedOperationException("Unimplemented method 'dec'");
+        char[][] tempMatrix = createMatrixDec(data);
+        String message = "";
+        char[][] matrix = new char[key.length][];
+        for (int i = 0; i < matrix.length; i++) {
+            int l = indexOfvalue(key, i);
+            matrix[i] = tempMatrix[l];
+        }
+
+        for (char[] cs : matrix) {
+            message += cs;
+        }
+
+        return message;
     }
 
     @Override
     public void setKey(String data) {
         key = new int[data.length()];
         char[] localAlphabet = Utility.alphabet;
+        char[] dataArray = data.toCharArray();
 
-        for (int i = 0; i < data.length(); i++) {
+        int i = 0; 
+        while (i < data.length()) {
             int k = 0;
-
-            breakPoint: {
                 while (k < localAlphabet.length) {
-                    char c = localAlphabet[k];
+                    char alf = localAlphabet[k];
                     for (int j = 0; j < data.length(); j++) {
-                        char d = data.toCharArray()[j];
-                        if (c == d) {
-                            key[i] = d;
-                            break breakPoint;
+                        char da = dataArray[j];
+                        if (alf == Character.toLowerCase(da)) {
+                            //i ++;
+                            key[j] = i;
+                            i ++;
                         }
                     }
                     k += 1;
+
                 }
-            }
         }
+
     }
 
 }
