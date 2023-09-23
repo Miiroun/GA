@@ -109,4 +109,9 @@ public class FrequencyAnalysis implements AttackInterface{
         throw new UnsupportedOperationException("Unimplemented method 'attackXO'");
     }
     
+    @Override 
+    public String attackCT(String data) {
+                throw new UnsupportedOperationException("CT is not susepteble to FA");
+
+    }
 }

@@ -6,7 +6,7 @@ public class ColumnarTransposition implements StringEncrytionInterface {
 
     public char[][] createMatrixEnc(String data) {
         int width = key.length;
-        int hight = (int)Math.ceil(data.length() / width);
+        int hight = (int) Math.ceil(data.length() / width);
         char[][] matrix = new char[width][hight];
 
         for (int i = 0; i < hight; i++) {
@@ -25,17 +25,19 @@ public class ColumnarTransposition implements StringEncrytionInterface {
 
     public char[][] createMatrixDec(String data) {
         int width = key.length;
-        int hight = (int)Math.ceil(data.length() / width);
+        int hight = (int) Math.ceil(data.length() / width);
         char[][] matrix = new char[width][hight];
 
+        for (int i = 0; i < width; i++) {
+            int l = indexOfvalue(key, i);
+            // l = i;
 
-        for (int i = 0; i < hight; i++) {
-            for (int j = 0; j < width; j++) {
-                char c = data.charAt((i * width) + j);
-                matrix[j][i] = c;
+            for (int j = 0; j < hight; j++) {
+                char c = data.charAt((i * hight) + j);
+                // char c = data.charAt((i) + j*(width));
+                matrix[l][j] = c;
             }
         }
-
 
         return matrix;
     }
@@ -70,16 +72,13 @@ public class ColumnarTransposition implements StringEncrytionInterface {
 
     @Override
     public String dec(String data) {
-        char[][] tempMatrix = createMatrixDec(data);
+        char[][] matrix = createMatrixDec(data);
         String message = "";
-        char[][] matrix = new char[key.length][];
-        for (int i = 0; i < matrix.length; i++) {
-            int l = indexOfvalue(key, i);
-            matrix[i] = tempMatrix[l];
-        }
 
-        for (char[] cs : matrix) {
-            message += cs;
+        for (int j = 0; j < matrix[0].length; j++) {
+            for (int i = 0; i < matrix.length; i++) {
+                message += matrix[i][j];
+            }
         }
 
         return message;
@@ -91,24 +90,28 @@ public class ColumnarTransposition implements StringEncrytionInterface {
         char[] localAlphabet = Utility.alphabet;
         char[] dataArray = data.toCharArray();
 
-        int i = 0; 
+        int i = 0;
         while (i < data.length()) {
             int k = 0;
-                while (k < localAlphabet.length) {
-                    char alf = localAlphabet[k];
-                    for (int j = 0; j < data.length(); j++) {
-                        char da = dataArray[j];
-                        if (alf == Character.toLowerCase(da)) {
-                            //i ++;
-                            key[j] = i;
-                            i ++;
-                        }
+            while (k < localAlphabet.length) {
+                char alf = localAlphabet[k];
+                for (int j = 0; j < data.length(); j++) { 
+                    char da = dataArray[j];
+                    if (alf == Character.toLowerCase(da)) {
+                        // i ++;
+                        key[j] = i;
+                        i++;
                     }
-                    k += 1;
-
                 }
+                k += 1;
+
+            }
         }
 
+    }
+
+    public void setKey(int[] data) {
+        key = data;
     }
 
 }

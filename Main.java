@@ -226,9 +226,11 @@ class Main {
             outputString = attClass.attackXO(inputString);
         } else if (encStandard == EncStandard.Sub) {
             outputString = attClass.attackST(inputString);
+        } else if (encStandard == EncStandard.CT) {
+            outputString = attClass.attackCT(inputString);
         } else {
             // error, should never be here
-            System.out.println("something wrong with attact standard selection");
+            throw new UnsupportedOperationException("something wrong with attact standard selection");
         }
 
     }
@@ -293,13 +295,10 @@ class Main {
 
             doAttacking();
 
-            System.out.println("guess of key:" + outputString);
+            System.out.println("guess of oridginal text:" + outputString);
 
-            keyString = outputString;
-
-            doCryption(false);
-
-            if (keyString.equals(readData("data/encryptKey.txt") )){System.out.println("The attack got the correct answer");
+            
+            if (outputString.equals(readData("data/startText.txt") )){System.out.println("The attack got the correct answer");
             } else {System.out.println("The attack got the wrong answer");}
             
             writeData(outputString, "data/attackedText.txt");
@@ -313,7 +312,7 @@ class Main {
    
 
     public static void testKrypto() {
-        varibleSetUp(EncStandard.CT, AttStandard.FA);
+        varibleSetUp(EncStandard.CT, AttStandard.BF);
 
         System.out.println("Staring...");
 
@@ -321,7 +320,7 @@ class Main {
 
         decryptData();
 
-        //attackData();
+        attackData();
 
         System.out.println("Done!");
 
@@ -344,6 +343,7 @@ class Main {
     public static void main(String[] args) {
         testKrypto();
         //anaCharFrec();
+
     }
 
 }
