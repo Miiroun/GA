@@ -47,4 +47,8 @@ public class Statistics {
     public static void recordeStats() {
     }
 
+    public static void addDataCount(String string, int i) {
+        //increase a datafield with name "string" i times, or create it if not exist
+    }
+
 }

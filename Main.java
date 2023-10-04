@@ -92,7 +92,7 @@ class Main {
     public static String readData(String path){
         String data = "";
         try{
-            data = new String(Files.readAllBytes(Paths.get(path)));
+            data = new String(Files.readAllBytes(Paths.get(path)), charset);
         } catch (Exception e) {
             System.out.println("An error '" + e + "' has occurred.");
         }

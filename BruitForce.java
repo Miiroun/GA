@@ -1,10 +1,13 @@
 
 import java.math.BigInteger;
+import java.util.ArrayList;
 
 import Chiffers.CaesarCipher;
 import Interfaces.AttackInterface;
 
 public class BruitForce implements AttackInterface {
+    int[][][][] swe4Grams = null;
+
     // atempts at DES
     public static void attackDES() {
         System.out.println("decrypting data");
@@ -32,20 +35,97 @@ public class BruitForce implements AttackInterface {
 
     }
 
-    public String[] genNGram(String data) {
-                throw new UnsupportedOperationException("not yet implented nGrams function");
+    public int[][][][] readNGrams() {
+        // reads the ngram in files
+        int[][][][] grams = new int[29][29][29][29];
+        int count = 0;
+
+        String[] splits = Main.readData("data/nGrams/swedish_quadgrams.txt").split("\n", 0);
+
+        for (String split : splits) {
+            grams = setNgramValue(grams, split.substring(0, 4), Integer.valueOf(split.substring(5)));
+        }
+
+        System.out.println(count); //sould divide by this and then multiply by 1000
+        return grams;
+    }
+
+    public int getNgramValue(int[][][][] grams, String nGramS) {
+        char[] nGram = nGramS.toCharArray();
+        int value = grams[Utility.indexOf(nGram[0])][Utility.indexOf(nGram[1])][Utility.indexOf(nGram[2])][Utility.indexOf(nGram[3])];
+
+        return value;
 
     }
 
+    public int[][][][] setNgramValue(int[][][][] grams, String nGramS, int value) {
+        char[] nGram = nGramS.toCharArray();
+
+        // maybe not do swe4gram here but the loocal ngrams for our string
+        grams[Utility.indexOf(nGram[0])][Utility.indexOf(nGram[1])][Utility.indexOf(nGram[2])][Utility
+                .indexOf(nGram[3])] = value;
+
+        return grams;
+    }
+
+    public String[] genNGram(String data) {
+        String[] words = data.split(" ", 0);
+
+        ArrayList<String> grams = new ArrayList<String>() {};
+
+        for (String word : words) {
+            for (int i = 0; i <= word.length() - 4; i++) {
+                char[] temp = {word.charAt(i), word.charAt(i+1), word.charAt(i+2), word.charAt(i+3)};
+                grams.add(new String(temp));
+            }
+        }
+
+        String[] gramArray = new String[grams.size()];
+        gramArray = grams.toArray(gramArray);
+
+        return gramArray;
+    }
+
+    public int[][][][] countNGrams(String[] grams) {
+        int[][][][] nGramCount = new int[29][29][29][29];
+
+        for (String gramS : grams) {
+            nGramCount = setNgramValue(nGramCount, gramS, getNgramValue(nGramCount, gramS) + 1);
+        }
+
+        return nGramCount;
+
+    }
+
+    public int compareNGrams(int[][][][] nGrams1, int[][][][] nGrams2) {
+        int value = 0;
+        for (int i4 = 0; i4 < nGrams2.length; i4++) {
+            for (int i3 = 0; i3 < nGrams2.length; i3++) {
+                for (int i2 = 0; i2 < nGrams2.length; i2++) {
+                    for (int i1 = 0; i1 < nGrams2.length; i1++) {
+                        value += Math.abs(nGrams1[i4][i3][i2][i1] + nGrams2[i4][i3][i2][i1]);
+                    }
+                }
+            }
+        }
+
+        return value;
+    }
+
     public int evaluteText(String data) {
+        Statistics.addDataCount("evaText", 1);
         // not yet implemented
 
-        // either quadgram or dictonary
-        String[] nGrams = genNGram(data);
-        int value = 0;
+        if (swe4Grams == null) {
+            swe4Grams = readNGrams();
+        }
+        
+        String[] Grams = genNGram(data); // should be list? or dictonary?
+        int[][][][] nGramValues = countNGrams(Grams);
 
-        throw new UnsupportedOperationException("not yet implented evalutate text function");
-        //return value;
+        int value = compareNGrams(swe4Grams, nGramValues);
+
+        return value;
     }
 
     public int[] dividers(int nummber) {
@@ -65,7 +145,7 @@ public class BruitForce implements AttackInterface {
     }
 
     public static int[][] permutations(int[] array) {
-        //maybe create lookuptable if too slow
+        // maybe create lookuptable if too slow
 
         if (array.length != 1) {
             int[][] perm = new int[Utility.factorial(array.length)][];
@@ -150,8 +230,8 @@ public class BruitForce implements AttackInterface {
                 }
 
                 keys = permutations(key);
-                //calculates all keys for current matrix length
-                
+                // calculates all keys for current matrix length
+
                 for (int j = 0; j < keys.length; j++) {
                     // check the key and decrypt message
                     ct.setKey(keys[j]);
