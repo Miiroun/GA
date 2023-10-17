@@ -1,3 +1,4 @@
+package Other;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -5,17 +6,20 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import AdvancedEncryption.DES;
-import AdvancedEncryption.DiffieHellman;
-import AdvancedEncryption.TriDES;
 import Chiffers.CaesarCipher;
+import Chiffers.ColumnarTransposition;
 import Chiffers.Substitution;
 import Chiffers.X_OR;
 import Interfaces.AttackInterface;
 import Interfaces.ByteEncrytionInterface;
 import Interfaces.StringEncrytionInterface;
+import attacks.BruitForce;
+import attacks.FrequencyAnalysis;
+import attacks.AdvancedEncryption.DES;
+import attacks.AdvancedEncryption.DiffieHellman;
+import attacks.AdvancedEncryption.TriDES;
 
-class Main {
+public class Main {
 
     public enum EncStandard {
         DES,
@@ -29,7 +33,8 @@ class Main {
 
     public enum AttStandard {
         FA,
-        BF
+        BF,
+        not
     }
 
     public static EncStandard encStandard;
@@ -312,7 +317,7 @@ class Main {
    
 
     public static void testKrypto() {
-        varibleSetUp(EncStandard.CT, AttStandard.BF);
+        varibleSetUp(EncStandard.Sub, AttStandard.not);
 
         System.out.println("Staring...");
 
@@ -320,7 +325,7 @@ class Main {
 
         decryptData();
 
-        attackData();
+        if(attStandard != AttStandard.not) attackData();
 
         System.out.println("Done!");
 

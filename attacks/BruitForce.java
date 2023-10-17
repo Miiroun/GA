@@ -1,12 +1,17 @@
+package attacks;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
 
 import Chiffers.CaesarCipher;
+import Chiffers.ColumnarTransposition;
 import Interfaces.AttackInterface;
+import Other.Main;
+import Other.Statistics;
+import Other.Utility;
 
 public class BruitForce implements AttackInterface {
-    int[][][][] swe4Grams = null;
+    int[][][][] swe4Grams;
 
     // atempts at DES
     public static void attackDES() {
@@ -35,24 +40,40 @@ public class BruitForce implements AttackInterface {
 
     }
 
-    public int[][][][] readNGrams() {
+    public int[][][][] readNGrams(String path) {
         // reads the ngram in files
         int[][][][] grams = new int[29][29][29][29];
-        int count = 0;
+        // int count = 0;
 
-        String[] splits = Main.readData("data/nGrams/swedish_quadgrams.txt").split("\n", 0);
+        String[] splits = Main.readData(path).split("\n", 0);
 
         for (String split : splits) {
             grams = setNgramValue(grams, split.substring(0, 4), Integer.valueOf(split.substring(5)));
+            // count += Integer.valueOf(split.substring(5));
         }
 
-        System.out.println(count); //sould divide by this and then multiply by 1000
+        // 79367664
+        // System.out.println(count); //sould divide by this and then multiply by 1000
         return grams;
     }
 
     public int getNgramValue(int[][][][] grams, String nGramS) {
         char[] nGram = nGramS.toCharArray();
-        int value = grams[Utility.indexOf(nGram[0])][Utility.indexOf(nGram[1])][Utility.indexOf(nGram[2])][Utility.indexOf(nGram[3])];
+        
+        for (char c : nGram) {
+            aa: {
+                for (char d : Utility.alphabet) {
+                    if (c == d) {
+                        break aa;
+                    }
+                }
+                return 1000000000; // a big nummer to discurage signes not known
+            }
+        }
+
+
+        int value = grams[Utility.indexOf(nGram[0])][Utility.indexOf(nGram[1])][Utility.indexOf(nGram[2])][Utility
+                .indexOf(nGram[3])];
 
         return value;
 
@@ -60,6 +81,18 @@ public class BruitForce implements AttackInterface {
 
     public int[][][][] setNgramValue(int[][][][] grams, String nGramS, int value) {
         char[] nGram = nGramS.toCharArray();
+
+        for (char c : nGram) {
+            aa: {
+                for (char d : Utility.alphabet) {
+                    if (Character.toLowerCase(c) == d) {
+                        break aa;
+                    }
+                }
+                return grams; // should maybe print something when find characters like this
+            }
+        }
+
 
         // maybe not do swe4gram here but the loocal ngrams for our string
         grams[Utility.indexOf(nGram[0])][Utility.indexOf(nGram[1])][Utility.indexOf(nGram[2])][Utility
@@ -71,11 +104,12 @@ public class BruitForce implements AttackInterface {
     public String[] genNGram(String data) {
         String[] words = data.split(" ", 0);
 
-        ArrayList<String> grams = new ArrayList<String>() {};
+        ArrayList<String> grams = new ArrayList<String>() {
+        };
 
         for (String word : words) {
             for (int i = 0; i <= word.length() - 4; i++) {
-                char[] temp = {word.charAt(i), word.charAt(i+1), word.charAt(i+2), word.charAt(i+3)};
+                char[] temp = { word.charAt(i), word.charAt(i + 1), word.charAt(i + 2), word.charAt(i + 3) };
                 grams.add(new String(temp));
             }
         }
@@ -97,13 +131,15 @@ public class BruitForce implements AttackInterface {
 
     }
 
-    public int compareNGrams(int[][][][] nGrams1, int[][][][] nGrams2) {
-        int value = 0;
+    public double compareNGrams(int[][][][] nGrams1, int[][][][] nGrams2, int nG2Count) {
+        double value = 0;
+        double factor = (10000000/nG2Count);
         for (int i4 = 0; i4 < nGrams2.length; i4++) {
             for (int i3 = 0; i3 < nGrams2.length; i3++) {
                 for (int i2 = 0; i2 < nGrams2.length; i2++) {
-                    for (int i1 = 0; i1 < nGrams2.length; i1++) {
-                        value += Math.abs(nGrams1[i4][i3][i2][i1] + nGrams2[i4][i3][i2][i1]);
+                    for (int i1 = 0; i1 < nGrams2.length; i1++) { //793 is precomupted and 10 000 / ngrams in data set
+                        double temp = (nGrams1[i4][i3][i2][i1])  - (nGrams2[i4][i3][i2][i1] * factor);
+                        value = value + Math.abs(temp);
                     }
                 }
             }
@@ -112,18 +148,18 @@ public class BruitForce implements AttackInterface {
         return value;
     }
 
-    public int evaluteText(String data) {
+    public double evaluteText(String data) {
         Statistics.addDataCount("evaText", 1);
         // not yet implemented
 
         if (swe4Grams == null) {
-            swe4Grams = readNGrams();
+            swe4Grams = readNGrams("data/nGrams/swedish_quadgrams.txt");
         }
-        
-        String[] Grams = genNGram(data); // should be list? or dictonary?
+
+        String[] Grams = genNGram(data); 
         int[][][][] nGramValues = countNGrams(Grams);
 
-        int value = compareNGrams(swe4Grams, nGramValues);
+        double value = compareNGrams(swe4Grams, nGramValues, Grams.length);
 
         return value;
     }
@@ -187,14 +223,15 @@ public class BruitForce implements AttackInterface {
 
         for (int i = 0; i < 29; i++) {
             cc.setKey(Integer.toString(i));
-            message[29] = cc.dec(data);
+            message[i] = cc.dec(data);
         }
 
         int bestMatch = -1;
-        int bestValue = Integer.MAX_VALUE;
+        double bestValue = Double.MAX_VALUE;
+        double value;
         for (int i = 0; i < 29; i++) {
-            int value = evaluteText(message[i]);
-            if (value > bestValue) {
+            value = evaluteText(message[i]);
+            if(value < bestValue) { //something wrong with value function, contiusly decrease
                 bestMatch = i;
                 bestValue = value;
             }
@@ -223,24 +260,22 @@ public class BruitForce implements AttackInterface {
 
         int[][] keys = null;
         for (int num : div) { // div is all matrix dimentions
-            for (int i = 0; i < Utility.factorial(num); i++) { // nummber of permutations
-                int[] key = new int[num];
-                for (int j = 0; j < num; j++) { // nummbers that appera in key
-                    key[j] = j;
-                }
+            int[] key = new int[num];
+            for (int j = 0; j < num; j++) { // nummbers that appera in key
+                key[j] = j;
+            }
 
-                keys = permutations(key);
-                // calculates all keys for current matrix length
+            keys = permutations(key);
+            // calculates all keys for current matrix length
 
-                for (int j = 0; j < keys.length; j++) {
-                    // check the key and decrypt message
-                    ct.setKey(keys[j]);
-                    String text = ct.dec(data);
-                    int value = evaluteText(text);
-                    if (value >= bestValue) {
-                        bestMatch = text;
-                        bestValue = value;
-                    }
+            for (int j = 0; j < keys.length; j++) {
+                // check the key and decrypt message
+                ct.setKey(keys[j]);
+                String text = ct.dec(data);
+                double value = evaluteText(text);
+                if (value <= bestValue) {
+                    bestMatch = text;
+                    bestValue = (int)value;
                 }
             }
 
