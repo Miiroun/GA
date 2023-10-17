@@ -9,10 +9,10 @@ public class Utility {
     public static final char[] signs = "abcdefghijklmnopqrstuvwxyzåäöABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ0123456789 ,.;:!?'-+=%<>[](){}/\r\n\t".toCharArray(); //ÃƒÆ†â¢Â‚€¬¶¤–“œ„
     
     //{'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','å','ä','ö'};
-    public static int indexOf(char c) {
+    public static int indexOf(char c, char[] alf) {
         Integer num = null;
-        for (int i = 0; i < alphabet.length; i++) {
-            if (Character.toLowerCase(c) == alphabet[i]) {
+        for (int i = 0; i < alf.length; i++) {
+            if (Character.toLowerCase(c) == alf[i]) {
                 num = i;
             }
         }
@@ -21,6 +21,11 @@ public class Utility {
 
         return num;
     }
+
+    public static int indexOf(char c) {
+        return indexOf(c, alphabet);
+    }
+
 
     public static int factorial(int n){    
         if (n == 0)    
