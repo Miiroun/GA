@@ -1,5 +1,5 @@
 package Chiffers;
-import Interfaces.StringEncrytionInterface;
+import Other.Interfaces.StringEncrytionInterface;
 
 public class CaesarCipher implements StringEncrytionInterface {
     int key = 0;

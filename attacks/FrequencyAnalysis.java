@@ -1,16 +1,18 @@
 package attacks;
 
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
+import java.util.TreeSet;
 
-import Interfaces.AttackInterface;
 import Other.Utility;
+import Other.Interfaces.AttackInterface;
 
 import static java.util.Map.entry;    
 
 public class FrequencyAnalysis implements AttackInterface{
 
-    public Map<Character, Integer> englishFrequency = Map.ofEntries(
+    public Map<Character, Integer> sweFrequency = Map.ofEntries(
         entry('a', 720),
         entry('b', 120),
         entry('c', 180),
@@ -74,7 +76,6 @@ public class FrequencyAnalysis implements AttackInterface{
 
     public String attackCC(String data) {
         char[] charArray = data.toCharArray();
-
         Map<Character, Integer> frequency = analysLetters(charArray);
 
         int lowestDisplasment = Integer.MAX_VALUE;
@@ -86,12 +87,12 @@ public class FrequencyAnalysis implements AttackInterface{
             {
             char absChar = Utility.alphabet[(j) % 29];
             char locChar = Utility.alphabet[(j + i) % 29];
-            int dis = Math.abs(englishFrequency.get(absChar) - frequency.get(locChar));
+            int dis = Math.abs(sweFrequency.get(absChar) - frequency.get(locChar));
             currentDis += dis;
             //System.out.println(dis);
 
             }
-            if ( currentDis < lowestDisplasment) {lowestDisplasment = currentDis;bestMatch = i;}
+            if ( currentDis < lowestDisplasment) lowestDisplasment = currentDis;bestMatch = i;
         }
 
         return Integer.toString(bestMatch);
@@ -103,7 +104,31 @@ public class FrequencyAnalysis implements AttackInterface{
 
     @Override
     public String attackST(String data) {
+        char[] charArray = data.toCharArray();
+        Map<Character, Integer> frequency = analysLetters(charArray);
+        Set<Character> keys[] = new TreeSet<Character>()[29];
+
+        float percent = 0.15f;
+        for (char letter  : Utility.alphabet) {
+            int value = frequency.get(letter);
+
+            for (char answerLetter  : Utility.alphabet) {
+                int answerValue = sweFrequency.get(answerLetter);
+                if(value * (1- percent) < answerLetter && value * (1- percent) > answerLetter);
+                {
+                    keys[Utility.indexOf(letter)].add(answerLetter);
+                }
+            }
+
+        }
+
+        //should go throw all key combinations ive generated
+        
+
+
+        //return ;
         throw new UnsupportedOperationException("Unimplemented method 'attackST'");
+
     }
 
     @Override

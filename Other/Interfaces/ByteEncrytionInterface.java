@@ -1,4 +1,4 @@
-package Interfaces;
+package Other.Interfaces;
 
 public interface ByteEncrytionInterface {
 

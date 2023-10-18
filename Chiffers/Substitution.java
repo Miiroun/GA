@@ -2,8 +2,8 @@ package Chiffers;
 import java.util.Set;
 import java.util.TreeSet;
 
-import Interfaces.StringEncrytionInterface;
 import Other.Utility;
+import Other.Interfaces.StringEncrytionInterface;
 
 public class Substitution implements StringEncrytionInterface {
 

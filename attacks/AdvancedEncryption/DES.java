@@ -2,7 +2,7 @@ package attacks.AdvancedEncryption;
 
 import java.util.BitSet;
 
-import Interfaces.ByteEncrytionInterface;
+import Other.Interfaces.ByteEncrytionInterface;
 public class DES implements ByteEncrytionInterface {
     
     // functions

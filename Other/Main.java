@@ -10,9 +10,9 @@ import Chiffers.CaesarCipher;
 import Chiffers.ColumnarTransposition;
 import Chiffers.Substitution;
 import Chiffers.X_OR;
-import Interfaces.AttackInterface;
-import Interfaces.ByteEncrytionInterface;
-import Interfaces.StringEncrytionInterface;
+import Other.Interfaces.AttackInterface;
+import Other.Interfaces.ByteEncrytionInterface;
+import Other.Interfaces.StringEncrytionInterface;
 import attacks.BruitForce;
 import attacks.FrequencyAnalysis;
 import attacks.AdvancedEncryption.DES;
@@ -49,12 +49,12 @@ public class Main {
         encStandard = encStand;
         attStandard = attStand;
 
-        if (encStandard == EncStandard.DES || encStandard == EncStandard.TriDES || encStandard == EncStandard.XOR || encStandard == EncStandard.DH) {
+        if (encStandard == EncStandard.DES || encStandard == EncStandard.TriDES || encStandard == EncStandard.DH) {
             doBytes = true;
             blockSize = 64;
             byteSize = blockSize / 8;
             charset = Charset.forName("UTF-8");
-        } else if (encStandard == EncStandard.CC || encStandard == EncStandard.Sub || encStandard == EncStandard.CT) {
+        } else if (encStandard == EncStandard.CC || encStandard == EncStandard.Sub ||  encStandard == EncStandard.XOR || encStandard == EncStandard.CT) {
             doBytes = false;
             charset = Charset.forName("UTF-8");
 
@@ -317,7 +317,7 @@ public class Main {
    
 
     public static void testKrypto() {
-        varibleSetUp(EncStandard.Sub, AttStandard.not);
+        varibleSetUp(EncStandard.XOR, AttStandard.not);
 
         System.out.println("Staring...");
 

@@ -5,10 +5,11 @@ import java.util.ArrayList;
 
 import Chiffers.CaesarCipher;
 import Chiffers.ColumnarTransposition;
-import Interfaces.AttackInterface;
+import Chiffers.Substitution;
 import Other.Main;
 import Other.Statistics;
 import Other.Utility;
+import Other.Interfaces.AttackInterface;
 
 public class BruitForce implements AttackInterface {
     int[][][][] swe4Grams;
@@ -148,7 +149,7 @@ public class BruitForce implements AttackInterface {
         return value;
     }
 
-    public double evaluteText(String data) {
+    public double evaluateNGram(String data) {
         Statistics.addDataCount("evaText", 1);
         // not yet implemented
 
@@ -162,6 +163,17 @@ public class BruitForce implements AttackInterface {
         double value = compareNGrams(swe4Grams, nGramValues, Grams.length);
 
         return value;
+    }
+
+    public double evaluteIOC(String data) { //index of coincidence
+
+
+        return ;
+    }
+
+    public double evaluteText(String data) {
+        return evaluateNGram(data);
+        //return evaluteIOC(data);
     }
 
     public int[] dividers(int nummber) {
@@ -242,7 +254,35 @@ public class BruitForce implements AttackInterface {
 
     @Override
     public String attackST(String data) {
-        throw new UnsupportedOperationException("Unimplemented method 'attackST'");
+        int key[] = new int[29];
+        for (int i = 1; i <= key.length; i++) key[i] = i;
+        int keys[][] = permutations(key);
+
+
+        Substitution sub = new Substitution();
+        String[] message = new String[Utility.factorial(29)];
+        int k = 0;//im breacking integer limit, finns 8*10^30 möjligheter
+        for (int[] is : keys) {
+            String inChar = "";
+            for (int i = 0; i < is.length; i++) inChar += Utility.alphabet[is[i]];
+            sub.setKey(inChar);
+            message[k] = sub.dec(data);
+            k++;
+
+        }
+
+
+        int bestMatch = -1;
+        double bestValue = Double.MAX_VALUE;
+        double value;
+        for (int i = 0; i < message.length; i++) {
+            value = evaluteText(message[i]);
+            if(value < bestValue) { //something wrong with value function, contiusly decrease
+                bestMatch = i;
+                bestValue = value;
+            }
+        }
+        return message[bestMatch];
     }
 
     @Override

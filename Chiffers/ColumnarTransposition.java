@@ -1,7 +1,7 @@
 package Chiffers;
 
-import Interfaces.StringEncrytionInterface;
 import Other.Utility;
+import Other.Interfaces.StringEncrytionInterface;
 
 public class ColumnarTransposition implements StringEncrytionInterface {
     public int[] key;

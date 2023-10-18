@@ -1,4 +1,4 @@
-package Interfaces;
+package Other.Interfaces;
 public interface AttackInterface {
     
     public String attackCC(String data);

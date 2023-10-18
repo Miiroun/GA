@@ -1,5 +1,5 @@
 package attacks.AdvancedEncryption;
-import Interfaces.ByteEncrytionInterface;
+import Other.Interfaces.ByteEncrytionInterface;
 
 public class DiffieHellman implements ByteEncrytionInterface {
     

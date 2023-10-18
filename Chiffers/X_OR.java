@@ -1,40 +1,35 @@
 package Chiffers;
-import Interfaces.StringEncrytionInterface;
+import Other.Interfaces.StringEncrytionInterface;
 
 public class X_OR implements StringEncrytionInterface {
-    public char[] key = "a".toCharArray(); 
+    public char[] key;
 
-    public String enc(String data) {
-        char[] message = data.toString().toCharArray();
+
+    public String crypt(String data, int factor){
+        char[] dataArray = data.toString().toCharArray();
+        char[] message = new char[dataArray.length];
 
         for (int i = 0; i < message.length; i++) {  //inte efel med denna functionen, inte detta iallafall
-            message[i] = (char) (message[i]     + key[ i % key.length]);
+            message[i] = (char) (dataArray[i]     + factor * key[ i % key.length]);
             
         }
 
-        return message.toString();
+        String messString = new String(message);
+        return messString;
     }
 
-    public X_OR() {
-        key[0] = 0;
-
-    }
-
+        public String enc(String data) {
+            return crypt(data, 1);
+        }
+    
     public String dec(String data) {
-                char[] message = data.toString().toCharArray();
-
-        for (int i = 0; i < message.length; i++) {
-            message[i] = (char) (message[i]    - key[ i % key.length]);
-            
-        }
-
-        return message.toString();
+        return crypt(data, -1);
     }
     
 
     
     public void setKey(String keyString) {
-        throw new UnsupportedOperationException("Unimplemented method 'setKey'");
+        key = keyString.toCharArray();
     }
     
 }
