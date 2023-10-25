@@ -106,7 +106,7 @@ public class FrequencyAnalysis implements AttackInterface{
     public String attackST(String data) {
         char[] charArray = data.toCharArray();
         Map<Character, Integer> frequency = analysLetters(charArray);
-        Set<Character> keys[] = new TreeSet<Character>()[29];
+        Set<Character> keys[] = new TreeSet[29];
 
         float percent = 0.15f;
         for (char letter  : Utility.alphabet) {
@@ -114,7 +114,7 @@ public class FrequencyAnalysis implements AttackInterface{
 
             for (char answerLetter  : Utility.alphabet) {
                 int answerValue = sweFrequency.get(answerLetter);
-                if(value * (1- percent) < answerLetter && value * (1- percent) > answerLetter);
+                if(value * (1- percent) < answerValue && value * (1- percent) > answerValue);
                 {
                     keys[Utility.indexOf(letter)].add(answerLetter);
                 }

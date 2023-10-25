@@ -1,18 +1,18 @@
 package attacks;
 
 import java.math.BigInteger;
-import java.util.ArrayList;
 
 import Chiffers.CaesarCipher;
 import Chiffers.ColumnarTransposition;
 import Chiffers.Substitution;
 import Other.Main;
+import Other.QuadGram;
 import Other.Statistics;
 import Other.Utility;
 import Other.Interfaces.AttackInterface;
 
 public class BruitForce implements AttackInterface {
-    int[][][][] swe4Grams;
+    QuadGram swe4Grams;
 
     // atempts at DES
     public static void attackDES() {
@@ -41,211 +41,101 @@ public class BruitForce implements AttackInterface {
 
     }
 
-    public int[][][][] readNGrams(String path) {
-        // reads the ngram in files
-        int[][][][] grams = new int[29][29][29][29];
-        // int count = 0;
-
-        String[] splits = Main.readData(path).split("\n", 0);
-
-        for (String split : splits) {
-            grams = setNgramValue(grams, split.substring(0, 4), Integer.valueOf(split.substring(5)));
-            // count += Integer.valueOf(split.substring(5));
-        }
-
-        // 79367664
-        // System.out.println(count); //sould divide by this and then multiply by 1000
-        return grams;
-    }
-
-    public int getNgramValue(int[][][][] grams, String nGramS) {
-        char[] nGram = nGramS.toCharArray();
-        
-        for (char c : nGram) {
-            aa: {
-                for (char d : Utility.alphabet) {
-                    if (c == d) {
-                        break aa;
-                    }
-                }
-                return 1000000000; // a big nummer to discurage signes not known
-            }
-        }
-
-
-        int value = grams[Utility.indexOf(nGram[0])][Utility.indexOf(nGram[1])][Utility.indexOf(nGram[2])][Utility
-                .indexOf(nGram[3])];
-
-        return value;
-
-    }
-
-    public int[][][][] setNgramValue(int[][][][] grams, String nGramS, int value) {
-        char[] nGram = nGramS.toCharArray();
-
-        for (char c : nGram) {
-            aa: {
-                for (char d : Utility.alphabet) {
-                    if (Character.toLowerCase(c) == d) {
-                        break aa;
-                    }
-                }
-                return grams; // should maybe print something when find characters like this
-            }
-        }
-
-
-        // maybe not do swe4gram here but the loocal ngrams for our string
-        grams[Utility.indexOf(nGram[0])][Utility.indexOf(nGram[1])][Utility.indexOf(nGram[2])][Utility
-                .indexOf(nGram[3])] = value;
-
-        return grams;
-    }
-
-    public String[] genNGram(String data) {
-        String[] words = data.split(" ", 0);
-
-        ArrayList<String> grams = new ArrayList<String>() {
-        };
-
-        for (String word : words) {
-            for (int i = 0; i <= word.length() - 4; i++) {
-                char[] temp = { word.charAt(i), word.charAt(i + 1), word.charAt(i + 2), word.charAt(i + 3) };
-                grams.add(new String(temp));
-            }
-        }
-
-        String[] gramArray = new String[grams.size()];
-        gramArray = grams.toArray(gramArray);
-
-        return gramArray;
-    }
-
-    public int[][][][] countNGrams(String[] grams) {
-        int[][][][] nGramCount = new int[29][29][29][29];
-
-        for (String gramS : grams) {
-            nGramCount = setNgramValue(nGramCount, gramS, getNgramValue(nGramCount, gramS) + 1);
-        }
-
-        return nGramCount;
-
-    }
-
-    public double compareNGrams(int[][][][] nGrams1, int[][][][] nGrams2, int nG2Count) {
-        double value = 0;
-        double factor = (10000000/nG2Count);
-        for (int i4 = 0; i4 < nGrams2.length; i4++) {
-            for (int i3 = 0; i3 < nGrams2.length; i3++) {
-                for (int i2 = 0; i2 < nGrams2.length; i2++) {
-                    for (int i1 = 0; i1 < nGrams2.length; i1++) { //793 is precomupted and 10 000 / ngrams in data set
-                        double temp = (nGrams1[i4][i3][i2][i1])  - (nGrams2[i4][i3][i2][i1] * factor);
-                        value = value + Math.abs(temp);
-                    }
-                }
-            }
-        }
-
-        return value;
-    }
-
     public double evaluateNGram(String data) {
         Statistics.addDataCount("evaText", 1);
         // not yet implemented
 
-        if (swe4Grams == null) {
-            swe4Grams = readNGrams("data/nGrams/swedish_quadgrams.txt");
-        }
+        if (swe4Grams == null){
+            swe4Grams = new QuadGram();
+             swe4Grams.readNGrams("data/nGrams/swedish_quadgrams.txt");}
 
-        String[] Grams = genNGram(data); 
-        int[][][][] nGramValues = countNGrams(Grams);
 
-        double value = compareNGrams(swe4Grams, nGramValues, Grams.length);
+        String[] Grams = QuadGram.genNGram(data); 
+        QuadGram nGramValues = new QuadGram();
+        nGramValues.countNGrams(Grams);
+
+        double value = QuadGram.compareNGrams(swe4Grams, nGramValues, Grams.length);
 
         return value;
     }
 
     public double evaluteIOC(String data) { //index of coincidence
+        //does not work for transposition chifers, can just be used to tell that been incrypted by substitution
+        int alfLength = 29;
+
+        double sum = 0d;
+        long n = data.length();
+        char[] letterarray = data.toCharArray();
+        int[] letterCount = new int[29];
+
+        for (int i = 0; i < letterarray.length; i++){ 
+            aa:{for(char c : Utility.alphabet){if(letterarray[i] == c)break aa;}letterarray[i] = 'q';}} //if char:i not in letterArray then replace with q
+        for (char c : letterarray) letterCount[Utility.indexOf(c)] += 1;
+
+        for (int i = 0; i < letterCount.length; i++){ 
+            long mult = Math.multiplyExact(letterCount[i], (letterCount[i] -1));
+            sum += mult;
+        }
+
+        long div = Math.multiplyExact(n, n-1);
+        return sum *(alfLength) / div ;
+    }
+
+    public double evaluateQGProb(String data) {//Quadgram but with proberbility
+        if (swe4Grams == null){
+            swe4Grams = new QuadGram();
+             swe4Grams.readNGrams("data/nGrams/swedish_quadgrams.txt");}
+
+        String[] grams = QuadGram.genNGram(data); 
+        double value = 0d;
 
 
-        return ;
+        long length = swe4Grams.getLength();
+        double log2 = Math.log10(length);
+        for(String gram : grams) {
+            long standVal = swe4Grams.getNgramValue(gram);
+            double prob;
+            if(standVal != 0) {
+                double log1 = Math.log10(standVal);
+                prob = log1 - log2;
+                //log ( val / (length) ); 
+            } else {
+                prob = 0;
+            }
+            value += Math.abs(prob);   
+        }
+
+        double normalValue = (value)/grams.length;
+        double removedSigns = -50; int k = 5;
+        if(grams.length != 0)removedSigns = (k * ((4 * grams.length ) - data.length()) )/ (grams.length); 
+        return normalValue + removedSigns;
     }
 
     public double evaluteText(String data) {
-        return evaluateNGram(data);
+        //return evaluateNGram(data);
         //return evaluteIOC(data);
+        return evaluateQGProb(data);
     }
-
-    public int[] dividers(int nummber) {
-        int[] div = new int[0];
-
-        for (int i = 1; i < nummber; i++) {
-            if (nummber % i == 0) {
-                int[] tempDiv = new int[div.length + 1];
-                System.arraycopy(div, 0, tempDiv, 0, div.length);
-                div = tempDiv;
-                div[div.length - 1] = i;
-            }
-        }
-
-        return div;
-
-    }
-
-    public static int[][] permutations(int[] array) {
-        // maybe create lookuptable if too slow
-
-        if (array.length != 1) {
-            int[][] perm = new int[Utility.factorial(array.length)][];
-            int n = 0;
-
-            int[] shortArr = new int[array.length - 1];
-            System.arraycopy(array, 0, shortArr, 0, array.length - 1);
-
-            int[][] tempPerm = permutations(shortArr);
-            for (int i = 0; i < array.length; i++) {
-                for (int j = 0; j < tempPerm.length; j++) {
-                    int[] tempArr = new int[array.length];
-                    if (i != 0) {
-                        System.arraycopy(tempPerm[j], 0, tempArr, 0, i); // copys start until select index
-                    }
-                    tempArr[i] = array[array.length - 1]; // makes select index to last index
-                    if (i != array.length - 1) {
-                        System.arraycopy(tempPerm[j], i, tempArr, i + 1, array.length - 1 - i); // copys after select
-                                                                                                // index
-                    }
-
-                    perm[n] = tempArr;
-                    n++;
-                }
-
-            }
-            return perm;
-        } else {
-            int[][] perm = new int[1][];
-            perm[0] = array;
-            return perm;
-        }
-
-    }
+    
 
     public String attackCC(String data) {
-        String[] message = new String[29];
+        final int testLength = 29*2;
+        String[] message = new String[testLength];
         CaesarCipher cc = new CaesarCipher();
 
-        for (int i = 0; i < 29; i++) {
-            cc.setKey(Integer.toString(i));
+        for (int i = 0; i < testLength; i++) {
+            cc.setKey(Integer.toString(i- (testLength/2)));
             message[i] = cc.dec(data);
         }
 
         int bestMatch = -1;
-        double bestValue = Double.MAX_VALUE;
-        double value;
-        for (int i = 0; i < 29; i++) {
-            value = evaluteText(message[i]);
-            if(value < bestValue) { //something wrong with value function, contiusly decrease
+        double bestValue = Double.MIN_VALUE; //change sign if focus on low
+        double[] values = new double[testLength];
+        for (int i = 0; i < testLength; i++) {
+            values[i] = evaluteText(message[i]); 
+            if(values[i] > bestValue) {// change sign if focus on low
                 bestMatch = i;
-                bestValue = value;
+                bestValue = values[i];
             }
         }
 
@@ -256,7 +146,7 @@ public class BruitForce implements AttackInterface {
     public String attackST(String data) {
         int key[] = new int[29];
         for (int i = 1; i <= key.length; i++) key[i] = i;
-        int keys[][] = permutations(key);
+        int keys[][] = Utility.permutations(key);
 
 
         Substitution sub = new Substitution();
@@ -292,7 +182,7 @@ public class BruitForce implements AttackInterface {
 
     @Override
     public String attackCT(String data) {
-        int[] div = dividers(data.length());
+        int[] div = Utility.dividers(data.length());
         ColumnarTransposition ct = new ColumnarTransposition();
 
         String bestMatch = "";
@@ -305,7 +195,7 @@ public class BruitForce implements AttackInterface {
                 key[j] = j;
             }
 
-            keys = permutations(key);
+            keys = Utility.permutations(key);
             // calculates all keys for current matrix length
 
             for (int j = 0; j < keys.length; j++) {

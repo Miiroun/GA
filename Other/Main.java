@@ -61,7 +61,6 @@ public class Main {
         }
 
 
-        Statistics.startCollecting();
     }
 
     // setup
@@ -317,7 +316,8 @@ public class Main {
    
 
     public static void testKrypto() {
-        varibleSetUp(EncStandard.XOR, AttStandard.not);
+        Statistics.startCollecting();
+        varibleSetUp(EncStandard.CC, AttStandard.BF);
 
         System.out.println("Staring...");
 
@@ -339,16 +339,60 @@ public class Main {
     }
 
 
+    public static void testEvaluate() {
+        BruitForce bf = new BruitForce();
+        String str = readData("data/texts/hamlet.txt");
+        //str = "kzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxb";
+        //str = "TobeornottobethatisthequestionWhethertisNoblerinthemindtosufferTheSlingsandArrowsofoutrageousFortuneOrtotakeArmsagainstaSeaoftroublesAndbyopposingendthemWilliamShakespeareHamlet";
+        System.out.println(bf.evaluteText(str));
+    }
 
+    public static void collectData() {
+        Statistics.startCollecting();
+        varibleSetUp(EncStandard.Sub, AttStandard.BF);
 
+        String[] texts = new String[20]; //5 shackspear 5 Stringberg 10 av olika kort längder 10--> 200 karaktärer
+        texts[0] = readData("data/texts/hamlet.txt");
 
+        for (int i = 0; i < 4 * 2; i++) {// looop throw encryption and attack pattarns
+            if(i % 2 == 0) {
+                attStandard = AttStandard.BF;
+            } else {
+                attStandard = AttStandard.FA;
+            }
+            if(i == 0 || i == 1) {
+                encStandard = EncStandard.CC;
+                keyString = "3";
+            } else if(i == 2 || i == 3) {
+                encStandard = EncStandard.Sub;
+                keyString = "timeodansfrbcghjklpåäöquvwxyz";
+            } else if(i == 4 || i == 5) {
+                encStandard = EncStandard.XOR;
+                keyString = "data";
+            } else if(i == 6 || i == 7) {
+                encStandard = EncStandard.CT;
+                keyString = "swindon";
+            } 
+
+            for (int j = 0; j < texts.length; j++) { //loop throu all the texts
+                inputString = texts[i];
+                doCryption(false);
+
+                inputString = outputString;
+                attackData();
+                //Statistics.dumpResults();
+            }
+        }
+        Statistics.endCollecting(false);
+    }
 
 
 
     public static void main(String[] args) {
         testKrypto();
         //anaCharFrec();
-
+        //testEvaluate();
+        //collectData();
     }
 
 }
