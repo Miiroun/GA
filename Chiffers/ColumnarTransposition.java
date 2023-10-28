@@ -1,5 +1,6 @@
 package Chiffers;
 
+import Other.Statistics;
 import Other.Utility;
 import Other.Interfaces.StringEncrytionInterface;
 
@@ -74,6 +75,8 @@ public class ColumnarTransposition implements StringEncrytionInterface {
 
     @Override
     public String dec(String data) {
+        Statistics.recordStat("CallDecMethod");
+
         char[][] matrix = createMatrixDec(data);
         String message = "";
 

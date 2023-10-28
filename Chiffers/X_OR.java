@@ -1,4 +1,5 @@
 package Chiffers;
+import Other.Statistics;
 import Other.Interfaces.StringEncrytionInterface;
 
 public class X_OR implements StringEncrytionInterface {
@@ -23,6 +24,8 @@ public class X_OR implements StringEncrytionInterface {
         }
     
     public String dec(String data) {
+        Statistics.recordStat("CallDecMethod");
+
         return crypt(data, -1);
     }
     

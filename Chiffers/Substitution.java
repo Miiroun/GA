@@ -2,6 +2,7 @@ package Chiffers;
 import java.util.Set;
 import java.util.TreeSet;
 
+import Other.Statistics;
 import Other.Utility;
 import Other.Interfaces.StringEncrytionInterface;
 
@@ -56,6 +57,7 @@ public class Substitution implements StringEncrytionInterface {
     }
 
     public String dec(String data) {
+        Statistics.recordStat("CallDecMethod");
         return crypt(data, Utility.alphabet, encKey);
     }
 

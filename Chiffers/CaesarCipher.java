@@ -1,4 +1,5 @@
 package Chiffers;
+import Other.Statistics;
 import Other.Interfaces.StringEncrytionInterface;
 
 public class CaesarCipher implements StringEncrytionInterface {
@@ -23,6 +24,7 @@ public class CaesarCipher implements StringEncrytionInterface {
 
 
     public String dec(String data) {
+        Statistics.recordStat("CallDecMethod");
         String message = "";
 
         for (char c : data.toCharArray()) {

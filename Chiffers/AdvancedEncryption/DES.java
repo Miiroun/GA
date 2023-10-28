@@ -1,4 +1,4 @@
-package attacks.AdvancedEncryption;
+package Chiffers.AdvancedEncryption;
 
 import java.util.BitSet;
 

@@ -37,7 +37,7 @@ public class BruitForce implements AttackInterface {
         }
 
         Main.writeData(Main.outputArray, "data/endText.txt", true);
-        Statistics.recordeStats();
+        Statistics.recordStat("");
 
     }
 
@@ -61,7 +61,7 @@ public class BruitForce implements AttackInterface {
 
     public double evaluteIOC(String data) { //index of coincidence
         //does not work for transposition chifers, can just be used to tell that been incrypted by substitution
-        int alfLength = 29;
+        int alfLength = 29; // sometimes mutliply the ioc by alfabet length (26 or 29)to get "nicer" nummers to work with, differ depeding on source 
 
         double sum = 0d;
         long n = data.length();
@@ -112,6 +112,7 @@ public class BruitForce implements AttackInterface {
     }
 
     public double evaluteText(String data) {
+        Statistics.recordStat("UseMesEva");
         //return evaluateNGram(data);
         //return evaluteIOC(data);
         return evaluateQGProb(data);

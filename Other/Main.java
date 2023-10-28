@@ -10,14 +10,14 @@ import Chiffers.CaesarCipher;
 import Chiffers.ColumnarTransposition;
 import Chiffers.Substitution;
 import Chiffers.X_OR;
+import Chiffers.AdvancedEncryption.DES;
+import Chiffers.AdvancedEncryption.DiffieHellman;
+import Chiffers.AdvancedEncryption.TriDES;
 import Other.Interfaces.AttackInterface;
 import Other.Interfaces.ByteEncrytionInterface;
 import Other.Interfaces.StringEncrytionInterface;
 import attacks.BruitForce;
 import attacks.FrequencyAnalysis;
-import attacks.AdvancedEncryption.DES;
-import attacks.AdvancedEncryption.DiffieHellman;
-import attacks.AdvancedEncryption.TriDES;
 
 public class Main {
 
@@ -259,7 +259,7 @@ public class Main {
             writeData(outputString, "data/encryptedText.txt");
         }
 
-        Statistics.recordeStats();
+        Statistics.recordStat("");
     }
 
     public static void decryptData() {
@@ -286,7 +286,7 @@ public class Main {
 
             writeData(outputString, "data/endText.txt");
         }
-        Statistics.recordeStats();
+        Statistics.recordStat("");
     }
 
     public static void attackData() {
@@ -307,7 +307,7 @@ public class Main {
             
             writeData(outputString, "data/attackedText.txt");
         }
-        Statistics.recordeStats();
+        Statistics.recordStat("");
 
     }
 
@@ -351,10 +351,19 @@ public class Main {
         Statistics.startCollecting();
         varibleSetUp(EncStandard.Sub, AttStandard.BF);
 
-        String[] texts = new String[20]; //5 shackspear 5 Stringberg 10 av olika kort längder 10--> 200 karaktärer
-        texts[0] = readData("data/texts/hamlet.txt");
+        String[] texts = new String[20]; 
+        String[] titles = {"Hamlet", "RaJ", "MND", "WinterTale", "MerchantVenice", // shakspear: Hamlet, Romeo and Julijet, a Midsummer nights dream, the winter tale, the merchant of venice
+         "Carol", "DetGarAn", "FrakenJulie", "Fadern", "RodaRummet"// chrismas carol, det går an, fröken julie, Fadern, röda rummet
+        , "LoTR", "Tradet", "IHAD", "TwoCitys", "1984" //  5 middle short text: lord of the ring opening monolog, trädet av Boye, utdrag ur i have a dream, utdrag ur a tale of two citys, utdrag av utdrag av 1984
+        , "ToBE", "PP", "BB", "WD", "HW" // 5 realy short texts: to be or not to be, peter pipper; toung twister, start doing by wuiting- Disney, Betty botter; toung twister, hellow world
+        };
+        
+        for (int i = 0; i < 20; i++) {
+            texts[i] = readData("data/texts/" + titles[i] + ".txt");
+        }  
 
-        for (int i = 0; i < 4 * 2; i++) {// looop throw encryption and attack pattarns
+        //should be 4, but temporatraly removed CT
+        for (int i = 0; i < 1 * 2; i++) {// looop throw encryption and attack pattarns
             if(i % 2 == 0) {
                 attStandard = AttStandard.BF;
             } else {
@@ -371,28 +380,43 @@ public class Main {
                 keyString = "data";
             } else if(i == 6 || i == 7) {
                 encStandard = EncStandard.CT;
-                keyString = "swindon";
+                keyString = "swindon"; //hur vet ct vilken column längd att välja??
             } 
 
+            Statistics.openAttEncPair();
             for (int j = 0; j < texts.length; j++) { //loop throu all the texts
+                Statistics.openTextWork();
+                System.out.println("Started on text:" + j);//
+
                 inputString = texts[i];
                 doCryption(false);
+                Statistics.closeSegmentInPair();
 
                 inputString = outputString;
-                attackData();
-                //Statistics.dumpResults();
+                doCryption(true);
+                Statistics.closeSegmentInPair();
+
+                doAttacking();
+                Statistics.closeSegmentInPair();
+
+                Statistics.closeTextWork(outputString.equals(texts[i]));
+
             }
+            Statistics.closeAttEncPair();
+
         }
-        Statistics.endCollecting(false);
+        Statistics.endCollecting(true);
     }
 
 
 
     public static void main(String[] args) {
-        testKrypto();
+        //testKrypto();
+        
         //anaCharFrec();
         //testEvaluate();
-        //collectData();
+        
+        collectData();
     }
 
 }

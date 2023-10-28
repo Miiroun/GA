@@ -5,6 +5,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import Chiffers.X_OR;
 import Other.Utility;
 import Other.Interfaces.AttackInterface;
 
@@ -74,8 +75,7 @@ public class FrequencyAnalysis implements AttackInterface{
         return frequency;
     }
 
-    public String attackCC(String data) {
-        char[] charArray = data.toCharArray();
+    public int analysCharArray(char[] charArray) {
         Map<Character, Integer> frequency = analysLetters(charArray);
 
         int lowestDisplasment = Integer.MAX_VALUE;
@@ -95,7 +95,11 @@ public class FrequencyAnalysis implements AttackInterface{
             if ( currentDis < lowestDisplasment) lowestDisplasment = currentDis;bestMatch = i;
         }
 
-        return Integer.toString(bestMatch);
+        return bestMatch;
+    }
+
+    public String attackCC(String data) {
+        return Integer.toString(analysCharArray(data.toCharArray()));
     }
 
 
@@ -104,6 +108,8 @@ public class FrequencyAnalysis implements AttackInterface{
 
     @Override
     public String attackST(String data) {
+
+        
         char[] charArray = data.toCharArray();
         Map<Character, Integer> frequency = analysLetters(charArray);
         Set<Character> keys[] = new TreeSet[29];
@@ -125,20 +131,46 @@ public class FrequencyAnalysis implements AttackInterface{
         //should go throw all key combinations ive generated
         
 
+        String messString = new String(charArray);
+        return messString;
 
-        //return ;
-        throw new UnsupportedOperationException("Unimplemented method 'attackST'");
-
+        
     }
 
     @Override
-    public String attackXO(String Data) {
-        throw new UnsupportedOperationException("Unimplemented method 'attackXO'");
+    public String attackXO(String data) {
+        char[] charArray = data.toCharArray();
+        char[][] subArray = new char[4][];
+
+        BruitForce bf = new BruitForce();
+        X_OR xo = new X_OR();
+
+        //int[] dividers = Utility.dividers(charArray.length);
+        String str;
+
+        aa:{//chould make it generic for length > 4
+            int lgh = 4;//length
+
+            for (int i = 0; i < charArray.length; i++) 
+            {subArray[i % lgh][Math.floorDiv(i, lgh) +(i % lgh)] = charArray[i];} //create strings than inclued every 4th character
+
+            int[] values = new int[lgh];
+            for (int i = 0; i < subArray.length; i++) {
+                values[i] = analysCharArray(subArray[i]);
+            }
+            str = "";
+            for (int i = 0; i < lgh; i++) str += Utility.alphabet[values[i]];
+            xo.setKey(str);
+            if(bf.evaluteText(xo.dec(data)) > 7) {break aa;} //this check would be helpful if wanted to do for more than length 4
+        }
+
+
+        return str; // not completly implemented
     }
     
     @Override 
     public String attackCT(String data) {
-                throw new UnsupportedOperationException("CT is not susepteble to FA");
+        throw new UnsupportedOperationException("CT is not susepteble to FA");
 
     }
 }
