@@ -1,15 +1,16 @@
 package attacks;
 
 import java.util.Map;
-import java.util.Set;
 import java.util.TreeMap;
-import java.util.TreeSet;
 
+import Chiffers.Substitution;
 import Chiffers.X_OR;
 import Other.Utility;
 import Other.Interfaces.AttackInterface;
 
-import static java.util.Map.entry;    
+import static java.util.Map.entry;
+
+import java.util.ArrayList;
 
 public class FrequencyAnalysis implements AttackInterface{
 
@@ -98,41 +99,57 @@ public class FrequencyAnalysis implements AttackInterface{
         return bestMatch;
     }
 
+    public ArrayList<String> genArrayListFromCharComb(ArrayList<Character>[] charComb, int i, ArrayList<String> keys) {
+        ArrayList<String> tempList = keys;
+
+        if(i != 29) {
+            
+            //how should this work??
+        } 
+
+        return tempList;
+    }
+
     public String attackCC(String data) {
         return Integer.toString(analysCharArray(data.toCharArray()));
     }
 
 
-    //
-
-
     @Override
-    public String attackST(String data) {
-
-        
+    public String attackST(String data) { 
         char[] charArray = data.toCharArray();
         Map<Character, Integer> frequency = analysLetters(charArray);
-        Set<Character> keys[] = new TreeSet[29];
+        ArrayList<Character>[] charComb = new ArrayList[29];
 
         float percent = 0.15f;
-        for (char letter  : Utility.alphabet) {
+        for (int i = 0; i < 29; i++) {
+            char letter = Utility.alphabet[i];
             int value = frequency.get(letter);
+            charComb[i] = new ArrayList<Character>();
 
             for (char answerLetter  : Utility.alphabet) {
                 int answerValue = sweFrequency.get(answerLetter);
                 if(value * (1- percent) < answerValue && value * (1- percent) > answerValue);
                 {
-                    keys[Utility.indexOf(letter)].add(answerLetter);
+                    charComb[Utility.indexOf(letter)].add(answerLetter);
                 }
             }
 
         }
 
-        //should go throw all key combinations ive generated
+        ArrayList<String> keys = genArrayListFromCharComb(charComb, 0, new ArrayList<String>());
         
+        
+        Substitution st = new Substitution();
+        String message[] = new String[keys.size()];
+        int j = 0;
+        for (String key : keys) {
+            st.setKey(key);
+            message[j] = st.dec(data);
+            j++;
+        }
 
-        String messString = new String(charArray);
-        return messString;
+        return BruitForce.evaluteMessageArray(message);
 
         
     }
@@ -142,7 +159,6 @@ public class FrequencyAnalysis implements AttackInterface{
         char[] charArray = data.toCharArray();
         char[][] subArray = new char[4][];
 
-        BruitForce bf = new BruitForce();
         X_OR xo = new X_OR();
 
         //int[] dividers = Utility.dividers(charArray.length);
@@ -161,7 +177,7 @@ public class FrequencyAnalysis implements AttackInterface{
             str = "";
             for (int i = 0; i < lgh; i++) str += Utility.alphabet[values[i]];
             xo.setKey(str);
-            if(bf.evaluteText(xo.dec(data)) > 7) {break aa;} //this check would be helpful if wanted to do for more than length 4
+            if(BruitForce.evaluteText(xo.dec(data)) > 7) {break aa;} //this check would be helpful if wanted to do for more than length 4
         }
 
 

@@ -10,10 +10,9 @@ public class Statistics {
     //global var for entire program
     public static LocalTime timeStart;
     public static String dataTime;
-    public static String textData;
+    public static String dataText;
 
     //local var for each encryption attack pair
-    public static int mesIndex;
     public static String[] dataEncAttPair; // stores the data collected in all messges
 
     //local var for each message
@@ -22,57 +21,28 @@ public class Statistics {
     //local var for each funtion type
     public static int[] useOfMessEva; //counts how many times this used the evalute of message function
     public static int[] useOfDecMeth;
-
-    public Statistics(){
-        timeStart = java.time.LocalTime.now();
-        dataTime = "'TimeStamp':[";
-    }
+    public static LocalTime[] lastTime;
 
     public static void startCollecting() {
         timeStart = java.time.LocalTime.now();
+        dataTime = "\"TimeStamp\":[\n";
+        dataText = "\"AttackData\":[";
+
     }
 
     public static void timeStamp() {timeStamp("");}
     
     public static void timeStamp(String message) {
         LocalTime now = java.time.LocalTime.now();
-        String mess = "{'Time':" + now.compareTo(timeStart) + ", 'message':" + message + "},";
+        
+        String mess = "\t{\"Time\":" + (now.toNanoOfDay() -timeStart.toNanoOfDay()) + ", \"message\":\"" + message + "\"},";
         dataTime += mess + "\n";
-        System.out.println(mess);
+        //System.out.println(mess);
 
     }
 
-    public static void endCollecting(Boolean saveData) {
-        String data = compileData();
-        if(saveData){
-            saveData(data);
-        }
-        System.out.println(data);
-    }
-
-    public static void saveData(String data) {
-        try {
-            Path path = Paths.get("data/statistics/" + "stats:" + LocalDate.now().toString() + "_" + LocalTime.now().getHour() + "-"+ LocalTime.now().getMinute() + /* "-" + LocalTime.now().getSecond() +  "" +*/  ".json");
-            Files.write(path, data.getBytes(Main.charset));
-        } catch (Exception e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
-
-    }
-
-    public static String compileData() {
-        String data = "{";
-
-        dataTime = dataTime.substring(0, dataTime.length()-1) + "]";
-        data += dataTime;
-
-        data += "}";
-        return data;
-    }
 
     public static void openAttEncPair() { //starts collection for; ex CC and BF
-        mesIndex = 0;
         dataEncAttPair = new String[20];
     }
 
@@ -82,54 +52,70 @@ public class Statistics {
         useOfMessEva = new int[3];
         useOfDecMeth = new int[3];
 
+        lastTime = new LocalTime[4];
+        lastTime[3] = LocalTime.now();
+
     }
 
     public static void closeSegmentInPair() { // closes the collection for; ex encryption of ceasar chifer
-        
+        lastTime[funIndex] = LocalTime.now();
         funIndex ++;
+
     }
 
-    public static void closeTextWork(Boolean correct) {
+    public static void closeTextWork(Boolean correct, int j) {
         //sumerice text
         String str = "";
+        str += "{";
+
+        
+        str += "\"Name\":";
+        str += "\"Text"+ j + "\",";
 
         //encryotion
-        str += "'enc':{"; 
-        str += "}";
+        str += "\"enc\":{"; 
+        str += "\"Time\":" + (lastTime[0].toNanoOfDay() - lastTime[3].toNanoOfDay())+ "";
+        str += "},";
         
         //decryption
-        str += "'dec':{"; 
-        str += "'mesEva':" + useOfMessEva[1];
-        str += "}";
+        str += "\"dec\":{"; 
+        str += "\"Time\":" + (lastTime[1].toNanoOfDay() - lastTime[3].toNanoOfDay())+ "";
+        str += "},";
 
         //attack
-        str += "'att':{"; 
-        str += "'mesEva': " + useOfMessEva[2] + ",\n";
-        str += "'decMet': " + useOfDecMeth[2] + ",\n";
-        str += "'Succes':" + Boolean.toString(correct); //is this correct method?
-        str += "}";
+        str += "\"att\":{"; 
+        str += "\"mesEva\": " + useOfMessEva[2] + ",";
+        str += "\"decMet\": " + useOfDecMeth[2] + ",";
+        str += "\"Succes\":" + Boolean.toString(correct) + ","; //kanske spara tiden här också??
+        str += "\"Time\":" + (lastTime[2].toNanoOfDay() - lastTime[3].toNanoOfDay())+ "";
+        str += "},";
 
         //summery
-        str += "'sum':{"; 
-                str += "'mesEva': " + useOfMessEva[0] + useOfMessEva[1] + useOfMessEva[2] + ",\n";
-        str += "'decMet': " + useOfDecMeth[0] + useOfDecMeth[1] + useOfDecMeth[2] + ",\n";
-        str += "textLength:" + Main.inputString.length();
+        str += "\"sum\":{"; 
+        str += "\"mesEva\": " + (useOfMessEva[0] + useOfMessEva[1] + useOfMessEva[2]) + ",";
+        str += "\"decMet\": " + (useOfDecMeth[0] + useOfDecMeth[1] + useOfDecMeth[2]) + ",";
+        str += "\"textLength\":" + Main.inputString.length(); 
         str += "}";
         
-        dataEncAttPair[mesIndex] = str;
-
-        mesIndex ++;
+        str += "}";
+        dataEncAttPair[j] = str;
     }
 
-    public static void closeAttEncPair() { // close collection, preper for new pair: ex CC and BF
+    public static void closeAttEncPair(int i) { // close collection, preper for new pair: ex CC and BF
 
         //summerice pair
-        textData += "{";
-        for (String string : dataEncAttPair) {
-            textData += string + ", ";
-        }
-        textData += "}";
+        String str = "";
 
+        str += "\n\t" + "[";
+        //str += "\"Typ" + i + "\"," 
+        str += "\n";
+        for (String string : dataEncAttPair) {
+            str += "\t\t" + string + ",\n";
+        }
+        str = str.substring(0, str.length()-2);
+        str += "],";
+
+        dataText += str;
         //record key used
 
     }
@@ -150,5 +136,40 @@ public class Statistics {
     public static void addDataCount(String string, int i) {
         //increase a datafield with name "string" i times, or create it if not exist
     }
+
+    public static String compileData() {
+        String data = "{";
+
+
+        data += dataTime.substring(0, dataTime.length()-2) + "]" + ",\n";
+
+        data += dataText.substring(0, dataText.length()-1) + "]" +  "\n";
+
+        data += "}";
+        return data;
+    }
+
+    
+    public static void endCollecting(Boolean saveData) {
+        String data = compileData();
+        if(saveData){
+            saveData(data);
+        } else {
+            System.out.println(data);
+        }
+    }
+
+    public static void saveData(String data) {
+        try {
+            Path path = Paths.get("data/statistics/" + "stats" + LocalDate.now().toString() + "_" + LocalTime.now().getHour() + "-"+ LocalTime.now().getMinute() + /* "-" + LocalTime.now().getSecond() +  "" +*/  ".json");
+            Files.write(path, data.getBytes(Main.charset));
+        } catch (Exception e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+
+    }
+
+    
 
 }

@@ -329,7 +329,7 @@ public class Main {
 
         System.out.println("Done!");
 
-        Statistics.endCollecting(false);
+        //Statistics.endCollecting(false);
     }
     
     public static void anaCharFrec () {
@@ -340,15 +340,15 @@ public class Main {
 
 
     public static void testEvaluate() {
-        BruitForce bf = new BruitForce();
         String str = readData("data/texts/hamlet.txt");
         //str = "kzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxbkzuojahsnqxfqkevsfftsbpuioyehpxb";
         //str = "TobeornottobethatisthequestionWhethertisNoblerinthemindtosufferTheSlingsandArrowsofoutrageousFortuneOrtotakeArmsagainstaSeaoftroublesAndbyopposingendthemWilliamShakespeareHamlet";
-        System.out.println(bf.evaluteText(str));
+        System.out.println(BruitForce.evaluteText(str));
     }
 
     public static void collectData() {
         Statistics.startCollecting();
+
         varibleSetUp(EncStandard.Sub, AttStandard.BF);
 
         String[] texts = new String[20]; 
@@ -362,7 +362,7 @@ public class Main {
             texts[i] = readData("data/texts/" + titles[i] + ".txt");
         }  
 
-        //should be 4, but temporatraly removed CT
+        //should be at 4, but temporatraly removed all but CC
         for (int i = 0; i < 1 * 2; i++) {// looop throw encryption and attack pattarns
             if(i % 2 == 0) {
                 attStandard = AttStandard.BF;
@@ -384,27 +384,32 @@ public class Main {
             } 
 
             Statistics.openAttEncPair();
+            //lowered to 5 to speed up progress
             for (int j = 0; j < texts.length; j++) { //loop throu all the texts
                 Statistics.openTextWork();
                 System.out.println("Started on text:" + j);//
 
-                inputString = texts[i];
-                doCryption(false);
+                inputString = texts[j];
+                doCryption(true);
                 Statistics.closeSegmentInPair();
 
                 inputString = outputString;
-                doCryption(true);
+                doCryption(false);
                 Statistics.closeSegmentInPair();
+                String tempOut = outputString;
 
                 doAttacking();
                 Statistics.closeSegmentInPair();
 
-                Statistics.closeTextWork(outputString.equals(texts[i]));
+                Statistics.closeTextWork(outputString.equals(tempOut), j);
+                Statistics.timeStamp("Typ:"+i+"_Text: "+j);
 
             }
-            Statistics.closeAttEncPair();
-
+            Statistics.closeAttEncPair(i);
         }
+
+        //record data about my messages
+
         Statistics.endCollecting(true);
     }
 

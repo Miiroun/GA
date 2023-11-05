@@ -1,18 +1,14 @@
 package Other;
 public class Utility {
-    public  float isText(String message) {
-        float chance = 0.0f;
-        return chance;
-    }
-
+    
     public static final char[] alphabet = "abcdefghijklmnopqrstuvwxyzåäö".toCharArray();
-    public static final char[] signs = "abcdefghijklmnopqrstuvwxyzåäöABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ0123456789 ,.;:!?'-+=%<>[](){}/\r\n\t".toCharArray(); //ÃƒÆ†â¢Â‚€¬¶¤–“œ„
+    public static final char[] signs = " ,.;:!?'-+=%<>[](){}/\r\n\t\"".toCharArray(); //ÃƒÆ†â¢Â‚€¬¶¤–“œ„
     
     //{'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','å','ä','ö'};
     public static int indexOf(char c, char[] alf) {
         Integer num = null;
         for (int i = 0; i < alf.length; i++) {
-            if (Character.toLowerCase(c) == alf[i]) {
+            if (c == alf[i]) {
                 num = i;
             }
         }
@@ -81,6 +77,7 @@ public class Utility {
 
     }
 
+
     public static int[] dividers(int nummber) {
         int[] div = new int[0];
 
@@ -98,11 +95,12 @@ public class Utility {
     }
 
     public static String removeSigns(String data) {
-        String message = "";
-        
-        for (char c : data.toCharArray()) {
-            if(contains(alphabet, c)) message += Character.toString(c);
+        String message = data;
+        for (char c : signs) {
+            message = message.replace(Character.toString(c), "");
         }
+
+        //for (char c : data.toCharArray()) {if(contains(alphabet, c)) message += Character.toString(c);}
 
         return message;
     }

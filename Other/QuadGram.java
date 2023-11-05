@@ -58,7 +58,7 @@ public class QuadGram {
         QuadGram grams = new QuadGram();
         // int count = 0;
 
-        String[] splits = Main.readData(path).split("\n", 0);
+        String[] splits = Main.readData(path).toLowerCase().split("\n", 0);
 
         for (String split : splits) {
             String gram = split.substring(0, 4);
@@ -75,9 +75,11 @@ public class QuadGram {
 
     public long getNgramValue(String nGramS) {
         char[] nGram = nGramS.toCharArray();
-        for (int i = 0; i < nGram.length; i++) nGram[i] = Character.toLowerCase(nGram[i]);
+        //for (int i = 0; i < nGram.length; i++) nGram[i] = Character.toLowerCase(nGram[i]);
         
         //this for loop checks so that it is letters and not signs
+        //this should not be needed
+        /* 
         for (char c : nGram) {
             aa: {
                 for (char d : Utility.alphabet) {
@@ -88,7 +90,7 @@ public class QuadGram {
                 return 1000000000; // a big nummer to discurage signes not known
             }
         }
-
+        */
 
         long value = quadGram[Utility.indexOf(nGram[0])][Utility.indexOf(nGram[1])][Utility.indexOf(nGram[2])][Utility
                 .indexOf(nGram[3])];
@@ -101,7 +103,7 @@ public class QuadGram {
         char[] nGram = nGramS.toCharArray();
 
         for (char c : nGram) {
-            if(Utility.contains(Utility.alphabet, c) != false)
+            if(!Utility.contains(Utility.alphabet, c))
             throw new java.lang.NullPointerException("something wrong with ngram trying to set:" + nGramS) ;
         }
 
@@ -112,7 +114,7 @@ public class QuadGram {
     }
 
     public static String[] genNGram(String data) {
-        String str = Utility.removeSigns(data);
+        String str = Utility.removeSigns(data);//this is slow
 
         ArrayList<String> grams = new ArrayList<String>() {};
 

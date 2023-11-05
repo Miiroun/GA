@@ -12,7 +12,7 @@ import Other.Utility;
 import Other.Interfaces.AttackInterface;
 
 public class BruitForce implements AttackInterface {
-    QuadGram swe4Grams;
+    public static QuadGram swe4Grams;
 
     // atempts at DES
     public static void attackDES() {
@@ -81,18 +81,18 @@ public class BruitForce implements AttackInterface {
         return sum *(alfLength) / div ;
     }
 
-    public double evaluateQGProb(String data) {//Quadgram but with proberbility
+    public static double evaluateQGProb(String data) {//Quadgram but with proberbility
         if (swe4Grams == null){
             swe4Grams = new QuadGram();
              swe4Grams.readNGrams("data/nGrams/swedish_quadgrams.txt");}
 
-        String[] grams = QuadGram.genNGram(data); 
+        String[] grams = QuadGram.genNGram(data.toLowerCase()); 
         double value = 0d;
 
 
         long length = swe4Grams.getLength();
         double log2 = Math.log10(length);
-        for(String gram : grams) {
+        for(String gram : grams) { //proberbly should implement chaching, this is far too slow
             long standVal = swe4Grams.getNgramValue(gram);
             double prob;
             if(standVal != 0) {
@@ -102,20 +102,40 @@ public class BruitForce implements AttackInterface {
             } else {
                 prob = 0;
             }
-            value += Math.abs(prob);   
+            value += prob;
+            //value += Math.abs(prob);   
         }
 
+        value = Math.abs(value);
         double normalValue = (value)/grams.length;
         double removedSigns = -50; int k = 5;
         if(grams.length != 0)removedSigns = (k * ((4 * grams.length ) - data.length()) )/ (grams.length); 
         return normalValue + removedSigns;
     }
 
-    public double evaluteText(String data) {
+    public static double evaluteText(String data) {
         Statistics.recordStat("UseMesEva");
         //return evaluateNGram(data);
         //return evaluteIOC(data);
         return evaluateQGProb(data);
+    }
+
+    public static String evaluteMessageArray(String message[]) {
+
+        int bestMatch = -1;
+        double bestValue = Double.MIN_VALUE; //change sign if focus on low
+        for (int i = 0; i < message.length; i++) {
+            double value = evaluteText(message[i]); 
+            if(value > bestValue) {// change sign if focus on low
+                bestMatch = i;
+                bestValue = value;
+            }
+        }
+
+        if (bestMatch ==-1) {
+            throw new java.lang.NullPointerException("something wrong with messageevaluation");
+        }
+        return message[bestMatch];
     }
     
 
@@ -129,18 +149,7 @@ public class BruitForce implements AttackInterface {
             message[i] = cc.dec(data);
         }
 
-        int bestMatch = -1;
-        double bestValue = Double.MIN_VALUE; //change sign if focus on low
-        double[] values = new double[testLength];
-        for (int i = 0; i < testLength; i++) {
-            values[i] = evaluteText(message[i]); 
-            if(values[i] > bestValue) {// change sign if focus on low
-                bestMatch = i;
-                bestValue = values[i];
-            }
-        }
-
-        return message[bestMatch];
+        return evaluteMessageArray(message);
     }
 
     @Override
@@ -163,17 +172,7 @@ public class BruitForce implements AttackInterface {
         }
 
 
-        int bestMatch = -1;
-        double bestValue = Double.MAX_VALUE;
-        double value;
-        for (int i = 0; i < message.length; i++) {
-            value = evaluteText(message[i]);
-            if(value < bestValue) { //something wrong with value function, contiusly decrease
-                bestMatch = i;
-                bestValue = value;
-            }
-        }
-        return message[bestMatch];
+       return evaluteMessageArray(message);
     }
 
     @Override
