@@ -317,7 +317,10 @@ public class Main {
 
     public static void testKrypto() {
         Statistics.startCollecting();
-        varibleSetUp(EncStandard.CC, AttStandard.BF);
+        Statistics.openAttEncPair();
+        Statistics.openTextWork();
+
+        varibleSetUp(EncStandard.XOR, AttStandard.not);
 
         System.out.println("Staring...");
 
@@ -334,7 +337,18 @@ public class Main {
     
     public static void anaCharFrec () {
         FrequencyAnalysis fa = new FrequencyAnalysis();
-        String str = readData("data/texts/hamlet.txt");
+        String str = readData("data/texts/FrakenJulie.txt");
+        //CaesarCipher cc = new CaesarCipher();
+        //cc.setKey("3");
+        //str = cc.enc(str);
+        
+        /*char[] strArray = new char[10000];
+        Random rand = new Random();
+        for (int i = 0; i < strArray.length; i++) {
+            strArray[i] = Utility.alphabet[rand.nextInt(29)];
+        }
+        String str = new String(strArray);*/
+
         System.out.println(fa.analysLetters(str.toCharArray()));
     }
 
@@ -345,6 +359,7 @@ public class Main {
         //str = "TobeornottobethatisthequestionWhethertisNoblerinthemindtosufferTheSlingsandArrowsofoutrageousFortuneOrtotakeArmsagainstaSeaoftroublesAndbyopposingendthemWilliamShakespeareHamlet";
         System.out.println(BruitForce.evaluteText(str));
     }
+
 
     public static void collectData() {
         Statistics.startCollecting();
@@ -360,25 +375,28 @@ public class Main {
         
         for (int i = 0; i < 20; i++) {
             texts[i] = readData("data/texts/" + titles[i] + ".txt");
+            //System.out.println(titles[i] +":" + texts[i].length());
         }  
 
-        //should be at 4, but temporatraly removed all but CC
-        for (int i = 0; i < 1 * 2; i++) {// looop throw encryption and attack pattarns
-            if(i % 2 == 0) {
-                attStandard = AttStandard.BF;
-            } else {
+        for (int i = 0; i < 8; i++) {// looop throw encryption and attack pattarns
+            if(i == 2 || i == 3 ||/* i == 4 || */ i == 5 || i == 6 || i == 7 ){
+                attStandard = AttStandard.not;
+            }else if(i % 2 == 0) {
                 attStandard = AttStandard.FA;
+            } else if(i % 2 == 1){
+                attStandard = AttStandard.BF;
             }
+
             if(i == 0 || i == 1) {
-                encStandard = EncStandard.CC;
+                encStandard = EncStandard.CC; 
                 keyString = "3";
-            } else if(i == 2 || i == 3) {
+            } else if(i == 2 || i == 3 ) {
                 encStandard = EncStandard.Sub;
                 keyString = "timeodansfrbcghjklpåäöquvwxyz";
-            } else if(i == 4 || i == 5) {
+            } else if(i == 4 || i == 5 ) {
                 encStandard = EncStandard.XOR;
                 keyString = "data";
-            } else if(i == 6 || i == 7) {
+            } else if(i == 6 || i == 7 ) {
                 encStandard = EncStandard.CT;
                 keyString = "swindon"; //hur vet ct vilken column längd att välja??
             } 
@@ -387,7 +405,7 @@ public class Main {
             //lowered to 5 to speed up progress
             for (int j = 0; j < texts.length; j++) { //loop throu all the texts
                 Statistics.openTextWork();
-                System.out.println("Started on text:" + j);//
+                System.out.println("Started on text:" + j + ", With enc:" + encStandard+ ", and att:" + attStandard);//
 
                 inputString = texts[j];
                 doCryption(true);
@@ -398,7 +416,9 @@ public class Main {
                 Statistics.closeSegmentInPair();
                 String tempOut = outputString;
 
-                doAttacking();
+                if(attStandard != AttStandard.not) {
+                    doAttacking();
+                }
                 Statistics.closeSegmentInPair();
 
                 Statistics.closeTextWork(outputString.equals(tempOut), j);
@@ -417,7 +437,7 @@ public class Main {
 
     public static void main(String[] args) {
         //testKrypto();
-        
+
         //anaCharFrec();
         //testEvaluate();
         

@@ -36,9 +36,7 @@ public class ColumnarTransposition implements StringEncrytionInterface {
             // l = i;
 
             for (int j = 0; j < hight; j++) {
-                char c = data.charAt((i * hight) + j);
-                // char c = data.charAt((i) + j*(width));
-                matrix[l][j] = c;
+                matrix[l][j] = data.charAt((i * hight) + j);;
             }
         }
 

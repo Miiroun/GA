@@ -8,7 +8,7 @@ import java.time.LocalTime;
 public class Statistics {
     
     //global var for entire program
-    public static LocalTime timeStart;
+    public static long timeStart;
     public static String dataTime;
     public static String dataText;
 
@@ -21,10 +21,10 @@ public class Statistics {
     //local var for each funtion type
     public static int[] useOfMessEva; //counts how many times this used the evalute of message function
     public static int[] useOfDecMeth;
-    public static LocalTime[] lastTime;
+    public static long[] lastTime;
 
     public static void startCollecting() {
-        timeStart = java.time.LocalTime.now();
+        timeStart = System.nanoTime();
         dataTime = "\"TimeStamp\":[\n";
         dataText = "\"AttackData\":[";
 
@@ -33,9 +33,9 @@ public class Statistics {
     public static void timeStamp() {timeStamp("");}
     
     public static void timeStamp(String message) {
-        LocalTime now = java.time.LocalTime.now();
+        long now = System.nanoTime();
         
-        String mess = "\t{\"Time\":" + (now.toNanoOfDay() -timeStart.toNanoOfDay()) + ", \"message\":\"" + message + "\"},";
+        String mess = "\t{\"Time\":" + (now - timeStart) + ", \"message\":\"" + message + "\"},";
         dataTime += mess + "\n";
         //System.out.println(mess);
 
@@ -52,13 +52,13 @@ public class Statistics {
         useOfMessEva = new int[3];
         useOfDecMeth = new int[3];
 
-        lastTime = new LocalTime[4];
-        lastTime[3] = LocalTime.now();
+        lastTime = new long[4];
+        lastTime[3] = System.nanoTime();
 
     }
 
     public static void closeSegmentInPair() { // closes the collection for; ex encryption of ceasar chifer
-        lastTime[funIndex] = LocalTime.now();
+        lastTime[funIndex] = System.nanoTime();
         funIndex ++;
 
     }
@@ -74,20 +74,22 @@ public class Statistics {
 
         //encryotion
         str += "\"enc\":{"; 
-        str += "\"Time\":" + (lastTime[0].toNanoOfDay() - lastTime[3].toNanoOfDay())+ "";
+        str += "\"Type\":\"" + (Main.encStandard)+ "\",";
+        str += "\"Time\":" + (lastTime[0] - lastTime[3])+ "";
         str += "},";
         
         //decryption
         str += "\"dec\":{"; 
-        str += "\"Time\":" + (lastTime[1].toNanoOfDay() - lastTime[3].toNanoOfDay())+ "";
+        str += "\"Time\":" + (lastTime[1] - lastTime[3])+ "";
         str += "},";
 
         //attack
         str += "\"att\":{"; 
+        str += "\"Type\":\"" + (Main.attStandard)+ "\",";
         str += "\"mesEva\": " + useOfMessEva[2] + ",";
         str += "\"decMet\": " + useOfDecMeth[2] + ",";
         str += "\"Succes\":" + Boolean.toString(correct) + ","; //kanske spara tiden här också??
-        str += "\"Time\":" + (lastTime[2].toNanoOfDay() - lastTime[3].toNanoOfDay())+ "";
+        str += "\"Time\":" + (lastTime[2] - lastTime[3])+ "";
         str += "},";
 
         //summery

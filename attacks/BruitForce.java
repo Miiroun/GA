@@ -133,6 +133,7 @@ public class BruitForce implements AttackInterface {
         }
 
         if (bestMatch ==-1) {
+            System.out.println(message.length);
             throw new java.lang.NullPointerException("something wrong with messageevaluation");
         }
         return message[bestMatch];
@@ -155,7 +156,7 @@ public class BruitForce implements AttackInterface {
     @Override
     public String attackST(String data) {
         int key[] = new int[29];
-        for (int i = 1; i <= key.length; i++) key[i] = i;
+        for (int i = 0; i < key.length; i++) key[i] = i+1;
         int keys[][] = Utility.permutations(key);
 
 

@@ -3,6 +3,7 @@ package attacks;
 import java.util.Map;
 import java.util.TreeMap;
 
+import Chiffers.ColumnarTransposition;
 import Chiffers.Substitution;
 import Chiffers.X_OR;
 import Other.Utility;
@@ -99,13 +100,31 @@ public class FrequencyAnalysis implements AttackInterface{
         return bestMatch;
     }
 
-    public ArrayList<String> genArrayListFromCharComb(ArrayList<Character>[] charComb, int i, ArrayList<String> keys) {
-        ArrayList<String> tempList = keys;
+    public String[] genArrayListFromCharComb(ArrayList<Character>[] charComb, int i, String keys[]) {
+        String[] tempList = keys;
 
-        if(i != 29) {
+    
+
+        
             
+            String[] prior = new String[1];
+            if(i != 0){
+                prior = genArrayListFromCharComb(charComb, i - 1, keys); //not entierly correct, needs ti fix somthing
+            }
+            if(i == 29) {
+                return prior;
+            }
+            tempList = new String[prior.length * charComb[i].size()];
+            int j = 0;
+            for (char c: charComb[i]) {
+                for(int k = 0; k < prior.length; k++) {
+                    tempList[j] = prior[j % prior.length] + c;
+                    j++;
+                }
+            }
+
             //how should this work??
-        } 
+        
 
         return tempList;
     }
@@ -121,27 +140,29 @@ public class FrequencyAnalysis implements AttackInterface{
         Map<Character, Integer> frequency = analysLetters(charArray);
         ArrayList<Character>[] charComb = new ArrayList[29];
 
-        float percent = 0.15f;
+        float percent = 20f;
         for (int i = 0; i < 29; i++) {
             char letter = Utility.alphabet[i];
-            int value = frequency.get(letter);
+            int value = frequency.get(letter); //problem här att blir 0, kanske fel från datan
             charComb[i] = new ArrayList<Character>();
-
+            
             for (char answerLetter  : Utility.alphabet) {
                 int answerValue = sweFrequency.get(answerLetter);
-                if(value * (1- percent) < answerValue && value * (1- percent) > answerValue);
-                {
-                    charComb[Utility.indexOf(letter)].add(answerLetter);
+                if (value * (1f - percent) <= answerValue )   
+                    if(answerValue <= value * (1f + percent)){
+                    {
+                        charComb[i].add(answerLetter);
+                    }
                 }
             }
 
         }
 
-        ArrayList<String> keys = genArrayListFromCharComb(charComb, 0, new ArrayList<String>());
+        String[] keys = genArrayListFromCharComb(charComb, 29, new String[1]); //problem med skapandet av nycklar
         
         
         Substitution st = new Substitution();
-        String message[] = new String[keys.size()];
+        String message[] = new String[keys.length];
         int j = 0;
         for (String key : keys) {
             st.setKey(key);
@@ -157,7 +178,7 @@ public class FrequencyAnalysis implements AttackInterface{
     @Override
     public String attackXO(String data) {
         char[] charArray = data.toCharArray();
-        char[][] subArray = new char[4][];
+        char[][] subArray = new char[0][];
 
         X_OR xo = new X_OR();
 
@@ -165,17 +186,25 @@ public class FrequencyAnalysis implements AttackInterface{
         String str;
 
         aa:{//chould make it generic for length > 4
-            int lgh = 4;//length
+            int keyLen = 4;//length
+            subArray = new char[keyLen][];
+            for (int i = 0; i < subArray.length; i++) {
+                int rounded = Math.round((charArray.length / keyLen) + 0.5f);
+                subArray[i] = new char[rounded + ((charArray.length > rounded * keyLen + i) ? 1 : 0) + 2];
+            }
 
             for (int i = 0; i < charArray.length; i++) 
-            {subArray[i % lgh][Math.floorDiv(i, lgh) +(i % lgh)] = charArray[i];} //create strings than inclued every 4th character
+            {
+                char c = charArray[i];
+                subArray[i % keyLen][Math.floorDiv(i, keyLen) + (i % keyLen)] = c;
+            } //create strings than inclued every 4th character
 
-            int[] values = new int[lgh];
+            int[] values = new int[keyLen];
             for (int i = 0; i < subArray.length; i++) {
                 values[i] = analysCharArray(subArray[i]);
             }
             str = "";
-            for (int i = 0; i < lgh; i++) str += Utility.alphabet[values[i]];
+            for (int i = 0; i < keyLen; i++) str += Utility.alphabet[values[i]];
             xo.setKey(str);
             if(BruitForce.evaluteText(xo.dec(data)) > 7) {break aa;} //this check would be helpful if wanted to do for more than length 4
         }
@@ -186,7 +215,47 @@ public class FrequencyAnalysis implements AttackInterface{
     
     @Override 
     public String attackCT(String data) {
-        throw new UnsupportedOperationException("CT is not susepteble to FA");
+        //do an (not anagram) attack here
+        int[] div = Utility.dividers(data.length());
+        ColumnarTransposition ct = new ColumnarTransposition();
 
+        int[] values = new int[div.length];
+        for (int i = 0; i < div.length; i++) {
+            int[] key = new int[div[i]];
+            for (int j = 0; j < key.length; j++) key[j] = j;
+            ct.setKey(key);
+
+            char[][] matrix = ct.createMatrixDec(data);
+            
+            values[i] = 0;
+            for (int j = 0; j < matrix.length; j++) {
+                String subMessage = new String(matrix[j]);
+                values[i] += BruitForce.evaluteText(subMessage);
+            } //maybe not evalute inside forloop but as a whole
+
+
+        }
+        int k = -1;
+        int bestMatch = Integer.MIN_VALUE;
+        for (int i = 0; i < values.length; i++) {
+            if(values[i] > bestMatch) {
+                k = i;
+                bestMatch = values[i];
+            }
+        }
+
+        //need to loop throw to check which is best
+        int num = div[k];
+        int[] key = new int[num];
+        for (int j = 0; j < num; j++) { key[j] = j;} //om blir för bred kolumn blir det myckeyt eftersom n! långl, problemet här är att överstrider integer bit limit
+        int[][] permutations = Utility.permutations(key); //alldeles för långsamt att testa all möjliga permutationer, 
+
+        String[] message = new String[num];
+        for (int i = 0; i < message.length; i++) {
+            ct.setKey(permutations[i]);
+            message[i] = ct.dec(data);
+        }
+
+        return BruitForce.evaluteMessageArray(message);
     }
 }

@@ -13,13 +13,14 @@ public class Utility {
             }
         }
         
-        if ( num == null){throw new java.lang.NullPointerException("didn't find character for:'" + c + "'");}
+        if ( num == null){//throw new java.lang.NullPointerException("didn't find character for:'" + c + "'");}
+        num = 0;}
 
         return num;
     }
 
     public static int indexOf(char c) {
-        return indexOf(c, alphabet);
+        return indexOf(Character.toLowerCase(c), alphabet);
     }
 
 
@@ -44,7 +45,7 @@ public class Utility {
         // maybe create lookuptable if too slow
 
         if (array.length != 1) {
-            int[][] perm = new int[Utility.factorial(array.length)][];
+            int[][] perm = new int[Utility.factorial(array.length)][];//breaks the integer bit limit, not reasonable tactic
             int n = 0;
 
             int[] shortArr = new int[array.length - 1];

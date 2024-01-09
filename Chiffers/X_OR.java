@@ -1,5 +1,6 @@
 package Chiffers;
 import Other.Statistics;
+import Other.Utility;
 import Other.Interfaces.StringEncrytionInterface;
 
 public class X_OR implements StringEncrytionInterface {
@@ -10,8 +11,8 @@ public class X_OR implements StringEncrytionInterface {
         char[] dataArray = data.toString().toCharArray();
         char[] message = new char[dataArray.length];
 
-        for (int i = 0; i < message.length; i++) {  //inte efel med denna functionen, inte detta iallafall
-            message[i] = (char) (dataArray[i]     + factor * key[ i % key.length]);
+        for (int i = 0; i < message.length; i++) {  //inte fel med denna functionen, inte detta iallafall
+            message[i] = Utility.alphabet[(Utility.indexOf(dataArray[i])     + factor * (Utility.indexOf(key[ i % key.length])) +29)%29];
             
         }
 
