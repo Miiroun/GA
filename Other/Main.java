@@ -26,7 +26,7 @@ public class Main {
         TriDES,
         DH,
         CC,
-        XOR,
+        Vig,
         Sub,
         CT
     }
@@ -54,7 +54,7 @@ public class Main {
             blockSize = 64;
             byteSize = blockSize / 8;
             charset = Charset.forName("UTF-8");
-        } else if (encStandard == EncStandard.CC || encStandard == EncStandard.Sub ||  encStandard == EncStandard.XOR || encStandard == EncStandard.CT) {
+        } else if (encStandard == EncStandard.CC || encStandard == EncStandard.Sub ||  encStandard == EncStandard.Vig || encStandard == EncStandard.CT) {
             doBytes = false;
             charset = Charset.forName("UTF-8");
 
@@ -188,7 +188,7 @@ public class Main {
 
         if (encStandard == EncStandard.CC) {
             encClass = new CaesarCipher();
-        } else if (encStandard == EncStandard.XOR) {
+        } else if (encStandard == EncStandard.Vig) {
             encClass = new X_OR();
         } else if (encStandard == EncStandard.Sub) {
             encClass = new Substitution();
@@ -226,7 +226,7 @@ public class Main {
 
         if (encStandard == EncStandard.CC) {
             outputString = attClass.attackCC(inputString);
-        } else if (encStandard == EncStandard.XOR) {
+        } else if (encStandard == EncStandard.Vig) {
             outputString = attClass.attackXO(inputString);
         } else if (encStandard == EncStandard.Sub) {
             outputString = attClass.attackST(inputString);
@@ -320,7 +320,7 @@ public class Main {
         Statistics.openAttEncPair();
         Statistics.openTextWork();
 
-        varibleSetUp(EncStandard.XOR, AttStandard.not);
+        varibleSetUp(EncStandard.CC, AttStandard.FA);
 
         System.out.println("Staring...");
 
@@ -332,7 +332,7 @@ public class Main {
 
         System.out.println("Done!");
 
-        //Statistics.endCollecting(false);
+        Statistics.endCollecting(false);
     }
     
     public static void anaCharFrec () {
@@ -378,8 +378,8 @@ public class Main {
             //System.out.println(titles[i] +":" + texts[i].length());
         }  
 
-        for (int i = 0; i < 8; i++) {// looop throw encryption and attack pattarns
-            if(i == 2 || i == 3 ||/* i == 4 || */ i == 5 || i == 6 || i == 7 ){
+        for (int i = 0; i < 5; i++) {// looop throw encryption and attack pattarns
+            if(i == 5){
                 attStandard = AttStandard.not;
             }else if(i % 2 == 0) {
                 attStandard = AttStandard.FA;
@@ -391,14 +391,11 @@ public class Main {
                 encStandard = EncStandard.CC; 
                 keyString = "3";
             } else if(i == 2 || i == 3 ) {
-                encStandard = EncStandard.Sub;
-                keyString = "timeodansfrbcghjklpåäöquvwxyz";
-            } else if(i == 4 || i == 5 ) {
-                encStandard = EncStandard.XOR;
+                encStandard = EncStandard.Vig;
                 keyString = "data";
-            } else if(i == 6 || i == 7 ) {
+            } else if(i == 4 || i == 5 ) {
                 encStandard = EncStandard.CT;
-                keyString = "swindon"; //hur vet ct vilken column längd att välja??
+                keyString = "swindon"; 
             } 
 
             Statistics.openAttEncPair();

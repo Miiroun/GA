@@ -1,8 +1,10 @@
 package attacks;
 
 import java.util.Map;
+import java.util.Random;
 import java.util.TreeMap;
 
+import Chiffers.CaesarCipher;
 import Chiffers.ColumnarTransposition;
 import Chiffers.Substitution;
 import Chiffers.X_OR;
@@ -94,7 +96,7 @@ public class FrequencyAnalysis implements AttackInterface{
             //System.out.println(dis);
 
             }
-            if ( currentDis < lowestDisplasment) lowestDisplasment = currentDis;bestMatch = i;
+            if ( currentDis < lowestDisplasment) {lowestDisplasment = currentDis;bestMatch = i;}
         }
 
         return bestMatch;
@@ -130,7 +132,9 @@ public class FrequencyAnalysis implements AttackInterface{
     }
 
     public String attackCC(String data) {
-        return Integer.toString(analysCharArray(data.toCharArray()));
+        CaesarCipher cc = new CaesarCipher();
+        cc.setKey(Integer.toString(analysCharArray(data.toCharArray())));
+        return cc.dec(data);
     }
 
 
@@ -182,37 +186,38 @@ public class FrequencyAnalysis implements AttackInterface{
 
         X_OR xo = new X_OR();
 
-        //int[] dividers = Utility.dividers(charArray.length);
-        String str;
+        char[] keyStr;
 
         aa:{//chould make it generic for length > 4
             int keyLen = 4;//length
             subArray = new char[keyLen][];
             for (int i = 0; i < subArray.length; i++) {
-                int rounded = Math.round((charArray.length / keyLen) + 0.5f);
-                subArray[i] = new char[rounded + ((charArray.length > rounded * keyLen + i) ? 1 : 0) + 2];
+                int rounded = Math.floorDiv(charArray.length, keyLen)+ 1;
+                subArray[i] = new char[rounded];
             }
 
-            for (int i = 0; i < charArray.length; i++) 
+            for (int i = 0; i < subArray[0].length * keyLen; i++) 
             {
-                char c = charArray[i];
-                subArray[i % keyLen][Math.floorDiv(i, keyLen) + (i % keyLen)] = c;
-            } //create strings than inclued every 4th character
+                char c = charArray[Math.min(i, charArray.length-1)];
+                subArray[i % keyLen][Math.floorDiv(i, keyLen)] = c;
+            } //create strings than inclued every keyLenth character
 
             int[] values = new int[keyLen];
             for (int i = 0; i < subArray.length; i++) {
                 values[i] = analysCharArray(subArray[i]);
             }
-            str = "";
-            for (int i = 0; i < keyLen; i++) str += Utility.alphabet[values[i]];
-            xo.setKey(str);
+
+            keyStr = new char[keyLen];
+            for (int i = 0; i < keyLen; i++){keyStr[i] = Utility.alphabet[values[i]];}
+            xo.setKey(new String(keyStr));
             if(BruitForce.evaluteText(xo.dec(data)) > 7) {break aa;} //this check would be helpful if wanted to do for more than length 4
         }
 
 
-        return str; // not completly implemented
+        return xo.dec(data); 
     }
-    
+
+
     @Override 
     public String attackCT(String data) {
         //do an (not anagram) attack here
@@ -244,18 +249,47 @@ public class FrequencyAnalysis implements AttackInterface{
             }
         }
 
-        //need to loop throw to check which is best
-        int num = div[k];
-        int[] key = new int[num];
-        for (int j = 0; j < num; j++) { key[j] = j;} //om blir för bred kolumn blir det myckeyt eftersom n! långl, problemet här är att överstrider integer bit limit
-        int[][] permutations = Utility.permutations(key); //alldeles för långsamt att testa all möjliga permutationer, 
+        //loop throw to check which key permutation is best
+        int keyLen = div[k];
 
-        String[] message = new String[num];
-        for (int i = 0; i < message.length; i++) {
-            ct.setKey(permutations[i]);
-            message[i] = ct.dec(data);
-        }
+        //cheats and tells system current length, since above algorithm not acuret enouth and throws errors
+        keyLen = 2;
+        int[] key = new int[keyLen];
+        for (int j = 0; j < keyLen; j++) { key[j] = j;} //om blir för bred kolumn blir det myckeyt eftersom n! långl, problemet här är att överstrider integer bit limit
 
-        return BruitForce.evaluteMessageArray(message);
+        if(Utility.factorial(keyLen) < 1000) {
+            int[][] permutations = Utility.permutations(key); //alldeles för långsamt att testa all möjliga permutationer, 
+
+            String[] message = new String[permutations.length];
+            for (int i = 0; i < message.length; i++) {
+                ct.setKey(permutations[i]);
+                char[][] matrix = ct.createMatrixDec(data);
+                message[i] = ct.decWithMatrix(matrix);
+            }
+
+            return BruitForce.evaluteMessageArray(message);
+        } else {
+            int[] lastKey = key.clone();
+            double lastValue = Integer.MIN_VALUE;
+            
+            Random r = new Random();
+
+            for (int i = 0; i < 100000; i++) {
+                int[] nowKey = lastKey.clone();
+                int rand1 = r.nextInt(keyLen-1);
+                int rand2 = r.nextInt(keyLen-1);
+                nowKey[rand1] = lastKey[rand2];
+                nowKey[rand2] = lastKey[rand1];
+                ct.setKey(nowKey);
+                double nowValue = BruitForce.evaluteText(ct.dec(data));
+                if(nowValue > lastValue) {
+                    lastValue = nowValue;
+                    nowKey = lastKey;
+                }
+            }
+            
+            ct.setKey(lastKey);
+            return ct.dec(data);
+        } 
     }
 }

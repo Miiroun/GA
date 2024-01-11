@@ -76,15 +76,19 @@ public class ColumnarTransposition implements StringEncrytionInterface {
         Statistics.recordStat("CallDecMethod");
 
         char[][] matrix = createMatrixDec(data);
-        String message = "";
+        return decWithMatrix(matrix);
+    }
+
+    public String decWithMatrix(char[][] matrix) {
+        char[] message = new char[matrix.length * matrix[0].length];
 
         for (int j = 0; j < matrix[0].length; j++) {
             for (int i = 0; i < matrix.length; i++) {
-                message += matrix[i][j];
+                message[j * matrix.length + i] += matrix[i][j];
             }
         }
 
-        return message;
+        return new String(message);
     }
 
     @Override

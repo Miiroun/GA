@@ -80,7 +80,7 @@ public class Statistics {
         
         //decryption
         str += "\"dec\":{"; 
-        str += "\"Time\":" + (lastTime[1] - lastTime[3])+ "";
+        str += "\"Time\":" + (lastTime[1] - lastTime[0])+ "";
         str += "},";
 
         //attack
@@ -89,7 +89,7 @@ public class Statistics {
         str += "\"mesEva\": " + useOfMessEva[2] + ",";
         str += "\"decMet\": " + useOfDecMeth[2] + ",";
         str += "\"Succes\":" + Boolean.toString(correct) + ","; //kanske spara tiden här också??
-        str += "\"Time\":" + (lastTime[2] - lastTime[3])+ "";
+        str += "\"Time\":" + (lastTime[2] - lastTime[1])+ "";
         str += "},";
 
         //summery

@@ -5,6 +5,7 @@ import java.math.BigInteger;
 import Chiffers.CaesarCipher;
 import Chiffers.ColumnarTransposition;
 import Chiffers.Substitution;
+import Chiffers.X_OR;
 import Other.Main;
 import Other.QuadGram;
 import Other.Statistics;
@@ -81,6 +82,7 @@ public class BruitForce implements AttackInterface {
         return sum *(alfLength) / div ;
     }
 
+
     public static double evaluateQGProb(String data) {//Quadgram but with proberbility
         if (swe4Grams == null){
             swe4Grams = new QuadGram();
@@ -117,36 +119,62 @@ public class BruitForce implements AttackInterface {
         Statistics.recordStat("UseMesEva");
         //return evaluateNGram(data);
         //return evaluteIOC(data);
-        return evaluateQGProb(data);
+
+        double value = evaluateQGProb(data);
+        return value;
     }
 
-    public static String evaluteMessageArray(String message[]) {
+    public static int evaluteMessageArrayBestMatch(String message[]) {
+        //problem om text som bara tre bokstäver långa och att message blir förflyttade för transposition när körs flera gånger
 
         int bestMatch = -1;
         double bestValue = Double.MIN_VALUE; //change sign if focus on low
         for (int i = 0; i < message.length; i++) {
             double value = evaluteText(message[i]); 
-            if(value > bestValue) {// change sign if focus on low
+            if(value >= bestValue) {// change sign if focus on low
                 bestMatch = i;
                 bestValue = value;
             }
         }
 
         if (bestMatch ==-1) {
-            System.out.println(message.length);
-            throw new java.lang.NullPointerException("something wrong with messageevaluation");
+            if(message[0].length() > 4) {
+                System.out.println(message.length);
+                throw new java.lang.NullPointerException("something wrong with messageevaluation");
+            } else {
+                System.out.println("sub message length is less than 4 and quadgramprobibility doesnt work");
+                bestValue = 0d;
+                bestMatch = 0;
+            }
         }
+        return bestMatch;
+    }
+
+    public static String evaluteMessageArray(String message[]) {
+        int bestMatch = evaluteMessageArrayBestMatch(message);
         return message[bestMatch];
     }
     
-
-    public String attackCC(String data) {
-        final int testLength = 29*2;
+    public int attackCCforBestMatch(String data) {
+        final int testLength = 29;
         String[] message = new String[testLength];
         CaesarCipher cc = new CaesarCipher();
 
         for (int i = 0; i < testLength; i++) {
-            cc.setKey(Integer.toString(i- (testLength/2)));
+            cc.setKey(Integer.toString(i- testLength));
+            message[i] = cc.dec(data);
+        }
+        return evaluteMessageArrayBestMatch(message);
+    }
+
+
+    public String attackCC(String data) {
+        final int testLength = 29;
+        String[] message = new String[testLength];
+        CaesarCipher cc = new CaesarCipher();
+
+        for (int i = 0; i < testLength; i++) {
+            cc.setKey(Integer.toString(i- testLength));
             message[i] = cc.dec(data);
         }
 
@@ -177,8 +205,41 @@ public class BruitForce implements AttackInterface {
     }
 
     @Override
-    public String attackXO(String Data) {
-        throw new UnsupportedOperationException("Unimplemented method 'attackXO'");
+    public String attackXO(String data) {
+        char[] charArray = data.toCharArray();
+        char[][] subArray = new char[0][];
+
+        X_OR xo = new X_OR();
+
+        char[] keyStr;
+
+        aa:{//chould make it generic for length > 4
+            int keyLen = 4;//length
+            subArray = new char[keyLen][];
+            for (int i = 0; i < subArray.length; i++) {
+                int rounded = Math.floorDiv(charArray.length, keyLen)+ 1;
+                subArray[i] = new char[rounded];
+            }
+
+            for (int i = 0; i < subArray[0].length * keyLen; i++) 
+            {
+                char c = charArray[Math.min(i, charArray.length-1)];
+                subArray[i % keyLen][Math.floorDiv(i, keyLen)] = c;
+            } //create strings than inclued every keyLenth character
+
+            int[] values = new int[keyLen];
+            for (int i = 0; i < subArray.length; i++) {                
+                values[i] = attackCCforBestMatch(new String(subArray[i]));
+            }
+
+            keyStr = new char[keyLen];
+            for (int i = 0; i < keyLen; i++){keyStr[i] = Utility.alphabet[values[i]];}
+            xo.setKey(new String(keyStr));
+            if(BruitForce.evaluteText(xo.dec(data)) > 7) {break aa;} //this check would be helpful if wanted to do for more than length 4
+        }
+
+
+        return xo.dec(data); 
     }
 
     @Override
