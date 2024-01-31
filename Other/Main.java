@@ -311,8 +311,21 @@ public class Main {
 
     }
 
-    
+    public static String repetText(String str) {
+        return  str + str + str +str + str + str + str + str +str + str;
+    }
 
+    public static String[] generateTextOfDiffrentLengths(String str, int n) {
+        String[] texts = new String[n];
+        texts[0] = str;
+
+        for (int i = 1; i < texts.length; i++) {
+            //texts[i] = repetText(texts[i-1]);
+            texts[i] = texts[i-1].concat(texts[i-1]);
+        }
+        return texts;
+
+    }
    
 
     public static void testKrypto() {
@@ -360,6 +373,46 @@ public class Main {
         System.out.println(BruitForce.evaluteText(str));
     }
 
+    public static void doDataCollecting(String[] texts, int i) {
+        Statistics.openAttEncPair();
+        for (int j = 0; j < texts.length; j++) { //loop throu all the texts
+            Statistics.openTextWork();
+            System.out.println("Started on text:" + j + ", With enc:" + encStandard+ ", and att:" + attStandard);//
+
+            inputString = texts[j];
+            doCryption(true);
+            Statistics.closeSegmentInPair();
+
+            inputString = outputString;
+            doCryption(false);
+            Statistics.closeSegmentInPair();
+            String tempOut = outputString;
+
+            if(attStandard != AttStandard.not) {
+                doAttacking();
+            }
+            Statistics.closeSegmentInPair();
+
+            Statistics.closeTextWork(outputString.equals(tempOut), j);
+            Statistics.timeStamp("Typ:"+i+"_Text: "+j);
+
+        }
+        Statistics.closeAttEncPair(i);
+    }
+
+    public static void testBigO() {
+        Statistics.startCollecting();
+
+        varibleSetUp(EncStandard.CC, AttStandard.FA);
+        keyString = "3";
+
+        String orgString = readData("data/texts/" + "TwoCitys" + ".txt");
+        String[] texts = generateTextOfDiffrentLengths(orgString, 15); //22 högsta för integer bit limit 
+
+        doDataCollecting(texts, 0);
+
+        Statistics.endCollecting(true);
+    }
 
     public static void collectData() {
         Statistics.startCollecting();
@@ -398,35 +451,11 @@ public class Main {
                 keyString = "swindon"; 
             } 
 
-            Statistics.openAttEncPair();
-            //lowered to 5 to speed up progress
-            for (int j = 0; j < texts.length; j++) { //loop throu all the texts
-                Statistics.openTextWork();
-                System.out.println("Started on text:" + j + ", With enc:" + encStandard+ ", and att:" + attStandard);//
 
-                inputString = texts[j];
-                doCryption(true);
-                Statistics.closeSegmentInPair();
-
-                inputString = outputString;
-                doCryption(false);
-                Statistics.closeSegmentInPair();
-                String tempOut = outputString;
-
-                if(attStandard != AttStandard.not) {
-                    doAttacking();
-                }
-                Statistics.closeSegmentInPair();
-
-                Statistics.closeTextWork(outputString.equals(tempOut), j);
-                Statistics.timeStamp("Typ:"+i+"_Text: "+j);
-
-            }
-            Statistics.closeAttEncPair(i);
+            doDataCollecting(texts, i);
         }
-
+            
         //record data about my messages
-
         Statistics.endCollecting(true);
     }
 
@@ -438,7 +467,8 @@ public class Main {
         //anaCharFrec();
         //testEvaluate();
         
-        collectData();
+        //collectData();
+        testBigO();
     }
 
 }
