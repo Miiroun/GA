@@ -30,13 +30,14 @@ public class CaesarCipher implements StringEncrytionInterface {
     }
 
     public String enc(String data) {
-        String message = "";
+        char[] message = new char[data.length()];
 
-        for (char c : data.toCharArray()) {
-            message = message + shitChar(c, key);
+        char[] charArray = data.toCharArray(); //blir långsamare och långsamare
+        for (int i = 0; i < charArray.length; i++ ) {
+            message[i] = shitChar(charArray[i], (1) * key);
         }
 
-        return message;   
+        return new String(message);
     }
 
 

@@ -407,7 +407,7 @@ public class Main {
         keyString = "3";
 
         String orgString = readData("data/texts/" + "TwoCitys" + ".txt");
-        String[] texts = generateTextOfDiffrentLengths(orgString, 15); //22 högsta för integer bit limit 
+        String[] texts = generateTextOfDiffrentLengths(orgString, 22); //22 högsta för integer bit limit, men krashar av minnesproblem vid n:19 redan
 
         doDataCollecting(texts, 0);
 
